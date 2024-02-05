@@ -340,7 +340,11 @@ header{
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-    
+    header{
+        nav.navbar.navbar-expand-lg{
+            background: unset!important;
+        }
+    }
 
     main{
         section#jumbotron{
@@ -452,6 +456,12 @@ header{
                     }
                 }
                }
+            }
+
+            #infographic{
+                div.display-1{
+                    font-size: 3rem;
+                }
             }
         }
         
