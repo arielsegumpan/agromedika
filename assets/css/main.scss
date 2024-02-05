@@ -1,4 +1,5 @@
-$prim: #0FAA0F;
+// $prim: #0FAA0F;
+$prim: #009245;
 $sec:#5B5B5B;
 $success: #8CC63F;
 $lightG: #F3FFF8;
@@ -7,6 +8,7 @@ $warning: #ffc107;
 $nav-size: 15px;
 $y-green: #91BF21;
 $black: #111111;
+$lteal: #EEFFF5;
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..600;1,300..800&display=swap');
 
@@ -38,7 +40,10 @@ $theme-colors:(
 
 $custom-colors: (
   "black": $black,
+  "lteal" : $lteal,
 );
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";

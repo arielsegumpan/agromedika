@@ -1,19 +1,133 @@
 $maxHeightSVH: 100svh;
-
-
-
+$white: #fff;
+$trans: .3s ease;
+$lteal: #EEFFF5;
+$black: #111111;
 
 
 *{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings:"wdth" 100;
+
+
+    #scroll_btn {
+        position: absolute;
+        right: 1.5rem;
+        z-index: 999;
+        bottom: 2rem;
+        position: fixed;
+        cursor: pointer;
+        display: none;
+        i{
+            color: white;
+            padding:.8rem;
+            transition: $trans;
+            border: 1px solid white;
+        }
+    }
+    
+    .visuallyHidden {
+        position: absolute; 
+        overflow: hidden; 
+        clip: rect(0 0 0 0); 
+        height: 1px; width: 1px; 
+        margin: -1px; padding: 0; border: 0; 
+    }
+    .hamburger {
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .hamburger .bar {
+        padding: 0;
+        width: 30px;
+        height: 4px;
+        background-color: $black;
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute; 
+    }
+    
+    .bar1 {
+        top: 0;
+    }
+    
+    .bar2,
+    .bar3 {
+        top: 13.5px;
+    }
+    
+    .bar3 {
+        right: 0;
+    }
+    
+    .bar4 {
+        bottom: 0;
+    }
+
+    
+    .hamburger2 .bar2,
+    .hamburger3 .bar3,
+    .hamburger4 .bar4 {
+        top: 13.5px;
+    }
+
+    .hamburger4 .bar5 {
+        bottom: 0px;
+    }
+
+    .hamburger4 .bar {
+        transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+    }
+
+    .hamburger4 .bar2 {
+        width: 1px;
+        transform: rotate(90deg);
+        left: 13.5px;
+    }
+
+    .hamburger4 .bar3 {
+        width: 1px;
+        left: 13.5px;
+        
+    }
+
+    .checkbox4:checked + label > .hamburger4 > .bar1{
+        top: 13.5px;
+        background-color: transparent;
+    }
+
+    .checkbox4:checked + label > .hamburger4 > .bar2{
+        left: 0px;
+        width: 30px;
+        transform: rotate(45deg);
+    }
+
+    .checkbox4:checked + label > .hamburger4 > .bar3{
+        left: 0;
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+
+    .checkbox4:checked + label > .hamburger4 > .bar4{
+        background-color: transparent;
+    }
+
+    .checkbox4:checked + label > .hamburger4 > .bar5{
+        bottom: 13.5px;
+        background-color: transparent; 
+    }
+
+    
 }
 
 header{
+    z-index: 500;
     nav{
         a.navbar-brand{
             img{
@@ -33,54 +147,362 @@ header{
     }
 }
 
+.bg-overlay{
+    background: $white;
+    overflow: hidden;
+    height: 100svh;
+    position: absolute;
+    z-index: 1;
+}
 
-main{
-    section#jumbotron{
-        height: $maxHeightSVH;
-        width: 100%;
-      
-        .container{
-            position: relative;
-            height: $maxHeightSVH;
-            .col-12{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
+@media (min-width: 375px) { 
+    header{
+        nav.navbar.navbar-expand-lg{
+            background: $lteal!important;
         }
     }
-
-    section#about{
-        padding: 10rem 0;
-        .about-imgs{
-            .col{
-                height: 400px;
+    // INDEX PAGE
+    main{
+        section#jumbotron{
+            height: 90svh;
+            width: 100%;
+          
+            .container{
+                position: relative;
+                height: $maxHeightSVH;
+                .col-12{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    
+        section#about{
+            padding: 5rem 0;
+            .about-imgs{
+                .col{
+                    height: 200px;
+                    padding: .25rem;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .col:nth-child(1){
+                    width: 25%;
+                    img{
+                        height: 200px;
+                    }
+                }
+                .col:nth-child(2){
+                    width: 35%;
+                    img{
+                        height: 200px;
+                    }
+                }
+                .col:nth-child(3){
+                    width: 40%;
+                    img{
+                        height:200px;
+                    }
+                }
+            }
+        }
+    
+        section#products{
+            padding: 5rem 0;
+            .prod-display{
                 img{
                     width: 100%;
+                    height: 190px;
                     object-fit: cover;
+                    background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
+                }
+            }
+
+            .col-12:nth-child(1){
+                img{
+                    width: 100%;
+                    height: 160px;
+                    object-fit: cover;
                     background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: bottom;
                 }
             }
-            .col:nth-child(1){
-                width: 25%;
+        }
+    
+        section#grow{
+            position: relative;
+            padding: 6rem 0;
+            background-blend-mode: screen;
+            background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+        }
+
+        section#certificate{
+            padding: 5rem 0;
+            .certificates{
                 img{
-                    height: 400px;
+                    width: auto;
+                    height:150px;
                 }
             }
-            .col:nth-child(2){
-                width: 35%;
-                img{
-                    height: 400px;
-                }
+
+            img.img-fluid{
+                height:300px;
+                object-fit: cover;
+                background: center/cover no-repeat;
             }
-            .col:nth-child(3){
-                width: 40%;
+
+            .card{
+               .card-body{
+
+                .cont-img{
+                    img{
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        background: center/cover no-repeat;
+                    }
+                }
+               }
+            }
+        }
+        
+        section#manufacturing{
+            padding: 5rem 0;
+        }
+
+        section#newsupdate{
+            padding: 10rem 0;
+
+            .row.row-cols-lg-2{
                 img{
-                    height: 400px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background: center/cover no-repeat;
+                }
+                .col:nth-child(1){
+                    height: 300px;
+                }
+                .col:nth-child(2){
+                    height: auto;
+                }
+                .col:nth-child(3){
+                    height: 160px;
+                }
+                .col:nth-child(4){
+                    height: 160px;
                 }
             }
         }
     }
-}
+
+    footer{
+       
+        .row:nth-child(1){
+            padding: 6rem 0 4rem 0;
+        }
+
+        .footer-logo{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+
+    main{
+        section#jumbotron{
+            height: $maxHeightSVH;
+            width: 100%;
+          
+            .container{
+                position: relative;
+                height: $maxHeightSVH;
+                .col-12{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    
+        section#about{
+            padding: 10rem 0;
+            .about-imgs{
+                .col{
+                    height: 400px;
+                    padding: unset;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .col:nth-child(1){
+                    width: 25%;
+                    img{
+                        height: 400px;
+                    }
+                }
+                .col:nth-child(2){
+                    width: 35%;
+                    img{
+                        height: 400px;
+                    }
+                }
+                .col:nth-child(3){
+                    width: 40%;
+                    img{
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    
+        section#products{
+            padding: 10rem 0;
+            .prod-display{
+                img{
+                    width: 100%;
+                    height: 280px;
+                    object-fit: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            .col-12:nth-child(1){
+                img{
+                    width: 100%;
+                    height: 160px;
+                    object-fit: cover;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: bottom;
+                }
+            }
+        }
+    
+        section#grow{
+            position: relative;
+            padding: 10rem 0;
+            background-blend-mode: screen;
+            background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+        }
+
+        section#certificate{
+            padding: 10rem 0;
+            .certificates{
+                img{
+                    width: auto;
+                    height: 130px;
+                }
+            }
+
+            img.img-fluid{
+                height: 500px;
+                object-fit: cover;
+                background: center/cover no-repeat;
+            }
+
+            .card{
+               .card-body{
+
+                .cont-img{
+                    img{
+                        width: 100%;
+                        height: 100px;
+                        object-fit: cover;
+                        background: center/cover no-repeat;
+                    }
+                }
+               }
+            }
+        }
+        
+        section#manufacturing{
+            padding: 10rem 0;
+        }
+
+        section#newsupdate{
+            padding: 10rem 0;
+
+            .row.row-cols-2{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background: center/cover no-repeat;
+                }
+                .col:nth-child(1){
+                    height: 300px;
+                }
+                .col:nth-child(2){
+                    height: 300px;
+                }
+                .col:nth-child(3){
+                    height: 150px;
+                }
+                .col:nth-child(4){
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+
+    footer{
+       
+        .row:nth-child(1){
+            padding: 10rem 0 8rem 0;
+        }
+
+        .footer-logo{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    
+
+ }
