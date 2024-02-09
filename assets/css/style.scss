@@ -3,7 +3,7 @@ $white: #fff;
 $trans: .3s ease;
 $lteal: #EEFFF5;
 $black: #111111;
-
+$prim: #009245;
 
 *{
     font-family: "Open Sans", sans-serif;
@@ -126,6 +126,11 @@ $black: #111111;
     
 }
 
+body{
+    position: relative;
+}
+
+
 header{
     z-index: 500;
     nav{
@@ -155,10 +160,88 @@ header{
     z-index: 1;
 }
 
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
 @media (min-width: 375px) { 
+    a{
+        #cart{
+            z-index: 6;
+            right: -2.9rem;
+            top: 10rem;
+            background: $prim;
+            width:60px;
+            padding: 1rem;
+            color: $lteal;
+            transition: $trans;
+            border-radius: 1rem 0 0 1rem;
+            border: 1px solid $lteal;
+
+        }
+    }
+
+    a:hover #cart{
+        right: 0rem;
+    }
+
+
     header{
         nav.navbar.navbar-expand-lg{
             background: $lteal!important;
+
+            .search-container {
+                position: relative;
+                display: inline-block;
+                width: 50px;
+                vertical-align: bottom;
+            }
+            
+            .searchbutton {
+                position: absolute;
+                width: 100%;
+                margin: 0;
+            }
+            
+            .search:focus + .searchbutton {
+                transition-duration: 0.4s;
+                -moz-transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                color: black;
+            }
+            
+            .search {
+                position: absolute;
+                left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+                background-color: white;
+                outline: none;
+                border: none;
+                padding: 0;
+                width: 0;
+                height: 100%;
+                z-index: 10;
+                border-radius: .5rem 0 0 .5rem;
+                transition-duration: 0.4s;
+                -moz-transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+            }
+            
+            .search:focus {
+                width: 300px; /* Bar width+1px */
+                padding: 15px 10px 15px 0;
+            }
+            
+            .expandright {
+                left: auto;
+                right: 49px; /* Button width-1px */
+            }
+            
+            .expandright:focus {
+                padding: 0 0 0 16px;
+            }
         }
     }
     // INDEX PAGE
@@ -525,11 +608,9 @@ header{
             }
         }
 
-
         section#contact{
             padding: 10rem 0;
         }
-
 
         section#content{
             padding: 10rem 0;
@@ -543,6 +624,151 @@ header{
                 }
             }
         }
+
+        section#who{
+            padding: 10rem 0;
+
+            .who-imgs{
+                img{
+                    width: 100%;
+                }
+                .col-12{
+                    img{
+                        height: 350px;
+                        background-size: cover;
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+
+            
+        }
+
+        section#timeline{
+            padding: 10rem 0;
+            #timelLineCarousel{
+                .carousel-indicators{
+                    width: 75%;
+                    position: static;
+                    margin: 5rem auto;
+
+                    button{
+                        text-indent: 0!important;
+                        background: 0 0;
+                        border: none;
+                        margin: 0!important;
+                        position: relative;
+                        width: 25%!important;
+
+                        span{
+                            margin: -5rem 0 0 0;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        i{
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin-top: -11px;
+                        }
+                    }
+                    button::before{
+                       position: absolute;
+                       content: "";
+                       border-top: 2px solid rgba($color: $lteal, $alpha: 1.0);
+                       width: 100%;
+                       left: 0;
+                    }
+                    
+                }
+
+                .carousel-inner{
+                    img{
+                        height: 400px;
+                        object-fit: cover;
+                        background:center/cover no-repeat;
+                        position: relative;
+                    }
+                   
+                    .carousel-item{
+                        position: relative;
+                        .carousel-caption{
+                            bottom: unset!important;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+        section#team{
+            padding: 10rem 0;
+
+            div#mission_vision{
+                padding:5rem 0 0 0;
+                img{
+                    width: auto;
+                    height: 40px;
+                }
+            }
+        }
+
+       section#infrastructure{
+        padding: 10rem 0;
+        #infractureCarous{
+            height: 500px;
+            .carousel-inner{
+                .carousel-item{
+                    height: 500px;
+
+                    img{
+                        height: 500px;
+                        object-fit: cover;
+                        background: center/cover no-repeat;
+                    }
+                }
+            }
+
+            .carousel-indicators{
+                height: 10px;
+            }
+        }
+       }
+
+       section#rnd{
+        padding: 10rem 0;
+
+        .row.row-cols-2{
+            img{
+                width: 100%;
+            }
+            .col-12{
+                img{
+                    height: 400px;
+                    object-fit: cover;
+                    background: center/cover no-repeat;
+                }
+            }
+        }
+       }
+
+       section#organic{
+        padding: 10rem 0;
+       }
+
+       section#quality_control{
+        padding: 10rem 0;
+
+        img{
+            width: 100%;
+            height: 400px;
+            background: center/cover no-repeat;
+            object-fit: cover;
+        }
+       }
     }
 
 
