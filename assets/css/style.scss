@@ -281,16 +281,16 @@ body{
         }
 
         section#jumbotron-2{
-            height: 90svh;
+            height:80svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: $maxHeightSVH;
+                height: 80svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-50%);
+                    transform: translateY(-30%);
                 }
             }
         }
@@ -516,7 +516,6 @@ body{
                 }
             }
         }
-
         section#infrastructure{
             padding: 5rem 0;
             #infractureCarous{
@@ -538,7 +537,6 @@ body{
                 }
             }
         }
-
         section#rnd{
             padding: 5rem 0;
 
@@ -565,11 +563,16 @@ body{
 
             img{
                 width: 100%;
-                height: 300px;
+                height: 30px;
                 background: center/cover no-repeat;
                 object-fit: cover;
             }
-       }
+        }
+
+       // CONTACT PAGE
+       section#contact{
+        padding: 5rem 0;
+        }
     }
 
     footer{
@@ -611,7 +614,7 @@ body{
         }
 
         section#jumbotron-2{
-            height: 90svh;
+            height: 140svh;
             width: 100%;
           
             .container{
@@ -620,7 +623,7 @@ body{
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-50%);
+                    transform: translateY(15%);
                 }
             }
         }
@@ -685,6 +688,91 @@ body{
                 }
             }
         }
+
+        // ABOUT PAGE
+        section#who{
+            padding: 6rem 0;
+            .who-imgs{
+                .col-12{
+                    img{
+                        height: 260px;
+                    }
+                }
+            }
+        }
+        section#timeline{
+            padding: 6rem 0;
+            #timelLineCarousel{
+                .carousel-inner{
+                    img{
+                        height: 500px;
+                    }
+                }
+            }
+        }
+        section#team{
+            padding: 6rem 0;
+
+            div#mission_vision{
+                padding:0 0 0 0;
+                img{
+                    width: auto;
+                    height: 40px;
+                }
+            }
+        }
+        section#infrastructure{
+            padding:6rem 0;
+            #infractureCarous{
+                height: 300px;
+                .carousel-inner{
+                    .carousel-item{
+                        height: 300px;
+
+                        img{
+                            height: 300px;
+                        }
+                    }
+                }
+
+                .carousel-indicators{
+                    height: 10px;
+                }
+            }
+        }
+        section#rnd{
+            padding: 6rem 0;
+
+            .row.row-cols-2{
+                img{
+                    width: 100%;
+                }
+                .col-12{
+                    img{
+                        height: 250px;
+                        object-fit: cover;
+                        background: center/cover no-repeat;
+                    }
+                }
+            }
+        }
+
+        section#organic{
+            padding: 6rem 0;
+        }
+
+        section#quality_control{
+            padding: 6rem 0;
+
+            img{
+                height: 200px;
+            }
+       }
+
+        // CONTACT PAGE
+        section#contact{
+            padding: 6rem 0;
+        }
     }
 
  }
@@ -708,7 +796,7 @@ body{
         }
 
         section#jumbotron-2{
-            height: 90svh;
+            height: 50svh;
             width: 100%;
           
             .container{
@@ -717,7 +805,7 @@ body{
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-50%);
+                    transform: translateY(-260%);
                 }
             }
         }
@@ -793,6 +881,86 @@ body{
                 }
             }
         }
+
+         // ABOUT PAGE
+         section#who{
+            padding: 6rem 0;
+            .who-imgs{
+                .col-12{
+                    img{
+                        height: 260px;
+                    }
+                }
+            }
+        }
+        section#timeline{
+            padding: 6rem 0;
+            #timelLineCarousel{
+                .carousel-inner{
+                    img{
+                        height: 500px;
+                    }
+                }
+            }
+        }
+        section#team{
+            padding: 6rem 0;
+
+            div#mission_vision{
+                padding:0 0 0 0;
+                img{
+                    width: auto;
+                    height: 40px;
+                }
+            }
+        }
+        section#infrastructure{
+            padding:6rem 0;
+            #infractureCarous{
+                height: 270px;
+                .carousel-inner{
+                    .carousel-item{
+                        height: 270px;
+
+                        img{
+                            height: 270px;
+                        }
+                    }
+                }
+
+                .carousel-indicators{
+                    height: 10px;
+                }
+            }
+        }
+        section#rnd{
+            padding: 6rem 0;
+
+            .row.row-cols-2{
+                img{
+                    width: 100%;
+                }
+                .col-12{
+                    img{
+                        height: 250px;
+                        object-fit: cover;
+                        background: center/cover no-repeat;
+                    }
+                }
+            }
+        }
+
+        section#organic{
+            padding: 6rem 0;
+        }
+
+        section#quality_control{
+            padding: 6rem 0;
+
+            img{
+                height: 250px;
+            }
+       }
     }
  }
 
@@ -814,16 +982,17 @@ body{
         }
 
         section#jumbotron-2{
-            height: 90svh;
+            height: 40svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: $maxHeightSVH;
+                height: 40svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-50%);
+                    left: 50%;
+                    transform: translate(-50%, -35%);
                 }
             }
         }
@@ -898,6 +1067,104 @@ body{
                     height: 190px;
                 }
             }
+        }
+
+         // ABOUT PAGE
+         section#who{
+            padding: 6rem 0;
+            .who-imgs{
+                .col-12{
+                    img{
+                        height: 260px;
+                    }
+                }
+            }
+        }
+        section#timeline{
+            padding: 6rem 0;
+            #timelLineCarousel{
+                .carousel-indicators{
+                    margin: 3rem auto;
+
+                    button{
+                        span{
+                            margin: -4rem 0 0 0;
+                            img{
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+                .carousel-inner{
+                    img{
+                        height: 410px;
+                    }
+                }
+            }
+        }
+        section#team{
+            padding: 6rem 0;
+
+            div#mission_vision{
+                padding:0 0 0 0;
+                img{
+                    width: auto;
+                    height: 40px;
+                }
+            }
+        }
+        section#infrastructure{
+            padding:6rem 0;
+            #infractureCarous{
+                height: 270px;
+
+                .carousel-inner{
+                    .carousel-item{
+                        height: 270px;
+
+                        img{
+                            height: 270px;
+                        }
+                    }
+                }
+
+                .carousel-indicators{
+                    height: 10px;
+                }
+            }
+        }
+        section#rnd{
+            padding: 6rem 0;
+
+            .row.row-cols-2{
+                img{
+                    width: 100%;
+                }
+                .col-12{
+                    img{
+                        height: 250px;
+                        object-fit: cover;
+                        background: center/cover no-repeat;
+                    }
+                }
+            }
+        }
+
+        section#organic{
+            padding: 6rem 0;
+        }
+
+        section#quality_control{
+            padding: 6rem 0;
+
+            img{
+                height: 250px;
+            }
+       }
+
+        // CONTACT PAGE
+        section#contact{
+            padding: 6rem 0;
         }
     }
  }
@@ -1096,7 +1363,7 @@ body{
                 }
             }
         }
-
+        // ABOUT PAGE
         section#contact{
             padding: 10rem 0;
         }
@@ -1176,7 +1443,7 @@ body{
 
                 .carousel-inner{
                     img{
-                        height: 400px;
+                        height: 450px;
                         object-fit: cover;
                         background:center/cover no-repeat;
                         position: relative;
