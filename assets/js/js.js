@@ -1,4 +1,35 @@
+// Get all elements with class 'dropdown'
+var dropdowns = document.querySelectorAll('.dropdown');
 
+// Iterate over each dropdown element
+dropdowns.forEach(function(dropdown) {
+    // Add event listener for mouseenter event (hover in)
+    dropdown.addEventListener('mouseenter', function() {
+        // Find the dropdown menu within the current dropdown and fadeIn
+        var dropdownMenu = this.querySelector('.dropdown-menu');
+        if (dropdownMenu) {
+            dropdownMenu.style.display = 'block'; // Ensure menu is visible
+            setTimeout(function() {
+                dropdownMenu.style.opacity = '1'; // Fade in the menu
+            }, 10);
+        }
+    });
+
+    // Add event listener for mouseleave event (hover out)
+    dropdown.addEventListener('mouseleave', function() {
+        // Find the dropdown menu within the current dropdown and fadeOut
+        var dropdownMenu = this.querySelector('.dropdown-menu');
+        if (dropdownMenu) {
+            dropdownMenu.style.opacity = '0'; // Fade out the menu
+            setTimeout(function() {
+                dropdownMenu.style.display = 'none'; // Hide menu after fading out
+            }, 300);
+        }
+    });
+
+    // Add CSS transition for smooth appearance
+    dropdown.querySelector('.dropdown-menu').style.transition = 'opacity 0.3s ease';
+});
 
 
 

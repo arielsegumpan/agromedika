@@ -1,0 +1,16 @@
+ <!-- <section id="manufacturing" class="bg-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="ratio ratio-4x3">
+                <iframe class="rounded-5" src="https://www.youtube.com/embed/HhM-7hmMp2U?si=nUTaTZ_egBpmK9c2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 my-auto mt-5 mt-lg-auto text-center text-lg-start">
+              <h1 class="fw-bold text-lteal">Manufacturing Plant</h1>
+              <p class="lh-lg text-lteal my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatum impedit excepturi, perferendis aspernatur dolore sunt eius nobis delectus, magnam, possimus obcaecati molestias ex fugit quo aperiam cum soluta optio. Saepe earum totam reiciendis quis, voluptatum delectus molestiae ipsum veritatis placeat porro dignissimos voluptatem tempora atque sapiente, voluptate error nesciunt recusandae quasi sed ea harum fugit necessitatibus? Error, quidem possimus?</p>
+              <a href="#!" class="text-decoration-none text-lteal fw-bold"><i class="bi bi-arrow-right me-2"></i>Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section> -->

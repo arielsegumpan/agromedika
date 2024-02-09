@@ -23,7 +23,7 @@
     </a>
 
     <header class="position-absolute w-100">
-        <nav class="navbar navbar-expand-lg bg-transparent">
+        <nav class="navbar navbar-expand-xl bg-transparent">
             <div class="container">
               <a class="navbar-brand" href="index.html">
                 <img src="assets/imgs/logo.png" alt="">
@@ -51,8 +51,16 @@
                   <li class="nav-item me-4">
                     <a class="nav-link  text-uppercase" href="products.html">Products</a>
                   </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link  text-uppercase" href="gallery.html">Gallery</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gallery <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-uppercase" href="#">Certifications</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="#">Machines</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="#">Philippine Medicinal Plants</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="#">Product Catalogue</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item me-4">
                     <a class="nav-link  text-uppercase" href="blog.html">News and Updates</a>
@@ -65,7 +73,7 @@
                   </li>
                 </ul>
 
-                <div class="d-flex flex-row  ps-3 ps-lg-auto">
+                <div class="d-flex flex-row  ps-3 ps-lg-auto mt-4 mt-xl-0">
                   <div class="search-container me-2">
                     <form action="/search" method="get">
                       <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
@@ -179,10 +187,18 @@
 
               <div class="certificates">
                 <div class="row row-cols-2 row-cols-lg-4 g-lg-4 g-3">
-                  <img src="assets/imgs/GMP_Certified.png" alt="">
-                  <img src="assets/imgs/occp2.png" alt="">
-                  <img src="assets/imgs/Halal.png" alt="">
-                  <img src="assets/imgs/HACCP.png" alt="">
+                  <div class="col">
+                    <img src="assets/imgs/GMP_Certified.png" alt="">
+                  </div>
+                  <div class="col">
+                    <img src="assets/imgs/occp2.png" alt="">
+                  </div>
+                  <div class="col">
+                    <img src="assets/imgs/Halal.png" alt="">
+                  </div>
+                  <div class="col">
+                    <img src="assets/imgs/HACCP.png" alt="">
+                  </div>
                 </div>
               </div>
 
@@ -198,82 +214,86 @@
             </div>
           </div>
 
-          <div id="infographic" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 mt-5">
-            <div class="col text-center text-lg-start">
-              <div class="card border-0 bg-transparent">
-                <div class="card-body">
-                  <div class="num-wrap">
-                    <div class="display-1 fw-bold  text-primary"><span class="num" data-val="20">00</span>+</div>
-                    <span class="fw-bold fs-5 text-black">Years</span>
-                  </div>
-
-                  <div class="cont mt-4">
-                    <p class="text-secondary">We have grown from a small agricultural enterprise to become the country's first and only extraction and spray-drying facility, paving the way for the use of more potent herbal extracts over powdered forms.
-                    </p>
-                  </div>
-
-                  <div class="cont-img mt-4">
-                    <img src="assets/imgs/pexels-artem-podrez-8533008.jpg" alt="" class="img-fluid rounded-4">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col text-center text-lg-start">
-              <div class="card border-0 bg-transparent">
-                <div class="card-body">
-                  <div class="num-wrap">
-                    <div class="display-1 fw-bold  text-primary"><span class="num" data-val="3500">000</span></div>
-                    <span class="fw-bold fs-5 text-black">Square Meters</span>
-                  </div>
-
-                  <div class="cont mt-4">
-                    <p class="text-secondary">
-                      Our production plant is GMP-certified with toll and contract manufacturing capabilities not only for extracts but also for functional foods and beverages, nutraceuticals, and biopharmaceuticals.
-                    </p>
-                  </div>
-
-                  <div class="cont-img mt-4">
-                    <img src="assets/imgs/pexels-pok-rie-5379333.jpg" alt="" class="img-fluid rounded-4">
+          <div class="row">
+            <div class="col-12">
+              <div id="infographic" class="row mt-5">
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-xl-0">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="20">00</span>+</div>
+                        <span class="fw-bold fs-5 text-black">Years</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">We have grown from a small agricultural enterprise to become the country's first and only extraction and spray-drying facility, paving the way for the use of more potent herbal extracts over powdered forms.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-4">
+                        <img src="assets/imgs/pexels-artem-podrez-8533008.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col text-center text-lg-start">
-              <div class="card border-0 bg-transparent">
-                <div class="card-body">
-                  <div class="num-wrap">
-                    <div class="display-1 fw-bold  text-primary"><span class="num" data-val="200">00</span>+</div>
-                    <span class="fw-bold fs-5 text-black">Medicinal Plants</span>
-                  </div>
-
-                  <div class="cont mt-4">
-                    <p class="text-secondary">
-                      We hold one of the largest in-site gene banks of medicinal and aromatic plants in the Philippines. Herbs produced in our farms are certified chemical-free.
-                    </p>
-                  </div>
-
-                  <div class="cont-img mt-4">
-                    <img src="assets/imgs/pexels-doterra-international-llc-4041098.jpg" alt="" class="img-fluid rounded-4">
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-xl-0">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="3500">000</span></div>
+                        <span class="fw-bold fs-5 text-black">Square Meters</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">
+                          Our production plant is GMP-certified with toll and contract manufacturing capabilities not only for extracts but also for functional foods and beverages, nutraceuticals, and biopharmaceuticals.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-4">
+                        <img src="assets/imgs/pexels-pok-rie-5379333.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col text-center text-lg-start">
-              <div class="card border-0 bg-transparent">
-                <div class="card-body">
-                  <div class="num-wrap">
-                    <div class="display-1 fw-bold  text-primary"><span class="num" data-val="20">00</span></div>
-                    <span class="fw-bold fs-5 text-black">Hectares</span>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-md-0 mb-xl-0">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="200">00</span>+</div>
+                        <span class="fw-bold fs-5 text-black">Medicinal Plants</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">
+                          We hold one of the largest in-site gene banks of medicinal and aromatic plants in the Philippines. Herbs produced in our farms are certified chemical-free.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-4">
+                        <img src="assets/imgs/pexels-doterra-international-llc-4041098.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="cont mt-4">
-                    <p class="text-secondary">
-                      Our organic farms in Bago City, Negros Occidental produces 20 different species of medicinal herbs that go straight into our factory for spray-dried extraction.
-                    </p>
-                  </div>
-
-                  <div class="cont-img mt-4">
-                    <img src="assets/imgs/pexels-tom-fisk-4856507.jpg" alt="" class="img-fluid rounded-4">
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="20">00</span></div>
+                        <span class="fw-bold fs-5 text-black">Hectares</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">
+                          Our organic farms in Bago City, Negros Occidental produces 20 different species of medicinal herbs that go straight into our factory for spray-dried extraction.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-4">
+                        <img src="assets/imgs/pexels-tom-fisk-4856507.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -281,23 +301,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <section id="manufacturing" class="bg-primary">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <div class="ratio ratio-4x3">
-                <iframe class="rounded-5" src="https://www.youtube.com/embed/HhM-7hmMp2U?si=nUTaTZ_egBpmK9c2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 my-auto mt-5 mt-lg-auto text-center text-lg-start">
-              <h1 class="fw-bold text-lteal">Manufacturing Plant</h1>
-              <p class="lh-lg text-lteal my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatum impedit excepturi, perferendis aspernatur dolore sunt eius nobis delectus, magnam, possimus obcaecati molestias ex fugit quo aperiam cum soluta optio. Saepe earum totam reiciendis quis, voluptatum delectus molestiae ipsum veritatis placeat porro dignissimos voluptatem tempora atque sapiente, voluptate error nesciunt recusandae quasi sed ea harum fugit necessitatibus? Error, quidem possimus?</p>
-              <a href="#!" class="text-decoration-none text-lteal fw-bold"><i class="bi bi-arrow-right me-2"></i>Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <section id="newsupdate">
         <div class="container">
@@ -308,14 +311,14 @@
               <p class="lh-lg text-secondary my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatum impedit excepturi, perferendis aspernatur dolore sunt eius nobis delectus, magnam, possimus obcaecati molestias ex fugit quo aperiam cum soluta optio. Saepe earum totam reiciendis quis, voluptatum delectus molestiae ipsum veritatis placeat porro dignissimos voluptatem tempora atque sapiente, voluptate error nesciunt recusandae quasi sed ea harum fugit necessitatibus? Error, quidem possimus?</p>
               <a href="#!" class="text-decoration-none text-black fw-bold"><i class="bi bi-arrow-right me-2"></i>Learn More</a>
             </div>
-            <div class="col-12 col-lg-6">
-              <div class="row row-cols-1 row-cols-lg-2 g-4">
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
                 <div class="col">
                   <a href="#!" class="text-decoration-none">
                     <img src="assets/imgs/science-experiment-with-plant.jpg" alt="" class="rounded-5">
                   </a>
                 </div>
-                <div class="col">
+                <div class="col my-auto">
                   <a href="#!" class="text-decoration-none">
                     <h3 class="fw-bold text-black my-auto pt-lg-5 mt-lg-3 p-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
                   </a>
@@ -352,7 +355,7 @@
              <p class="text-lteal mt-4">	We produce spray-dried extracts, powder and tea-cut ingredients, food supplements in capsule and tablet forms, granulated beverages, herbal syrups, essential oils and infusions. We are a licensed manufacturer of herbal cosmetic products.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-3 mt-5 mt-lg-0">
+          <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
             <h6 class="fw-bold text-uppercase text-lteal ps-lg-5">Applications</h6>
 
             <ul class="nav flex-column mt-4 ps-lg-5">
@@ -376,7 +379,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-lg-3 mt-5 mt-lg-0">
+          <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
             <h6 class="fw-bold text-uppercase text-lteal">Address</h6>
             <div class="d-flex mb-3 mt-4">
               <div class="flex-shrink-0">

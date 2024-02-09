@@ -18,55 +18,70 @@
     </div>
 
     <header class="position-absolute w-100">
-        <nav class="navbar navbar-expand-lg bg-transparent">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="assets/imgs/logo.png" alt="">
-              </a>
-              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                
-                <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
-                <label for="checkbox4">
-                    <div class="hamburger hamburger4">
-                        <span class="bar bar1"></span>
-                        <span class="bar bar2"></span>
-                        <span class="bar bar3"></span>
-                        <span class="bar bar4"></span>
-                        <span class="bar bar5"></span>
-                    </div>
-                </label>
-                
-              </button>
-              <div class="collapse navbar-collapse py-3 py-lg-auto" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-auto">
-                  <li class="nav-item me-4">
-                    <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link  text-uppercase" href="products.html">Products</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link  text-uppercase" href="gallery.html">Gallery</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link  text-uppercase" href="blog.html">News and Updates</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link  text-uppercase" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link  text-uppercase" href="contact.html">Contact</a>
-                  </li>
-                </ul>
+      <nav class="navbar navbar-expand-xl bg-transparent">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/imgs/logo.png" alt="">
+              
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+              <label for="checkbox4">
+                  <div class="hamburger hamburger4">
+                      <span class="bar bar1"></span>
+                      <span class="bar bar2"></span>
+                      <span class="bar bar3"></span>
+                      <span class="bar bar4"></span>
+                      <span class="bar bar5"></span>
+                  </div>
+              </label>
+              
+            </button>
+            <div class="collapse navbar-collapse py-3 py-lg-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-auto">
+                <li class="nav-item me-4">
+                  <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link  text-uppercase" href="products.html">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gallery <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-uppercase" href="#">Certifications</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Machines</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Philippine Medicinal Plants</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Product Catalogue</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link  text-uppercase" href="blog.html">News and Updates</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link  text-uppercase" href="about.html">About</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link  text-uppercase" href="contact.html">Contact</a>
+                </li>
+              </ul>
 
-                <div class="d-flex flex-row  ps-3 ps-lg-auto">
-                  <a href="products.html" class="btn btn-primary text-white me-2"><i class="bi bi-shop-window"></i></a>
-                  <a href="#!" class="btn btn-primary text-white"><i class="bi bi-person"></i></a>
+              <div class="d-flex flex-row  ps-3 ps-lg-auto mt-4 mt-xl-0">
+                <div class="search-container me-2">
+                  <form action="/search" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><i class="bi bi-search btn btn-primary text-white"></i></label>
+                  </form>
                 </div>
-
+                <a href="products.html" class="btn btn-primary text-white me-2"><i class="bi bi-shop-window"></i></a>
+                <a href="#!" class="btn btn-primary text-white"><i class="bi bi-person"></i></a>
               </div>
+
             </div>
-          </nav>
+          </div>
+        </nav>
     </header>
 
     <main>
@@ -154,23 +169,30 @@
              <a href="index.html" class="text-decoration-none">
               <img src="assets/imgs/logo.png" alt="">
              </a>
+             <p class="text-lteal mt-4">	We produce spray-dried extracts, powder and tea-cut ingredients, food supplements in capsule and tablet forms, granulated beverages, herbal syrups, essential oils and infusions. We are a licensed manufacturer of herbal cosmetic products.</p>
             </div>
           </div>
           <div class="col-12 col-lg-3 mt-5 mt-lg-0">
-            <h6 class="fw-bold text-uppercase text-lteal">Quick Links</h6>
+            <h6 class="fw-bold text-uppercase text-lteal ps-lg-5">Applications</h6>
 
-            <ul class="nav flex-column mt-4">
-              <li class="nav-item mb-3">
-                <a class="nav-link text-lteal fs-6 text-uppercase px-0" href="products.html">Products</a>
+            <ul class="nav flex-column mt-4 ps-lg-5">
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Nutrition</a>
               </li>
-              <li class="nav-item mb-3">
-                <a class="nav-link text-lteal fs-6  text-uppercase px-0" href="blog.html">News and Updates</a>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Pharmaceutical</a>
               </li>
-              <li class="nav-item mb-3">
-                <a class="nav-link text-lteal fs-6 text-uppercase px-0" href="gallery.html">Gallery</a>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Food and Beverage</a>
               </li>
-              <li class="nav-item mb-3">
-                <a class="nav-link text-lteal fs-6 text-uppercase px-0" href="about.html">About</a>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Personal Care/Cosmetic</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Flavor</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Animal Nutrition</a>
               </li>
             </ul>
           </div>
@@ -214,7 +236,7 @@
 
             
           </div>
-          <div class="col-12 col-lg-3 text-center text-lg-start mt-5 mt-lg-auto">
+          <div class="col-12 col-lg-3 text-center text-lg-start mt-5 mt-lg-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.8474368178963!2d122.91041601054606!3d10.59109878950301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aecf6926a1486b%3A0x5c43b6e1055dfe00!2sHerbanext%20Laboratories%2C%20Inc.!5e0!3m2!1sen!2sph!4v1707144132372!5m2!1sen!2sph"
             width="100%" height="300" class="rounded-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
