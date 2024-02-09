@@ -587,23 +587,23 @@ body{
                     
                 }
             .card-body{
-                    .attributes{
-                        width: 100%;
-                        position: relative;
-                    }
-                    .attributes::before{
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: 1rem;
-                        transform: translateY(-50%);
-                        width: 1px;
-                        height: 5rem;
-                        background-color: $black;
-                    }
-                    .title{
-                        width: calc(100% - 0%);
-                    }
+                .attributes{
+                    width: 100%;
+                    position: relative;
+                }
+                .attributes::before{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 1rem;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 5rem;
+                    background-color: rgba($color:  $black, $alpha: 0.5);
+                }
+                .title{
+                    width: calc(100% - 0%);
+                }
             }
             }
         }
@@ -1778,7 +1778,7 @@ body{
                         transform: translateY(-50%);
                         width: 1px;
                         height: 5rem;
-                        background-color: $black;
+                        background-color: rgba($color:  $black, $alpha: 0.5);
                     }
                     .title{
                         width: calc(100% - 25%);
