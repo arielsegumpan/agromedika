@@ -14,3 +14,60 @@
           </div>
         </div>
       </section> -->
+
+
+
+
+      
+// search gallery caption
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var cards = document.querySelectorAll('.card');
+  
+  //   document.getElementById('gallery-search').addEventListener('input', function (event) {
+  //     var searchTerm = event.target.value.toLowerCase();
+  //     cards.forEach(function (card) {
+  //       var caption = card.querySelector('a').getAttribute('data-caption').toLowerCase();
+  //       if (caption.includes(searchTerm)) {
+  //         card.classList.remove('fade-out'); // Remove fade-out class
+  //         card.classList.add('fade-in'); // Add fade-in class
+  //       } else {
+  //         card.classList.remove('fade-in'); // Remove fade-in class
+  //         card.classList.add('fade-out'); // Add fade-out class
+  //       }
+  //     });
+  //   });
+  // });
+//   document.addEventListener('DOMContentLoaded', function () {
+//     var cards = document.querySelectorAll('.card');
+//     var container = document.querySelector('.container-img');
+
+//     document.getElementById('gallery-search').addEventListener('input', function (event) {
+//         var searchTerm = event.target.value.toLowerCase();
+//         var matchingCards = [];
+
+//         cards.forEach(function (card) {
+//             var caption = card.querySelector('a').getAttribute('data-caption').toLowerCase();
+//             if (caption.includes(searchTerm)) {
+//                 matchingCards.push(card);
+//             }
+//         });
+
+//         // Clear the container
+//         container.innerHTML = '';
+
+//         // Append matching cards to the container with fade-in class
+//         matchingCards.forEach(function (card) {
+//             card.classList.remove('fade-out');
+//             card.classList.add('fade-in');
+//             container.appendChild(card);
+//         });
+
+//         // Add fade-out class to non-matching cards
+//         cards.forEach(function (card) {
+//             if (!matchingCards.includes(card)) {
+//                 card.classList.remove('fade-in');
+//                 card.classList.add('fade-out');
+//             }
+//         });
+//     });
+// });

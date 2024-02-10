@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agromedika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="scroll_btn">
+      <i class='bi bi-chevron-up text-lteal fs-4 rounded-3 bg-primary'></i>
+    </div>
+
+    <a href="#!" class="text-decoration-none">
+      <div id="cart" class="position-fixed shadow">
+        <i class="bi bi-cart4 fs-4"></i>
+      </div>
+    </a>
+
+    <header class="position-absolute w-100">
+        <nav class="navbar navbar-expand-xl bg-transparent">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/imgs/logo.png" alt="">
+                
+              </a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+                <label for="checkbox4">
+                    <div class="hamburger hamburger4">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                        <span class="bar bar5"></span>
+                    </div>
+                </label>
+                
+              </button>
+              <div class="collapse navbar-collapse py-3 py-lg-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-auto">
+                  <li class="nav-item me-4">
+                    <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link  text-uppercase" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gallery <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-uppercase" href="certification.html">Certifications</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="machine.html">Machines</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="#">Philippine Medicinal Plants</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="#">Product Catalogue</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link  text-uppercase" href="blog.html">News and Updates</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-uppercase" href="company.html">Company Profile</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="infrastructure.html">Infrasructure</a></li>
+                      <li><a class="dropdown-item text-uppercase" href="quality.html">Quality</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link  text-uppercase" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+
+                <div class="d-flex flex-row  ps-3 ps-lg-auto mt-4 mt-xl-0">
+                  <div class="search-container me-2">
+                    <form action="/search" method="get">
+                      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                      <label class="button searchbutton" for="searchright"><i class="bi bi-search btn btn-primary text-white"></i></label>
+                    </form>
+                  </div>
+                  <a href="products.html" class="btn btn-primary text-white me-2"><i class="bi bi-shop-window"></i></a>
+                  <a href="#!" class="btn btn-primary text-white"><i class="bi bi-person"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section id="jumbotron-2" style="background-image: url('assets/imgs/pexels-nataliya-vaitkevich-7615618.jpg');">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-8 mx-auto my-auto text-center">
+                  <h1 class="fw-bold text-black">Company Profile</h1>
+                  <h5 class="text-black mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint ea facilis vel et aut earum deserunt? Harum, tempore sequi.</h5>
+                </div>
+              </div>
+            </div>
+            <div class="jumb-overlay"></div>
+        </section>
+
+
+        <section id="who">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-7 mb-5 mb-xl-0">
+                  <div class="who-imgs row row-cols-2 g-3 g-xl-4">
+                    <div class="col-12">
+                      <img src="assets/imgs/elderly-person-holding-plant_1150-18574.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col">
+                      <img src="assets/imgs/close-up-medicine-pills-table.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col">
+                      <img src="assets/imgs/moringa-6582660_1280.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 my-auto text-center text-lg-start">
+                  <h2 class="fw-bold text-black mb-4">Who are We?</h2>
+                  <p class="lh-lg text-secondary">
+                    Agromedika herbal extracts are processed by Herbanext Laboratories. Our manufacturing plant was established in 2006 and expanded its operations in 2011 to become the Philippine’s first purpose-built extraction and modern spray-drying facility.  Tapping into the Philippines’ vast botanical diversity, our GMP-accredited plant is now paving the way to an industry shift from the traditional use of powdered herbs to the use of more potent herbal extracts. Our mission is to share the medicinal and health benefits of Philippine herbs to the world. Our expertise in herb extraction is complemented by GMP and HACCP-certified production lines for toll and contract manufacturing of functional foods, nutraceuticals, and herbal drugs; private labelling, laboratory services and product development. Our manufacturing capabilities include: instant granulated beverages, loose teas and tea bags, tablets in strip foil, capsules in blisters, and herbal syrups, as well as personal use and cosmetic products. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <section id="timeline" class="bg-primary">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-8 mx-auto text-center">
+                  <div class="mb-5">
+                    <h2 class="fw-bold text-lteal mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <p class="text-lteal mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint ea facilis vel et aut earum deserunt? Harum, tempore sequi.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-lg-5">
+                <div id="timelLineCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                  <div class="carousel-indicators ">
+                    <button type="button" data-bs-target="#timelLineCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                      <span class="position-absolute fs-4"><img src="assets/imgs/infrastractured.svg" alt="" width="auto" height="50"></span>
+                      <i class="bi bi-record-circle text-lteal position-absolute"></i>
+                    </button>
+                    <button type="button" data-bs-target="#timelLineCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                      <span class="position-absolute text-lteal"><img src="assets/imgs/expertise.svg" alt="" width="auto" height="50"></span>
+                      <i class="bi bi-record-circle text-lteal position-absolute"></i>
+                    </button>
+                    <button type="button" data-bs-target="#timelLineCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                      <span class="position-absolute text-lteal"><img src="assets/imgs/solutions.svg" alt="" width="auto" height="50"></span>
+                      <i class="bi bi-record-circle text-lteal position-absolute"></i>
+                    </button>
+                    <button type="button" data-bs-target="#timelLineCarousel" data-bs-slide-to="3" aria-label="Slide 3">
+                      <span class="position-absolute text-lteal"><img src="assets/imgs/organic.svg" alt="" width="auto" height="50"></span>
+                      <i class="bi bi-record-circle text-lteal position-absolute"></i>
+                    </button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                      <img src="assets/imgs/intern-work2.jpg" class="w-100 rounded-4 " alt="...">
+                      <div class="carousel-caption">
+                        <h3>Modern Infrastructure</h3>
+                        <p class="lh-lg">The Philippines’ first and only herbal extraction plant fully equipped with a state of the art production facility. We can produce tons of top quality extracts daily and effectively respond to bulk orders with ease.</p>
+                        <a href="#!" class="text-decoration-none btn btn-outline-lteal px-5 py-3 fw-bold mt-3"><i class="bi bi-arrow-right me-2"></i>Read More</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/imgs/pexels-artem-podrez-8533008.jpg" class="w-100 rounded-4" alt="...">
+                      <div class="carousel-caption">
+                        <h3>Reliable Expertise</h3>
+                        <p class="lh-lg">Agromedika’s product development team consists of experienced food technologists, pharmacists, chemists, and chemical engineers. We have over 15 years of experience in herbal extraction and product development.</p>
+                        <a href="#!" class="text-decoration-none btn btn-outline-lteal px-5 py-3 fw-bold mt-3"><i class="bi bi-arrow-right me-2"></i>Read More</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/imgs/oil.jpg" class="w-100 rounded-4" alt="...">
+                      <div class="carousel-caption">
+                        <h3>Customized Solutions</h3>
+                        <p class="lh-lg">Our ability to control raw materials and ingredient manufacturing processes allow us to deliver innovative and customized solutions to suit customer demand.</p>
+                        <a href="#!" class="text-decoration-none btn btn-outline-lteal px-5 py-3 fw-bold mt-3"><i class="bi bi-arrow-right me-2"></i>Read More</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/imgs/gotukola.jpg" class="w-100 rounded-4" alt="...">
+                      <div class="carousel-caption">
+                        <h3>Organic and Fully Traceable </h3>
+                        <p class="lh-lg">Herbs produced in these farms are certified to be chemical-free by the Organic Certification Council of the Philippines. </p>
+                        <a href="#!" class="text-decoration-none btn btn-outline-lteal px-5 py-3 fw-bold mt-3"><i class="bi bi-arrow-right me-2"></i>Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#timelLineCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#timelLineCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button> -->
+                </div>
+    
+              </div>
+            </div>
+          </section>
+    
+          <section id="team">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-8 mx-auto text-center">
+                  <h2 class="fw-bold text-black">Meet the team</h2>
+                  <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint ea facilis vel et aut earum deserunt? Harum, tempore sequi.</p>
+                </div>
+                <div class="col-12 mt-3 mt-lg-5">
+                  <img src="assets/imgs/team.png" class="img-fluid rounded-4" alt="">
+                </div>
+              </div>
+            </div>
+    
+            <div id="mission_vision">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12">
+                          <img src="assets/imgs/2b1c03_49e0d243d3f14a94ba95dd298db4005e~mv2.png" alt="" class="img-fluid rounded-5">
+                      </div>
+                      <div class="col-12 col-md-6 mx-auto text-center mt-5">
+                          <div class="mission">
+                              <h2 class="fw-bold">Our Vision</h2>
+                              <p class="lh-lg lead">Become the leading producer of Philippine extracts and herbal ingredients through science-based formulas.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="vision">
+                      <div class="row mb-5">
+                          <div class="col-12 col-md-6 mx-auto text-center mt-5">
+                              <div class="mission">
+                                  <h2 class="fw-bold">Our Mission</h2>
+                              </div>
+                          </div>
+                      </div>
+                     <div class="row row-cols row-cols-md-2 row-cols-lg-3 row-gap-5">
+                      <div class="col">
+                          <div class="d-flex flex-row justify-content-between align-items-start gap-3">
+                              <img src="assets/imgs/test.png" alt="" class="bg-gray">
+                              <div class="vision_title_Wrap">
+                                  <small class="text-secondary">Develop a portfolio of effective, affordable and safe natural ingredients through modern processing technology.</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="d-flex flex-row justify-content-between align-items-start gap-3">
+                              <img src="assets/imgs/leaves.png" alt="" class="bg-gray">
+                              <div class="vision_title_Wrap">
+                                  <small class="text-secondary">Harness the healing power of Philippine medicinal herbs through evidence-based research and collaboration.</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="d-flex flex-row justify-content-between align-items-start gap-3">
+                              <img src="assets/imgs/group.png" alt="" class="bg-gray">
+                              <div class="vision_title_Wrap">
+                                  <small class="text-secondary">Help in nation building by providing livelihood to marginalised communities that supply us with medicinal herbs.</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="d-flex flex-row justify-content-between align-items-start gap-3">
+                              <img src="assets/imgs/link.png" alt="" class="bg-gray">
+                              <div class="vision_title_Wrap">
+                                  <small class="text-secondary">Create a socially and environmentally responsible supply chain.</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="d-flex flex-row justify-content-between align-items-start gap-3">
+                              <img src="assets/imgs/plant-2.png" alt="" class="bg-gray">
+                              <div class="vision_title_Wrap">
+                                  <small class="text-secondary">Help protect Philippine biodiversity by making valuable and sustainable economic use of its resources.</small>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="d-flex flex-row justify-content-between align-items-start gap-3">
+                              <img src="assets/imgs/heart.png" alt="" class="bg-gray">
+                              <div class="vision_title_Wrap">
+                                  <small class="text-secondary">Contribute to a holistic concept of health and well-being not only for Filipinos but for all peoples of the world.</small>
+                              </div>
+                          </div>
+                      </div>
+                     </div>
+                  </div>
+                 
+              </div>
+            </div>
+          </section>
+
+    </main>
+
+
+    <footer class="bg-primary">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-3">
+            <div class="footer-logo">
+             <a href="index.html" class="text-decoration-none">
+              <img src="assets/imgs/logo.png" alt="">
+             </a>
+             <p class="text-lteal mt-4">	We produce spray-dried extracts, powder and tea-cut ingredients, food supplements in capsule and tablet forms, granulated beverages, herbal syrups, essential oils and infusions. We are a licensed manufacturer of herbal cosmetic products.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <h6 class="fw-bold text-uppercase text-lteal ps-lg-5">Applications</h6>
+
+            <ul class="nav flex-column mt-4 ps-lg-5">
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Nutrition</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Pharmaceutical</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Food and Beverage</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Personal Care/Cosmetic</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Flavor</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link text-lteal fs-6 px-0" href="#!">Animal Nutrition</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <h6 class="fw-bold text-uppercase text-lteal">Address</h6>
+            <div class="d-flex mb-3 mt-4">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>Negros South Road, Bago City,  Negros Occidental, Philippines</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0">
+                <i class="bi bi-telephone text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>+639 129 234 2348</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0">
+                <i class="bi bi-phone text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>+639 129 234 2348</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0">
+                <i class="bi bi-envelope text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <a class="text-lteal" href="mailto:agromedika@gmail.com">agromedika@gmail.com</a>
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="col-12 col-lg-3 text-center text-lg-start mt-5 mt-lg-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.8474368178963!2d122.91041601054606!3d10.59109878950301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aecf6926a1486b%3A0x5c43b6e1055dfe00!2sHerbanext%20Laboratories%2C%20Inc.!5e0!3m2!1sen!2sph!4v1707144132372!5m2!1sen!2sph"
+            width="100%" height="300" class="rounded-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+        <div class="row pb-2">
+          <div class="d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between align-items-lg-center">
+            <p><span class="small text-lteal">Copyright © 2024 All rights reserved.</span>&nbsp; <a target="_blank" href="#!" class="text-lteal small">Privacy Policy</a> &nbsp;<a target="_blank" href="#!" class="text-lteal small">Terms and Conditions</a></p>
+
+            <div class="d-flex flex-row gap-4 justify-content-start">
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-linkedin"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-youtube"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/js.js"></script>
+  </body>
+</html>

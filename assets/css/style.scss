@@ -133,10 +133,13 @@ $menu-size: 14px;
         border-bottom: 0!important;
         border-left: 0!important;
     }
+
+
 }
 
 body{
     position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -177,10 +180,9 @@ header{
     z-index: 1;
 }
 
-body{
-    overflow-x: hidden;
-    position: relative;
-}
+.cd__main{
+    display: block !important;
+ }
 
 @media (min-width: 375px) { 
     a{
@@ -283,16 +285,33 @@ body{
         section#jumbotron-2{
             height:80svh;
             width: 100%;
-          
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
             .container{
                 position: relative;
                 height: 80svh;
+                z-index: 1;
                 .col-12{
                     position: absolute;
                     top: 50%;
                     transform: translateY(-30%);
                 }
             }
+
+            .jumb-overlay{
+                position: absolute;
+                width: 100%;
+                height: 80svh;
+                overflow: hidden;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 0;
+                background: linear-gradient(14deg, rgba(238,255,245,0.1758754527201506) 0%, rgba(233,255,243,0.5792367972579657) 100%);
+              }
         }
     
         section#about{
@@ -647,6 +666,69 @@ body{
                 }
             }
         }
+
+
+         // GRID GALLERY
+         section#main{
+            padding: 5rem 0;
+            .container-img {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .card {
+                color: #252a32;
+                border-radius: 2px;
+                transition: opacity 0.5s ease;
+              }
+
+              
+            .fade-in {
+                opacity: 1;
+            }
+            
+            .fade-out {
+                opacity: 0;
+                pointer-events: none;
+                height: 0;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+    
+              .card-image {
+                position: relative;
+                display: block;
+                width: 100%;
+                padding-top: 70%;
+                background: #ffffff;
+                transition: $trans;
+                overflow: hidden;
+                // h6{
+                //     transition: $trans;
+                //     bottom: -3rem;
+                //     padding: 0 1.5rem;
+                // }
+
+              }
+
+            //   .card-image:hover h6{
+            //     bottom: 1rem;
+            //   }
+
+              .card-image img {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+         }
     }
 
     footer{
@@ -662,6 +744,8 @@ body{
             }
         }
     }
+
+   
  }
 
 // Small devices (landscape phones, 576px and up)
@@ -690,7 +774,11 @@ body{
         section#jumbotron-2{
             height: 140svh;
             width: 100%;
-          
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
             .container{
                 position: relative;
                 height: $maxHeightSVH;
@@ -699,6 +787,10 @@ body{
                     top: 50%;
                     transform: translateY(15%);
                 }
+            }
+
+            .jumb-overlay{
+                height: 140svh;
             }
         }
     
@@ -898,6 +990,14 @@ body{
                 }
             }
         }
+
+        // GALLERY
+        section#main{
+            padding: 6rem 0;
+            .container-img {
+                grid-template-columns: repeat(2, 1fr);
+              }
+         }
     }
 
  }
@@ -1159,18 +1259,22 @@ body{
         }
 
         section#jumbotron-2{
-            height: 40svh;
+            height: 70svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: 40svh;
+                height: 70svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -35%);
                 }
+            }
+
+            .jumb-overlay{
+                height: 70svh;
             }
         }
     
@@ -1393,6 +1497,16 @@ body{
                 }
             }
         }
+
+        // GRID GALLERY
+        section#main{
+            padding: 6rem 0;
+
+            .container-img {
+                grid-template-columns: repeat(3, 1fr);
+              }
+
+         }
     }
  }
 
@@ -1445,10 +1559,15 @@ body{
         section#jumbotron-2{
             height: 70svh;
             width: 100%;
-          
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
             .container{
                 position: relative;
                 height: 70svh;
+                z-index: 2;
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -1456,6 +1575,18 @@ body{
                     transform: translate(-50%, -50%);
                 }
             }
+
+            .jumb-overlay{
+                position: absolute;
+                width: 100%;
+                height: 70svh;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 0;
+                background: linear-gradient(14deg, rgba(238,255,245,0.1758754527201506) 0%, rgba(233,255,243,0.5792367972579657) 100%);
+              }
         }
     
         section#about{
@@ -1824,6 +1955,27 @@ body{
             }
         }
 
+        // GRID GALLERY
+        section#main{
+            padding: 10rem 0;
+            
+            .container-img {
+                grid-template-columns: repeat(4, 1fr);
+
+                .card{
+                    .card-image{
+                        a{
+                            overflow: hidden;
+                            h6{
+                                bottom: -3rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
     }
 
 
