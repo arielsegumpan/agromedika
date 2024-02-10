@@ -1537,6 +1537,18 @@ header{
                 left: auto;
                 right: 49px; /* Button width-1px */
             }
+
+            ul.navbar-nav{
+                li.nav-item.dropdown{
+                    ul.dropdown-menu.dropdown-large{
+                        min-width: 640px;
+                        max-width: 640px;
+                        overflow-x: hidden;
+                        transform: translate3d(-120px, 4px, 0);
+                        
+                    }
+                }
+            }
         }
     }
 
