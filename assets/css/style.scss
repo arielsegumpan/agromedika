@@ -263,6 +263,28 @@ header{
             .expandright:focus {
                 padding: 0 0 0 16px;
             }
+
+            ul.navbar-nav{
+                li.nav-item.dropdown{
+                    ul.dropdown-menu.dropdown-large{
+                        min-width: 100%;
+                        max-width: 100%;
+                        overflow-x: hidden;
+                        transform: translate3d(0px, 4px, 0);
+
+                        li{
+                            a.nav-link{
+                                img{
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: center/cover no-repeat;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
         }
     }
     // INDEX PAGE
@@ -1541,10 +1563,20 @@ header{
             ul.navbar-nav{
                 li.nav-item.dropdown{
                     ul.dropdown-menu.dropdown-large{
-                        min-width: 640px;
-                        max-width: 640px;
+                        min-width: 325px;
+                        max-width: 325px;
                         overflow-x: hidden;
                         transform: translate3d(-120px, 4px, 0);
+
+                        li{
+                            a.nav-link{
+                                img{
+                                    height: 50px;
+                                    width: 50px;
+                                    background-repeat: center/cover no-repeat;
+                                }
+                            }
+                        }
                         
                     }
                 }
