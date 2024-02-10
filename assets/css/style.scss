@@ -1026,11 +1026,11 @@ header{
           
             .container{
                 position: relative;
-                height: $maxHeightSVH;
+                height: 50svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-260%);
+                    transform: translateY(-50%);
                 }
             }
         }
