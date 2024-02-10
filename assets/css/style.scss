@@ -1971,9 +1971,23 @@ header{
                             }
                         }
                     }
-                }
+                } 
             }
 
+            ul#filter-menu{
+                position: relative;
+                overflow-x: hidden;
+                button.filter-item{
+                    position: relative;
+                    overflow-x: hidden;
+                    transition: $trans;
+                    background-color: transparent!important;
+                    left: 0;
+                }
+                button.filter-item:hover{
+                    left: .5rem;
+                }
+            }
 
         }
     }

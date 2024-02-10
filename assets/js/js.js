@@ -145,29 +145,93 @@ function handleIntersection(entries, observer) {
     });
   });
 
+// $(document).ready(function () {
+//   let container = $('.container-img');
+//   let cards = $('.card');
+
+//   $('#gallery-search').on('input', function () {
+//       let searchTerm = $(this).val().toLowerCase();
+//       let matchingCards = cards.filter(function () {
+//       let caption = $(this).find('a').data('caption').toLowerCase();
+//           return caption.includes(searchTerm);
+//       });
+
+//       // Clear the container
+//       container.empty();
+
+//       // Append matching cards to the container with fadeIn animation
+//       matchingCards.each(function () {
+//           $(this).removeClass('fade-out').addClass('fade-in').appendTo(container).hide().fadeIn();
+//       });
+
+//       // Add fade-out class to non-matching cards and fade them out
+//       cards.not(matchingCards).each(function () {
+//           $(this).removeClass('fade-in').addClass('fade-out').fadeOut();
+//       });
+//   });
+// });
+
+// $(document).ready(function () {
+//   let container = $('.container-img');
+//   let cards = $('.card');
+
+//   // Filter gallery based on category
+//   $('#filter-menu').on('click', '.filter-item', function () {
+//     let selectedFilter = $(this).data('filter');
+//     let matchingCards;
+
+//     if (selectedFilter === 'all') {
+//       matchingCards = cards;
+//     } else {
+//       matchingCards = cards.filter(function () {
+//         let caption = $(this).find('a').data('caption').toLowerCase();
+//         return caption.includes(selectedFilter.toLowerCase());
+//       });
+//     }
+
+//     // Clear the container
+//     container.empty();
+
+//     // Append matching cards to the container with fadeIn animation
+//     matchingCards.each(function () {
+//       $(this).removeClass('fade-out').addClass('fade-in').appendTo(container).hide().fadeIn();
+//     });
+
+//     // Add fade-out class to non-matching cards and fade them out
+//     cards.not(matchingCards).each(function () {
+//       $(this).removeClass('fade-in').addClass('fade-out').fadeOut();
+//     });
+//   });
+// });
 $(document).ready(function () {
   let container = $('.container-img');
   let cards = $('.card');
 
-  $('#gallery-search').on('input', function () {
-      let searchTerm = $(this).val().toLowerCase();
-      let matchingCards = cards.filter(function () {
-      let caption = $(this).find('a').data('caption').toLowerCase();
-          return caption.includes(searchTerm);
-      });
+  // Filter gallery based on category
+  $('#filter-menu').on('click', '.filter-item', function () {
+    let selectedFilter = $(this).data('filter');
+    let matchingCards;
 
-      // Clear the container
-      container.empty();
-
-      // Append matching cards to the container with fadeIn animation
-      matchingCards.each(function () {
-          $(this).removeClass('fade-out').addClass('fade-in').appendTo(container).hide().fadeIn();
+    if (selectedFilter === 'all') {
+      matchingCards = cards;
+    } else {
+      matchingCards = cards.filter(function () {
+        let dataId = $(this).find('a').data('id').toLowerCase();
+        return dataId === selectedFilter.toLowerCase();
       });
+    }
 
-      // Add fade-out class to non-matching cards and fade them out
-      cards.not(matchingCards).each(function () {
-          $(this).removeClass('fade-in').addClass('fade-out').fadeOut();
-      });
+    // Clear the container
+    container.empty();
+
+    // Append matching cards to the container with fadeIn animation
+    matchingCards.each(function () {
+      $(this).removeClass('fade-out').addClass('fade-in').appendTo(container).hide().fadeIn();
+    });
+
+    // Add fade-out class to non-matching cards and fade them out
+    cards.not(matchingCards).each(function () {
+      $(this).removeClass('fade-in').addClass('fade-out').fadeOut();
+    });
   });
 });
-
