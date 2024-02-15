@@ -639,7 +639,7 @@ header{
                     right: 1rem;
                     transform: translateY(-50%);
                     width: 1px;
-                    height: 5rem;
+                    height: 4rem;
                     background-color: rgba($color:  $black, $alpha: 0.5);
                 }
                 .title{
@@ -656,7 +656,7 @@ header{
             #featured_prod_aside{
                 a{
                     img{
-                        height: 150px;
+                        height: 100px;
                         width: 100%;
                         background-position: center;
                         background-size: cover;
@@ -688,7 +688,6 @@ header{
                 }
             }
         }
-
 
          // GRID GALLERY
          section#main{
@@ -1214,17 +1213,17 @@ header{
             padding: 8rem 0;
             .card{
                 img{
-                    height: 400px;
+                    height: 250px;
                 }
-            .card-body{
+            .card-body{ 
                     .attributes{
                         width: 40%;
                     }
                     .attributes::before{
                         top: 50%;
-                        right: 1rem;
+                        right: -1rem;
                         transform: translateY(-50%);
-                        height: 5rem;
+                        height: 4rem;
                     }
             }
             }
@@ -1235,7 +1234,7 @@ header{
             #featured_prod_aside{
                 a{
                     img{
-                        height: 250px;
+                        height: 134px;
                         width: 100%;
                     }
                 }
@@ -1478,7 +1477,7 @@ header{
                 }
             .card-body{
                     .attributes{
-                        width: 25%;
+                        width: 50%;
                     }
                     .attributes::before{
                         top: 50%;
