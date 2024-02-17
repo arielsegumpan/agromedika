@@ -335,7 +335,7 @@ header{
                 background: linear-gradient(14deg, rgba(238,255,245,0.1758754527201506) 0%, rgba(233,255,243,0.5792367972579657) 100%);
               }
         }
-    
+     
         section#about{
             padding: 5rem 0;
             .about-imgs{
@@ -469,6 +469,8 @@ header{
             .who-imgs{
                 img{
                     width: 100%;
+                    object-fit: cover;
+                    background: center/cover no-repeat;
                 }
                 .col-12{
                     img{
@@ -478,6 +480,13 @@ header{
                         background-repeat: no-repeat;
                     }
                 }
+
+                .who-img.col{
+                   img{
+                    height: 150px;
+                   }
+                }
+        
             }
 
 
@@ -921,6 +930,13 @@ header{
                         height: 260px;
                     }
                 }
+
+                .who-img.col{
+                    img{
+                     height: 160px;
+                    }
+                 }
+         
             }
         }
         section#timeline{
@@ -1192,6 +1208,12 @@ header{
                         height: 260px;
                     }
                 }
+
+                .who-img.col{
+                    img{
+                     height: 220px;
+                    }
+                 }
             }
         }
         section#timeline{
@@ -1881,6 +1903,12 @@ header{
                         background-repeat: no-repeat;
                     }
                 }
+
+                .who-img.col{
+                    img{
+                     height: 230px;
+                    }
+                 }
             }
 
 
