@@ -146,12 +146,7 @@ body{
 header{
     z-index: 500;
     nav{
-        a.navbar-brand{
-            img{
-                width:auto;
-                height: 45px;
-            }
-        }
+        
 
         ul.navbar-nav{
             li.nav-item{
@@ -185,6 +180,16 @@ header{
  }
 
 @media (min-width: 375px) { 
+    header{
+        nav{
+            a.navbar-brand{
+                img{
+                    width:auto;
+                    height: 50px;
+                }
+            }
+        }
+    }
     a{
         #cart{
             z-index: 6;
@@ -411,28 +416,23 @@ header{
                     height:130px;
                 }
             }
-
-            img.img-fluid{
-                height:300px;
-                object-fit: cover;
-                background: center/cover no-repeat;
-            }
-
-            .card{
-               .card-body{
-
-                .cont-img{
-                    img{
-                        width: 100%;
-                        height: 150px;
-                        object-fit: cover;
-                        background: center/cover no-repeat;
-                    }
-                }
-               }
-            }
         }
-        
+        section#infographics{
+            padding: 5rem 0;
+            .card{
+                .card-body{
+ 
+                 .cont-img{
+                     img{
+                         width: 100%;
+                         height: 150px;
+                         object-fit: cover;
+                         background: center/cover no-repeat;
+                     }
+                 }
+                }
+             }
+        }
         section#manufacturing{
             padding: 5rem 0;
         }
@@ -492,79 +492,22 @@ header{
 
             
         }
-        section#timeline{
+        section#company-info{
             padding: 5rem 0;
-            #timelLineCarousel{
-                .carousel-indicators{
-                    width: 75%;
-                    position: static;
-                    margin: 3rem auto;
 
-                    button{
-                        text-indent: 0!important;
-                        background: 0 0;
-                        border: none;
-                        margin: 0!important;
-                        position: relative;
-                        width: 25%!important;
-
-                        span{
-                            margin: -3.5rem 0 0 0;
-                            position: absolute;
-                            left: 50%;
-                            transform: translateX(-50%);
-
-                            img{
-                                width: auto;
-                                height: 30px;
-                            }
-                        }
-
-                        i{
-                            left: 50%;
-                            transform: translateX(-50%);
-                            margin-top: -11px;
-                        }
-                    }
-                    button::before{
-                       position: absolute;
-                       content: "";
-                       border-top: 2px solid rgba($color: $lteal, $alpha: 1.0);
-                       width: 100%;
-                       left: 0;
-                    }
-                    
-                }
-
-                .carousel-inner{
+            .card{
+                .cont-img{
                     img{
-                        height: 600px;
+                        width: 100%;
+                        height: 200px;
+                        background: center/cover no-repeat;
                         object-fit: cover;
-                        background:center/cover no-repeat;
-                        position: relative;
-                    }
-                   
-                    .carousel-item{
-                        position: relative;
-                        .carousel-caption{
-                            bottom: unset!important;
-                            top: 50%;
-                            transform: translateY(-50%);
-                        }
                     }
                 }
             }
         }
         section#team{
             padding: 5rem 0;
-
-            div#mission_vision{
-                padding:0 0 0 0;
-                img{
-                    width: auto;
-                    height: 40px;
-                }
-            }
         }
         section#infrastructure{
             padding: 5rem 0;
@@ -587,6 +530,13 @@ header{
                 }
             }
         }
+
+        
+        section#product_facility{
+            padding: 5rem 0;
+        }
+
+
         section#rnd{
             padding: 5rem 0;
 
@@ -735,7 +685,7 @@ header{
         }
 
          // GRID GALLERY
-         section#main{
+         section#main, section#infras-gallery{
             padding: 5rem 0;
             .container-img {
                 display: grid;
@@ -886,24 +836,21 @@ header{
                     height:160px;
                 }
             }
-
-            img.img-fluid{
-                height:350px;
-            }
-
-            .card{
-               .card-body{
-
-                .cont-img{
-                    img{
-                        width: 100%;
-                        height: 200px;
-                    }
-                }
-               }
-            }
         }
-        
+        section#infographics{
+            padding: 6rem 0;
+            .card{
+                .card-body{
+ 
+                 .cont-img{
+                     img{
+                         width: 100%;
+                         height: 200px;
+                     }
+                 }
+                }
+             }
+        }
         section#manufacturing{
             padding: 6rem 0;
         }
@@ -939,26 +886,19 @@ header{
          
             }
         }
-        section#timeline{
+        section#company-info{
             padding: 6rem 0;
-            #timelLineCarousel{
-                .carousel-inner{
+
+            .card{
+                .cont-img{
                     img{
-                        height: 500px;
+                        height: 300px;
                     }
                 }
             }
         }
         section#team{
             padding: 6rem 0;
-
-            div#mission_vision{
-                padding:0 0 0 0;
-                img{
-                    width: auto;
-                    height: 40px;
-                }
-            }
         }
         section#infrastructure{
             padding:6rem 0;
@@ -979,6 +919,11 @@ header{
                 }
             }
         }
+        
+        section#product_facility{
+            padding: 6rem 0;
+        }
+
         section#rnd{
             padding: 6rem 0;
 
@@ -1084,7 +1029,7 @@ header{
         }
 
         // GALLERY
-        section#main{
+        section#main, section#infras-gallery{
             padding: 6rem 0;
             .container-img {
                 grid-template-columns: repeat(2, 1fr);
@@ -1153,23 +1098,21 @@ header{
                     height:180px;
                 }
             }
+        }
 
-            img.img-fluid{
-                height:250px;
-                width: 100%;
-            }
-
+        section#infographics{
+            padding: 6rem 0;
             .card{
-               .card-body{
-
-                .cont-img{
-                    img{
-                        width: 100%;
-                        height: 150px;
-                    }
+                .card-body{
+ 
+                 .cont-img{
+                     img{
+                         width: 100%;
+                         height: 150px;
+                     }
+                 }
                 }
-               }
-            }
+             }
         }
         
         section#manufacturing{
@@ -1216,26 +1159,19 @@ header{
                  }
             }
         }
-        section#timeline{
+        section#company-info{
             padding: 6rem 0;
-            #timelLineCarousel{
-                .carousel-inner{
+
+            .card{
+                .cont-img{
                     img{
-                        height: 500px;
+                        height: 200px;
                     }
                 }
             }
         }
         section#team{
             padding: 6rem 0;
-
-            div#mission_vision{
-                padding:0 0 0 0;
-                img{
-                    width: auto;
-                    height: 40px;
-                }
-            }
         }
         section#infrastructure{
             padding:6rem 0;
@@ -1256,6 +1192,12 @@ header{
                 }
             }
         }
+
+        
+        section#product_facility{
+            padding: 6rem 0;
+        }
+
         section#rnd{
             padding: 6rem 0;
 
@@ -1356,7 +1298,7 @@ header{
         }
 
          // GALLERY
-         section#main{
+         section#main, section#infras-gallery{
             .container-img {
                 grid-template-columns: repeat(3, 1fr);
               }
@@ -1428,24 +1370,22 @@ header{
                 }
             }
 
-            img.img-fluid{
-                height:250px;
-                width: 100%;
-            }
-
-            .card{
-               .card-body{
-
-                .cont-img{
-                    img{
-                        width: 100%;
-                        height: 150px;
-                    }
-                }
-               }
-            }
+            
         }
-        
+        section#infographics{
+            padding: 6rem 0;
+            .card{
+                .card-body{
+ 
+                 .cont-img{
+                     img{
+                         width: 100%;
+                         height: 150px;
+                     }
+                 }
+                }
+             }
+        }
         section#manufacturing{
             padding: 6rem 0;
         }
@@ -1484,38 +1424,19 @@ header{
                 }
             }
         }
-        section#timeline{
+        section#company-info{
             padding: 6rem 0;
-            #timelLineCarousel{
-                .carousel-indicators{
-                    margin: 3rem auto;
 
-                    button{
-                        span{
-                            margin: -4rem 0 0 0;
-                            img{
-                                height: 40px;
-                            }
-                        }
-                    }
-                }
-                .carousel-inner{
+            .card{
+                .cont-img{
                     img{
-                        height: 410px;
+                        height: 220px;
                     }
                 }
             }
         }
         section#team{
             padding: 6rem 0;
-
-            div#mission_vision{
-                padding:0 0 0 0;
-                img{
-                    width: auto;
-                    height: 40px;
-                }
-            }
         }
         section#infrastructure{
             padding:6rem 0;
@@ -1537,6 +1458,11 @@ header{
                 }
             }
         }
+
+        section#product_facility{
+            padding: 6rem 0;
+        }
+
         section#rnd{
             padding: 6rem 0;
 
@@ -1626,7 +1552,7 @@ header{
         }
 
         // GRID GALLERY
-        section#main{
+        section#main, section#infras-gallery{
             padding: 6rem 0;
 
             .container-img {
@@ -1639,6 +1565,15 @@ header{
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
+    header{
+        nav{
+            a.navbar-brand{
+                img{
+                    height: 70px;
+                }
+            }
+        }
+    }
     a{
         #cart{
             right: -2.9rem;
@@ -1800,7 +1735,7 @@ header{
     
         section#grow{
             position: relative;
-            padding: 10rem 0;
+            padding: 8rem 0;
             background-blend-mode: screen;
             background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
         }
@@ -1814,31 +1749,29 @@ header{
                 }
             }
 
-            img.img-fluid{
-                height: 500px;
-                object-fit: cover;
-                background: center/cover no-repeat;
-            }
+        }
 
-            .card{
-               .card-body{
-
-                .cont-img{
-                    img{
-                        width: 100%;
-                        height: 100px;
-                        object-fit: cover;
-                        background: center/cover no-repeat;
-                    }
-                }
-               }
-            }
-
+        section#infographics{
+            padding: 10rem 0;
             #infographic{
 
                 div.display-1{
                     font-size: 3rem;
                 }
+
+                .card{
+                    .card-body{
+     
+                     .cont-img{
+                         img{
+                             width: 100%;
+                             height: 100px;
+                             object-fit: cover;
+                             background: center/cover no-repeat;
+                         }
+                     }
+                    }
+                 }
             }
         }
         
@@ -1914,75 +1847,20 @@ header{
 
             
         }
-
-        section#timeline{
+        section#company-info{
             padding: 10rem 0;
-            #timelLineCarousel{
-                .carousel-indicators{
-                    width: 75%;
-                    position: static;
-                    margin: 5rem auto;
 
-                    button{
-                        text-indent: 0!important;
-                        background: 0 0;
-                        border: none;
-                        margin: 0!important;
-                        position: relative;
-                        width: 25%!important;
-
-                        span{
-                            margin: -5rem 0 0 0;
-                            position: absolute;
-                            left: 50%;
-                            transform: translateX(-50%);
-                        }
-
-                        i{
-                            left: 50%;
-                            transform: translateX(-50%);
-                            margin-top: -11px;
-                        }
-                    }
-                    button::before{
-                       position: absolute;
-                       content: "";
-                       border-top: 2px solid rgba($color: $lteal, $alpha: 1.0);
-                       width: 100%;
-                       left: 0;
-                    }
-                    
-                }
-
-                .carousel-inner{
+            .card{
+                .cont-img{
                     img{
-                        height: 450px;
-                        object-fit: cover;
-                        background:center/cover no-repeat;
-                        position: relative;
-                    }
-                   
-                    .carousel-item{
-                        position: relative;
-                        .carousel-caption{
-                            bottom: unset!important;
-                            top: 50%;
-                            transform: translateY(-50%);
-                        }
+                        height: 100px;
                     }
                 }
             }
         }
+
         section#team{
             padding: 10rem 0;
-
-            div#mission_vision{
-                padding:5rem 0 0 0;
-                img{
-                    width: auto;
-                    height: 40px;
-                }
-            }
         }
 
         section#infrastructure{
@@ -2005,6 +1883,10 @@ header{
                     height: 10px;
                 }
             }
+        }
+
+        section#product_facility{
+            padding: 10rem 0;
         }
 
         section#rnd{
@@ -2133,7 +2015,7 @@ header{
         }
 
         // GRID GALLERY
-        section#main{
+        section#main, section#infras-gallery{
             padding: 10rem 0;
             
             .container-img {
@@ -2165,8 +2047,8 @@ header{
                     left: .5rem;
                 }
             }
-
         }
+        
     }
 
 
