@@ -134,7 +134,6 @@ $menu-size: 14px;
         border-left: 0!important;
     }
 
-
 }
 
 body{
@@ -269,27 +268,7 @@ header{
                 padding: 0 0 0 16px;
             }
 
-            ul.navbar-nav{
-                li.nav-item.dropdown{
-                    ul.dropdown-menu.dropdown-large{
-                        min-width: 100%;
-                        max-width: 100%;
-                        overflow-x: hidden;
-                        transform: translate3d(0px, 4px, 0);
-
-                        li{
-                            a.nav-link{
-                                img{
-                                    height: 50px;
-                                    width: 50px;
-                                    background-repeat: center/cover no-repeat;
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
+          
         }
     }
     // INDEX PAGE
@@ -379,13 +358,23 @@ header{
         section#products{
             padding: 5rem 0;
             .prod-display{
+                div.rounded-5,{
+                    width: auto;
+                    height: auto;
+                    overflow: hidden;
+                }
+
                 img{
                     width: 100%;
-                    height: 190px;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
+                    height: 160px;
+                    object-fit: cover; 
+                    background:center/cover no-repeat;
+                    transition: .8s ease;
+                    overflow: hidden;
+                    transform: scale(1);
+                }
+                img:hover{
+                    transform: scale(1.15);
                 }
             }
 
@@ -690,16 +679,16 @@ header{
             .container-img {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-gap: 1rem;
+                grid-gap: 1.5rem;
                 justify-content: center;
                 align-items: center;
               }
 
-              .card {
+            .card {
                 color: #252a32;
                 border-radius: 2px;
                 transition: opacity 0.5s ease;
-              }
+            }
 
               
             .fade-in {
@@ -715,7 +704,7 @@ header{
                 overflow: hidden;
             }
     
-              .card-image {
+            .card-image {
                 position: relative;
                 display: block;
                 width: 100%;
@@ -723,17 +712,8 @@ header{
                 background: #ffffff;
                 transition: $trans;
                 overflow: hidden;
-                // h6{
-                //     transition: $trans;
-                //     bottom: -3rem;
-                //     padding: 0 1.5rem;
-                // }
-
-              }
-
-            //   .card-image:hover h6{
-            //     bottom: 1rem;
-            //   }
+                height: 160px;
+            }
 
               .card-image img {
                 display: block;
@@ -741,10 +721,37 @@ header{
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 160px;
                 object-fit: cover;
+                background: center/cover no-repeat;
+                overflow: hidden;
+                transition: .8s ease;
+                scale: 1;
+              }
+              .card-image img:hover{
+                scale: 1.15;
               }
          }
+
+         section#products-main{
+            padding: 5rem 0;
+            div{
+                overflow: hidden;
+                border-radius: 1rem;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 1rem;
+                    background: center/cover no-repeat;
+                    object-fit: cover;
+                    transition: .8s ease;
+                    scale: 1;
+                }
+                img:hover{
+                    scale: 1.15;
+                }
+            } 
+        }
     }
 
     footer{
@@ -818,7 +825,7 @@ header{
             padding: 6rem 0;
             .prod-display{
                 img{
-                    height: 200px;
+                    height: 250px;
                 }
             }
 
@@ -1034,7 +1041,23 @@ header{
             .container-img {
                 grid-template-columns: repeat(2, 1fr);
               }
+
+            .card-image{
+                height: 230px;
+                img{
+                    height: 230px;
+                }
+            }
          }
+
+         section#products-main{
+            padding: 5rem 0;
+            div{
+                img{
+                    height: 300px;
+                }
+            } 
+        }
     }
 
  }
@@ -1080,7 +1103,7 @@ header{
             padding: 6rem 0;
             .prod-display{
                 img{
-                    height: 200px;
+                    height: 300px;
                 }
             }
 
@@ -1297,12 +1320,21 @@ header{
             }
         }
 
-         // GALLERY
-         section#main, section#infras-gallery{
+        // GALLERY
+        section#main, section#infras-gallery{
             .container-img {
                 grid-template-columns: repeat(3, 1fr);
               }
-         }
+        }
+
+        section#products-main{
+            padding: 6rem 0;
+            div{
+                img{
+                    height: 270px;
+                }
+            } 
+        }
     }
  }
 
@@ -1350,6 +1382,9 @@ header{
         section#products{
             padding: 6rem 0;
             .prod-display{
+                div.rounded-5{
+                    height: 200px;
+                }
                 img{
                     height: 200px;
                 }
@@ -1559,7 +1594,22 @@ header{
                 grid-template-columns: repeat(3, 1fr);
               }
 
+            .card-image{
+                height: 270px;
+                img{
+                    height: 270px;
+                }
+            }
          }
+
+         section#products-main{
+            padding: 6rem 0;
+            div{
+                img{
+                    height: 180px;
+                }
+            } 
+        }
     }
  }
 
@@ -1600,27 +1650,7 @@ header{
                 right: 49px; /* Button width-1px */
             }
 
-            ul.navbar-nav{
-                li.nav-item.dropdown{
-                    ul.dropdown-menu.dropdown-large{
-                        min-width: 325px;
-                        max-width: 325px;
-                        overflow-x: hidden;
-                        transform: translate3d(-120px, 4px, 0);
-
-                        li{
-                            a.nav-link{
-                                img{
-                                    height: 50px;
-                                    width: 50px;
-                                    background-repeat: center/cover no-repeat;
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
+           
         }
     }
 
@@ -1711,13 +1741,13 @@ header{
         section#products{
             padding: 10rem 0;
             .prod-display{
-                img{
+                div.rounded-5{
                     width: 100%;
                     height: 280px;
-                    object-fit: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
+                    overflow: hidden;
+                }
+                img{
+                    height: 280px;
                 }
             }
 
@@ -2019,14 +2049,17 @@ header{
             padding: 10rem 0;
             
             .container-img {
-                grid-template-columns: repeat(4, 1fr);
-
+                grid-template-columns: repeat(3, 1fr);
                 .card{
                     .card-image{
+                        height: 400px;
                         a{
                             overflow: hidden;
                             h6{
                                 bottom: -3rem;
+                            }
+                            img{
+                                height: 400px;
                             }
                         }
                     }
@@ -2048,7 +2081,45 @@ header{
                 }
             }
         }
+
+        section#main{
+            .container-img {
+                .card{
+                    .card-image{
+                        height: 330px;
+                        a{
+                            img{
+                                height: 330px;
+                            }
+                        }
+                    }
+                } 
+            }
+
+        }
         
+        section#products-main{
+            padding: 10rem 0;
+            div{
+                overflow: hidden;
+                border-radius: 1rem;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 1rem;
+                    background: center/cover no-repeat;
+                    object-fit: cover;
+                    transition: .8s ease;
+                    scale: 1;
+                }
+                img:hover{
+                    scale: 1.15;
+                }
+            } 
+        }
+        section#products-single{
+            padding: 10rem 0;
+        }
     }
 
 
