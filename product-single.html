@@ -17,12 +17,6 @@
       <i class='bi bi-chevron-up text-lteal fs-4 rounded-3 bg-primary'></i>
     </div>
 
-    <a href="#!" class="text-decoration-none">
-      <div id="cart" class="position-fixed shadow">
-        <i class="bi bi-cart4 fs-4"></i>
-      </div>
-    </a>
-
     <header class="position-absolute w-100">
       <nav class="navbar navbar-expand-xl bg-transparent">
           <div class="container">
@@ -62,6 +56,16 @@
                 </li>
                 <li class="nav-item dropdown me-3">
                   <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About Us <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-uppercase" href="company.html">Company Profile</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="infrastructure.html">Infrastructure</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="quality.html">Quality</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Gallery <i class="bi bi-chevron-down"></i>
                   </a>
                   <ul class="dropdown-menu">
@@ -72,18 +76,9 @@
                 <li class="nav-item me-3">
                   <a class="nav-link  text-uppercase" href="blog.html">News and Updates</a>
                 </li>
-                <li class="nav-item dropdown me-3">
-                  <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    About Us <i class="bi bi-chevron-down"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item text-uppercase" href="company.html">Company Profile</a></li>
-                    <li><a class="dropdown-item text-uppercase" href="infrastructure.html">Infrastructure</a></li>
-                    <li><a class="dropdown-item text-uppercase" href="quality.html">Quality</a></li>
-                  </ul>
-                </li>
+                
                 <li class="nav-item me-3">
-                  <a class="nav-link  text-uppercase" href="contact.html">Contact</a>
+                  <a class="nav-link  text-uppercase" href="contact.html">Contact Us</a>
                 </li>
               </ul>
 
@@ -94,7 +89,7 @@
                     <label class="button searchbutton" for="searchright"><i class="bi bi-search btn btn-primary text-white"></i></label>
                   </form>
                 </div>
-                <a href="products.html" class="btn btn-primary text-white me-2"><i class="bi bi-shop-window"></i></a>
+                <a href="#!" class="btn btn-primary text-white me-2"><i class="bi bi-whatsapp"></i></a>
                 <a href="#!" class="btn btn-primary text-white"><i class="bi bi-person"></i></a>
               </div>
 
@@ -104,41 +99,151 @@
     </header>
 
     <main>
-        <section id="jumbotron-2" style="background-image: url('assets/imgs/pexels-nataliya-vaitkevich-7615618.jpg');">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-lg-10 mx-auto my-auto text-center">
-                  <h1 class="fw-bold text-black">All Products</h1>
-                  <p class="mt-4 text-secondary">Agromediko supplies premium Philippine botanical and plant extracts in  extract and powder forms for companies that manufacture herbal supplements, biopharma and nutraceuticals, functional food and beverages, organic personal care and cosmetic products, and animal feed.  We also offer and pre-mix herbal extracts and customised solutions based on customer demand.</p>
-                </div>
-              </div>
-            </div>
-            <div class="jumb-overlay"></div>
-        </section>
-
-        <section id="products-single">
-          <div class="container-fluid">
+        <section id="products-single" class="bg-lteal">
+          <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4">
-                    <img src="assets/imgs/banaba.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-12 col-lg-5">
-                    <div>
-                        <h2 class="text-primary fw-bold">Banaba</h2>
-                        <h6 class="text-black"><small class="fst-italic">Lagerstroemia speciosa</small></h6>
-                        <p class="lh-lg text-secondary mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio molestias magnam maiores, error tempore quae commodi sunt accusantium assumenda nemo alias quisquam nihil enim labore nesciunt quas cum, iste quam voluptates sit. Voluptas, atque? Ipsa veniam, deleniti deserunt modi, eveniet tempore distinctio quam expedita sequi reiciendis reprehenderit fugit amet dolor!</p>
+                <div class="col-12 col-lg-10 mx-auto text-center">
+                  <div class="prod-img">
+                    <img src="assets/imgs/sambong.jpeg" alt="" class="img-fluid rounded-5">
+                  </div>
+                  <div class="mt-5 pt-lg-3">
+                      <div class="herb-wrap mb-5">
+                        <h1 class="text-primary fw-bold">Sambong (Blumea Leaves)</h1>
+                        <h6 class="text-black"><small class="fst-italic">Blumea balsamifera</small></h6>
+                      </div>
+                      <p class="lh-lg text-secondary mt-4">Blumea leaves (Sambong) display a variety of biological activities such as antitumor, hepatoprotective, antioxidant, antimicrobial, anti-inflammatory, anti-melanogenic, platelet aggregation, wound healing, and anti-obesity properties. It is used as herbal treatment for kidney stones, cuts or wounds, rheumatism, diarrhoea, spasms, colds, coughs, and hypertension.</p>
+                  </div>
+
+                  <div class="prod-single-content mt-5 pt-lg-5">
+                    <nav>
+                      <div class="nav nav-tabs justify-content-center gap-2" id="nav-tab" role="tablist">
+                        <button class="nav-link text-black text-uppercase active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Product Overview</button>
+                        <button class="nav-link text-black text-uppercase" id="nav-safety-data-sheet-tab" data-bs-toggle="tab" data-bs-target="#nav-safety-data-sheet" type="button" role="tab" aria-controls="nav-safety-data-sheet" aria-selected="false">Safety Data sheet</button>
+                        <button class="nav-link text-black text-uppercase" id="nav-general-specification-tab" data-bs-toggle="tab" data-bs-target="#nav-general-specification" type="button" role="tab" aria-controls="nav-general-specification" aria-selected="false">Product Data Sheet</button>
+                        <button class="nav-link text-black text-uppercase" id="nav-buynow-tab" data-bs-toggle="tab" data-bs-target="#nav-buynow" type="button" role="tab" aria-controls="nav-buynow" aria-selected="false">Send Inquiry/Buy Product</button>
+                      </div> 
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active pt-5 px-lg-5 text-start" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        
+                        <div class="mb-5 text-black">
+                          <h6>English name: Blumea leaves</h6>
+                          <h6>Local name: Sambong</h6>
+                          <h6>Source of Agromedika extract: Leaves</h6>
+                          <h6>Specification:</h6>
+                          <h6>Test method:</h6>
+                          <h6>Extract ratio: 10:01</h6>
+                          <h6>Health benefits: Common cold, diuretic, rheumatism, stomach ache</h6>
+                          <h6>Active constituents: borneol, saponin, sesquiterpene, and tannin.</h6>
+                        </div>
+                        
+
+                        <p class="lh-lg text-secondary">
+                          Blumea leaves (Sambong) display a variety of biological activities such as antitumor, hepatoprotective, antioxidant, antimicrobial, anti-inflammatory, anti-melanogenic, platelet aggregation, wound healing, and anti-obesity properties. It is used as herbal treatment for kidney stones, cuts or wounds, rheumatism, diarrhoea, spasms, colds, coughs, and hypertension. The Philippine Council for Health Research and Development has developed the technology for sambong herbal medicine tablets particularly for anti-urolithiatic purposes which have been available in the market for such indications. Consumption of sambong tea or leaf infusion can also help dissolve kidney stones and prevent urolith formation.
+                        Blumea balsamifera is a flowering plant that grows abundantly in Southeast Asia and India, in open fields, grasslands, and distributed areas at low and medium altitudes.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-safety-data-sheet" role="tabpanel" aria-labelledby="nav-safety-data-sheet-tab" tabindex="0">
+                        <div class="card rounded-5 border-0 p-3 mt-5 mt-lg-3">
+                          <div class="px-3 py-4 py-lg-5 p-lg-5">
+                            <div class="mb-5">
+                              <h2>Document Access Request</h2>
+                              <p class="text-secondary mt-4">Please complete the information below, we will send email with the link to access documents.</p>
+                            </div>
+                          <form action="#!">
+                            <div class="row mb-md-4">
+                              <div class="col-12 mb-4">
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="name" placeholder="Name*">
+                                  <label for="name">Name <span class="text-danger">*</span></label>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating mb-3">
+                                  <input type="email" class="form-control" id="email" placeholder="Email*">
+                                  <label for="email">Email<span class="text-danger">*</span></label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mt-5 mx-auto text-center">
+                              <button class="btn btn-black px-5 py-3"><i class="bi bi-send me-2"></i>Send Request</button>
+                            </div>
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-general-specification" role="tabpanel" aria-labelledby="nav-general-specification-tab" tabindex="0">
+                        <p class="lh-lg text-secondary">
+                         123 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa autem perferendis minima ea molestias cumque expedita consequatur similique hic architecto ipsam inventore rerum, explicabo aliquam consectetur modi quae fugit deleniti veritatis accusamus quidem magnam. Vero officiis, expedita, aut eveniet iure culpa nisi illum deleniti quasi voluptatibus mollitia rerum explicabo doloremque commodi, labore eum quaerat est harum ducimus quo sequi facere! Saepe, repudiandae veritatis consequuntur neque placeat enim atque quae vel cumque minima dolore officia temporibus, blanditiis laudantium quis illum quaerat cupiditate! Maiores, asperiores omnis harum dignissimos unde tempora ex ab facilis. Nobis exercitationem eaque neque molestias expedita mollitia unde.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-buynow" role="tabpanel" aria-labelledby="nav-buynow-tab" tabindex="0">
+                        <div class="card rounded-5 border-0 p-3 mt-5 mt-lg-3">
+                          <div class="mt-5">
+                            <h2>Enquire Now</h2>
+                          </div>
+                          <div class="px-3 py-4 py-lg-5 p-lg-5">
+                            <form action="#!">
+                              <div class="row mb-md-4">
+                                <div class="col-12 col-md-6">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Name*">
+                                    <label for="name">Name <span class="text-danger">*</span></label>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="form-floating mb-3">
+                                    <input type="phone" class="form-control" id="phone" placeholder="Phone*">
+                                    <label for="phone">Phone<span class="text-danger">*</span></label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-md-4">
+                                <div class="col-12 col-md-6">
+                                  <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="youremail@gmail.com">
+                                    <label for="email">Email Address<span class="text-danger">*</span></label>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="form-floating mb-3">
+                                    <input type="phone" class="form-control" id="phone" placeholder="Phone*">
+                                    <label for="phone">Phone Number<span class="text-danger">*</span></label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-md-4">
+                                <div class="col-12">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject*">
+                                    <label for="subject">Subject <span class="text-danger">*</span></label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Message<span class="text-danger">*</span></label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mt-5 mx-auto text-center">
+                                <button class="btn btn-black px-5 py-3"><i class="bi bi-send me-2"></i>Submit</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3">
+                  </div>
+
 
                 </div>
             </div>
           </div>
         </section>
-
-
     </main>
-
 
     <footer class="bg-primary">
       <div class="container">
@@ -176,7 +281,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 text-center text-lg-a">
+          <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 text-center text-lg-start">
             <h6 class="fw-bold text-uppercase text-lteal mb-4">Address</h6>
 
             <p class="text-lteal mb-4"><i class="bi bi-geo-alt text-lteal fs-6 me-2"></i>Negros South Road, Bago City,  Negros Occidental, Philippines</p>
