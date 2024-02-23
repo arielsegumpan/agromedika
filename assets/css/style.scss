@@ -963,6 +963,7 @@ header{
             div#nav-tab{
                 button.nav-link.active{
                     font-weight: bold!important;
+                    background-color: $lteal!important;
                 }
             }
             .card{
@@ -1008,7 +1009,7 @@ header{
                 }
             }
         }
-    }
+    } 
 
     footer{
        
