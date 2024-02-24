@@ -963,9 +963,13 @@ header{
             div#nav-tab{
                 button.nav-link.active{
                     font-weight: bold!important;
-                    background-color: $lteal!important;
+                    background-color: $prim!important;
+                    color: $lteal!important;
                 }
             }
+
+          
+
             .card{
                 transition: .8s ease;
                 width: 100%;
