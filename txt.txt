@@ -138,3 +138,114 @@
                         </form>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INFO GRAPHIC
+<section id="infographics" class="bg-lteal">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div id="infographic" class="row">
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-xl-0">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="20">00</span>+</div>
+                        <span class="fw-bold fs-5 text-black">Years</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">We have grown from a small agricultural enterprise to become the country's first and only extraction and spray-drying facility, paving the way for the use of more potent herbal extracts over powdered forms.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-5">
+                        <img src="assets/imgs/pexels-artem-podrez-8533008.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-xl-0">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="3500">000</span></div>
+                        <span class="fw-bold fs-5 text-black">Square Meters</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">
+                          Our production plant is GMP-certified with toll and contract manufacturing capabilities not only for extracts but also for functional foods and beverages, nutraceuticals, and biopharmaceuticals.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-5">
+                        <img src="assets/imgs/pexels-pok-rie-5379333.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-xl-0">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="200">00</span>+</div>
+                        <span class="fw-bold fs-5 text-black">Medicinal Plants</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">
+                          We hold one of the largest in-site gene banks of medicinal and aromatic plants in the Philippines. Herbs produced in our farms are certified chemical-free.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-5">
+                        <img src="assets/imgs/pexels-doterra-international-llc-4041098.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                      <div class="num-wrap">
+                        <div class="display-1 fw-bold  text-primary"><span class="num" data-val="20">00</span></div>
+                        <span class="fw-bold fs-5 text-black">Hectares</span>
+                      </div>
+    
+                      <div class="cont mt-4">
+                        <p class="text-secondary">
+                          Our organic farms in Bago City, Negros Occidental produces 20 different species of medicinal herbs that go straight into our factory for spray-dried extraction.
+                        </p>
+                      </div>
+    
+                      <div class="cont-img mt-5">
+                        <img src="assets/imgs/pexels-tom-fisk-4856507.jpg" alt="" class="img-fluid rounded-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

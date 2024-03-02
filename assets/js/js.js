@@ -88,46 +88,46 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-function handleIntersection(entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        startCounterAnimation(entry.target);
-        observer.unobserve(entry.target);
-      }
-    });
-  }
+// function handleIntersection(entries, observer) {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         startCounterAnimation(entry.target);
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   }
   
-  function startCounterAnimation(valueDisplay) {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let interval = 800;
-    let duration = Math.floor(interval / endValue);
+//   function startCounterAnimation(valueDisplay) {
+//     let startValue = 0;
+//     let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+//     let interval = 800;
+//     let duration = Math.floor(interval / endValue);
   
-    function updateCounter() {
-      startValue += 1;
-      valueDisplay.textContent = startValue;
+//     function updateCounter() {
+//       startValue += 1;
+//       valueDisplay.textContent = startValue;
   
-      if (startValue < endValue) {
-        requestAnimationFrame(updateCounter);
-      }
-    }
+//       if (startValue < endValue) {
+//         requestAnimationFrame(updateCounter);
+//       }
+//     }
   
-    updateCounter();
-  }
+//     updateCounter();
+//   }
   
-  let observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-  let valueDisplays = document.querySelectorAll(".num");
+//   let observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+//   let valueDisplays = document.querySelectorAll(".num");
   
-  valueDisplays.forEach((valueDisplay) => {
-    observer.observe(valueDisplay);
-  });
+//   valueDisplays.forEach((valueDisplay) => {
+//     observer.observe(valueDisplay);
+//   });
   
-  // Check initial state of elements
-  valueDisplays.forEach((valueDisplay) => {
-    if (observer.takeRecords().some((entry) => entry.target === valueDisplay && entry.isIntersecting)) {
-      startCounterAnimation(valueDisplay);
-    }
-  });
+//   // Check initial state of elements
+//   valueDisplays.forEach((valueDisplay) => {
+//     if (observer.takeRecords().some((entry) => entry.target === valueDisplay && entry.isIntersecting)) {
+//       startCounterAnimation(valueDisplay);
+//     }
+//   });
   
 
   $(document).ready(() => {
