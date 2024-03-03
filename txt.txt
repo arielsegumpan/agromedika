@@ -249,3 +249,25 @@ INFO GRAPHIC
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+<div class="who-imgs row row-cols-2 g-3 g-xl-4">
+                    <div class="who-img col-12">
+                      <img src="assets/imgs/elderly-person-holding-plant_1150-18574.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="who-img  col">
+                      <img src="assets/imgs/close-up-medicine-pills-table.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="who-img  col">
+                      <img src="assets/imgs/moringa-6582660_1280.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                  </div>

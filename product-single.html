@@ -118,10 +118,8 @@
                     <nav>
                       <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                         <button class="nav-link text-black text-uppercase active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Product Overview</button>
-                        <button class="nav-link text-black text-uppercase" id="nav-safety-data-sheet-tab" data-bs-toggle="tab" data-bs-target="#nav-safety-data-sheet" type="button" role="tab" aria-controls="nav-safety-data-sheet" aria-selected="false">Safety Data sheet</button>
-                        <button class="nav-link text-black text-uppercase" id="nav-technical-data-sheet-tab" data-bs-toggle="tab" data-bs-target="#nav-technical-data-sheet" type="button" role="tab" aria-controls="nav-technical-data-sheet" aria-selected="false">Technical Data Sheet</button>
-                        <button class="nav-link text-black text-uppercase" id="nav-analysis-conformity-tab" data-bs-toggle="tab" data-bs-target="#nav-analysis-conformity" type="button" role="tab" aria-controls="nav-analysis-conformity" aria-selected="false">Analysis and Conformity</button>
-                        <button class="nav-link text-black text-uppercase" id="nav-buynow-tab" data-bs-toggle="tab" data-bs-target="#nav-buynow" type="button" role="tab" aria-controls="nav-buynow" aria-selected="false">Send Inquiry/Buy Product</button>
+                        <button class="nav-link text-black text-uppercase" id="nav-document-access-tab" data-bs-toggle="tab" data-bs-target="#nav-document-access" type="button" role="tab" aria-controls="nav-document-access" aria-selected="false">Document Access</button>
+                        <button class="nav-link text-black text-uppercase" id="nav-buynow-tab" data-bs-toggle="tab" data-bs-target="#nav-buynow" type="button" role="tab" aria-controls="nav-buynow" aria-selected="false">Send Inquiry</button>
                       </div> 
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -130,7 +128,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga natus id earum tempora vero, pariatur, repellendus distinctio consequuntur porro nam deleniti soluta cum nesciunt quae itaque! Similique qui repellat fuga itaque perferendis. Reprehenderit, accusantium illo provident, ratione impedit explicabo aspernatur eum laborum beatae rem animi, libero est vero. Pariatur, facilis alias? Nobis sapiente cupiditate, id autem quasi maxime culpa veniam voluptas dolores quod ea delectus sit sed ut eos est nisi reprehenderit eligendi nostrum amet placeat? Quae nisi omnis officia ad aut. Ipsum quae consequuntur delectus praesentium nisi. Nulla a libero ipsam, ad nobis eligendi doloribus quisquam voluptas accusamus?</p>
                        </div>
                       </div>
-                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-safety-data-sheet" role="tabpanel" aria-labelledby="nav-safety-data-sheet-tab" tabindex="0">
+                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-document-access" role="tabpanel" aria-labelledby="nav-document-access-tab" tabindex="0">
                         <div class="card rounded-5 border-0 p-3 mt-5 mt-lg-3">
                           <div class="px-3 py-4 py-lg-5 p-lg-5">
                             <div class="mb-5">
@@ -145,29 +143,30 @@
                                   <label for="name">Name <span class="text-danger">*</span></label>
                                 </div>
                               </div>
-                              <div class="col-12">
+                              <div class="col-12 mb-4">
                                 <div class="form-floating mb-3">
                                   <input type="email" class="form-control" id="email" placeholder="Email*">
                                   <label for="email">Email<span class="text-danger">*</span></label>
                                 </div>
                               </div>
+                              <div class="col-12">
+                                <div class="form-floating">
+                                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected disabled></option>
+                                    <option value="1">Safety Data Sheet</option>
+                                    <option value="2">Technical Data Sheet</option>
+                                    <option value="3">Analysis and Conformity</option>
+                                  </select>
+                                  <label for="floatingSelect">Select Product Sheet</label>
+                                </div>
+                              </div>
                             </div>
-                            <div class="mt-5 mx-auto text-center">
+                            <div class="mt-5 pt-4 mx-auto text-center">
                               <button class="btn btn-black px-5 py-3"><i class="bi bi-send me-2"></i>Send Request</button>
                             </div>
                           </form>
                           </div>
                         </div>
-                      </div>
-                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-technical-data-sheet" role="tabpanel" aria-labelledby="nav-technical-data-sheet-tab" tabindex="0">
-                        <p class="lh-lg text-secondary">
-                         123 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa autem perferendis minima ea molestias cumque expedita consequatur similique hic architecto ipsam inventore rerum, explicabo aliquam consectetur modi quae fugit deleniti veritatis accusamus quidem magnam. Vero officiis, expedita, aut eveniet iure culpa nisi illum deleniti quasi voluptatibus mollitia rerum explicabo doloremque commodi, labore eum quaerat est harum ducimus quo sequi facere! Saepe, repudiandae veritatis consequuntur neque placeat enim atque quae vel cumque minima dolore officia temporibus, blanditiis laudantium quis illum quaerat cupiditate! Maiores, asperiores omnis harum dignissimos unde tempora ex ab facilis. Nobis exercitationem eaque neque molestias expedita mollitia unde.
-                        </p>
-                      </div>
-                      <div class="tab-pane fade pt-5 px-lg-5" id="nav-analysis-conformity" role="tabpanel" aria-labelledby="nav-analysis-conformity-tab" tabindex="0">
-                        <p class="lh-lg text-secondary">
-                         123 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa autem perferendis minima ea molestias cumque expedita consequatur similique hic architecto ipsam inventore rerum, explicabo aliquam consectetur modi quae fugit deleniti veritatis accusamus quidem magnam. Vero officiis, expedita, aut eveniet iure culpa nisi illum deleniti quasi voluptatibus mollitia rerum explicabo doloremque commodi, labore eum quaerat est harum ducimus quo sequi facere! Saepe, repudiandae veritatis consequuntur neque placeat enim atque quae vel cumque minima dolore officia temporibus, blanditiis laudantium quis illum quaerat cupiditate! Maiores, asperiores omnis harum dignissimos unde tempora ex ab facilis. Nobis exercitationem eaque neque molestias expedita mollitia unde.
-                        </p>
                       </div>
                       <div class="tab-pane fade pt-5 px-lg-5" id="nav-buynow" role="tabpanel" aria-labelledby="nav-buynow-tab" tabindex="0">
                         <div class="card rounded-5 border-0 p-3 mt-5 mt-lg-3">
@@ -229,8 +228,6 @@
                       </div>
                     </div>
                   </div>
-
-
                 </div>
             </div>
           </div>

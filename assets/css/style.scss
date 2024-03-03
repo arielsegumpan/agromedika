@@ -631,7 +631,7 @@ header{
 
         // ABOUT PAGE
         section#who{
-            padding: 5rem 0;
+            padding:0 0 5rem 0;
 
             .who-imgs{
                 img{
@@ -665,8 +665,8 @@ header{
             .card{
                 .cont-img{
                     img{
-                        width: 100%;
-                        height: 200px;
+                        width: auto;
+                        height: 150px;
                         background: center/cover no-repeat;
                         object-fit: cover;
                     }
@@ -674,7 +674,11 @@ header{
             }
         }
         section#team{
-            padding: 5rem 0;
+            padding: 5rem 0 0 0;
+        }
+
+        section#yt{
+            margin: 0 0 5rem 0;
         }
         section#infrastructure{
             padding: 5rem 0;
@@ -828,33 +832,25 @@ header{
         section#blog{
             padding: 7rem 0;
             .card{
+                .card-header{
+                    width: auto;
+                    height: 250px;
+                    overflow: hidden;
+                }
                 img{
                     width: 100%;
                     height: 250px;
                     object-fit: cover;
                     background-position: center;
                     background-size: cover;
-                    
-                }
-            .card-body{
-                .attributes{
-                    width: 100%;
-                    position: relative;
-                }
-                .attributes::before{
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    right: 1rem;
-                    transform: translateY(-50%);
-                    width: 1px;
-                    height: 4rem;
-                    background-color: rgba($color:  $black, $alpha: 0.5);
-                }
-                .title{
-                    width: calc(100% - 0%);
+                    transition: .8s ease;
+                    transform:scale(1);
                 }
             }
+            .card:hover{
+                img{
+                    transform:scale(1.25);
+                }
             }
         }
         section#blog.single_blog{
@@ -1006,7 +1002,7 @@ header{
                 .form-floating{
                     position: relative;
                     border-bottom: 1px solid rgba($black, .7);
-                    input, textarea{
+                    input, textarea, select{
                         -webkit-box-shadow: none;
                         -moz-box-shadow: none;
                         box-shadow: none;
@@ -1282,7 +1278,7 @@ header{
 
         // ABOUT PAGE
         section#who{
-            padding: 6rem 0;
+            padding:0 0 6rem 0;
             .who-imgs{
                 .col-12{
                     img{
@@ -1304,14 +1300,19 @@ header{
             .card{
                 .cont-img{
                     img{
-                        height: 300px;
+                        height: 150px;
                     }
                 }
             }
         }
         section#team{
-            padding: 6rem 0;
+            padding: 6rem 0 0 0;
         }
+
+        section#yt{
+            margin: 0 0 6rem 0;
+        }
+
         section#infrastructure{
             padding:6rem 0;
             #infractureCarous{
@@ -1404,15 +1405,7 @@ header{
                     height: 400px;
                 }
             .card-body{
-                    .attributes{
-                        width: 100%;
-                    }
-                    .attributes::before{
-                        top: 50%;
-                        right: 1rem;
-                        transform: translateY(-50%);
-                        height: 5rem;
-                    }
+               
             }
             }
         }
@@ -1681,7 +1674,7 @@ header{
 
          // ABOUT PAGE
          section#who{
-            padding: 6rem 0;
+            padding:2rem 0 6rem 0;
             .who-imgs{
                 .col-12{
                     img{
@@ -1702,13 +1695,16 @@ header{
             .card{
                 .cont-img{
                     img{
-                        height: 200px;
+                        height: 150px;
                     }
                 }
             }
         }
         section#team{
-            padding: 6rem 0;
+            padding: 7rem 0 0 0;
+        }
+        section#yt{
+            margin: 0 0 7rem 0;
         }
         section#infrastructure{
             padding:6rem 0;
@@ -1785,20 +1781,12 @@ header{
         section#blog{
             padding: 8rem 0;
             .card{
-                img{
-                    height: 250px;
+                .card-header{
+                    height: 200px;
                 }
-            .card-body{ 
-                    .attributes{
-                        width: 40%;
-                    }
-                    .attributes::before{
-                        top: 50%;
-                        right: -1rem;
-                        transform: translateY(-50%);
-                        height: 4rem;
-                    }
-            }
+                img{
+                    height: 200px;
+                }
             }
         }
         
@@ -2156,13 +2144,16 @@ header{
             .card{
                 .cont-img{
                     img{
-                        height: 220px;
+                        height: 130px;
                     }
                 }
             }
         }
         section#team{
             padding: 6rem 0;
+        }
+        section#yt{
+            margin: 0 0 7rem 0;
         }
         section#infrastructure{
             padding:6rem 0;
@@ -2239,19 +2230,8 @@ header{
             padding: 10rem 0;
             .card{
                 img{
-                    height: 400px;
+                    height: 200px;
                 }
-            .card-body{
-                    .attributes{
-                        width: 50%;
-                    }
-                    .attributes::before{
-                        top: 50%;
-                        right: 1rem;
-                        transform: translateY(-50%);
-                        height: 5rem;
-                    }
-            }
             }
         }
         // aside
@@ -2754,7 +2734,7 @@ header{
         // }
         // ABOUT PAGE
         section#who{
-            padding: 10rem 0;
+            padding:2rem 0 10rem 0;
 
             .who-imgs{
                 img{
@@ -2792,9 +2772,11 @@ header{
         }
 
         section#team{
-            padding: 10rem 0;
+            padding: 10rem 0 3rem 0;
         }
-
+        section#yt{
+            margin: 0 0 10rem 0;
+        }
         section#infrastructure{
             padding: 10rem 0;
             #infractureCarous{
@@ -2879,33 +2861,13 @@ header{
         section#blog{
             padding: 10rem 0;
             .card{
-                img{
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                    background-position: center;
-                    background-size: cover;
-                    
+                .card-header{
+                    height: 220px;
                 }
-               .card-body{
-                    .attributes{
-                        width: 25%;
-                        position: relative;
-                    }
-                    .attributes::before{
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: 1rem;
-                        transform: translateY(-50%);
-                        width: 1px;
-                        height: 5rem;
-                        background-color: rgba($color:  $black, $alpha: 0.5);
-                    }
-                    .title{
-                        width: calc(100% - 25%);
-                    }
-               }
+                img{
+                    height: 220px;
+                }
+              
             }
         }
         // aside
@@ -3426,7 +3388,7 @@ header{
         }
         // ABOUT PAGE
         section#who{
-            padding: 10rem 0;
+            padding:2rem 0 10rem 0;
 
             .who-imgs{
                 img{
@@ -3551,33 +3513,13 @@ header{
         section#blog{
             padding: 10rem 0;
             .card{
+                .card-header{
+                    height: 250px;
+                }
                 img{
-                    width: 100%;
-                    height: 400px;
-                    object-fit: cover;
-                    background-position: center;
-                    background-size: cover;
+                    height: 250px;
                     
                 }
-               .card-body{
-                    .attributes{
-                        width: 25%;
-                        position: relative;
-                    }
-                    .attributes::before{
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: 1rem;
-                        transform: translateY(-50%);
-                        width: 1px;
-                        height: 5rem;
-                        background-color: rgba($color:  $black, $alpha: 0.5);
-                    }
-                    .title{
-                        width: calc(100% - 25%);
-                    }
-               }
             }
         }
         // aside
