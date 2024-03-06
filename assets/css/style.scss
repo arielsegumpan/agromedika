@@ -541,13 +541,13 @@ header{
                     transform: scale(1.15);
                 }
 
-                .card{
-                    .prod-title{
-                        h6{
-                            line-height: 0;
-                        }
-                    }
-                }
+                // .card{
+                //     .prod-title{
+                //         h6{
+                //             line-height: auto;
+                //         }
+                //     }
+                // }
             }
 
             // .col-12:nth-child(1){
@@ -707,7 +707,7 @@ header{
         }
 
         section#rnd{
-            padding: 5rem 0;
+            padding:0 0 5rem 0;
 
             .row.row-cols-2{
                 img{
@@ -826,7 +826,7 @@ header{
                     height: 400px;
                 }
             }
-        }
+        }   
 
         //BLOG PAGE
         section#blog{
@@ -903,58 +903,86 @@ header{
                 grid-gap: 1.5rem;
                 justify-content: center;
                 align-items: center;
-              }
 
-            .card {
-                color: #252a32;
-                border-radius: 5px;
-                transition: opacity 0.5s ease;
-            }
 
-              
-            .fade-in {
-                opacity: 1;
-            }
-            
-            .fade-out {
-                opacity: 0;
-                pointer-events: none;
-                height: 0;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
+                .card {
+                    color: #252a32;
+                    border-radius: 5px;
+                    transition: opacity 0.5s ease;
+                }
     
-            .card-image {
-                position: relative;
-                display: block;
-                width: 100%;
-                padding-top: 70%;
-                background: #ffffff;
-                transition: $trans;
-                overflow: hidden;
-                height: 160px;
-            }
-
-              .card-image img {
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 160px;
-                object-fit: cover;
-                background: center/cover no-repeat;
-                overflow: hidden;
-                transition: .8s ease;
-                scale: 1;
-              }
-              .card-image img:hover{
-                scale: 1.15;
+                  
+                .fade-in {
+                    opacity: 1;
+                }
+                
+                .fade-out {
+                    opacity: 0;
+                    pointer-events: none;
+                    height: 0;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                }
+        
+                .card-image {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    padding-top: 70%;
+                    background: #ffffff;
+                    transition: $trans;
+                    overflow: hidden;
+                    height: 160px;
+                }
+    
+                  .card-image img {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 160px;
+                    object-fit: cover;
+                    background: center/cover no-repeat;
+                    overflow: hidden;
+                    transition: .8s ease;
+                    scale: 1;
+                  }
+                  .card-image img:hover{
+                    scale: 1.15;
+                  }
               }
          }
          section#main{
            padding:  2rem 0 6rem 0; 
+           .container-img-pdf {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+            justify-content: center;
+            align-items: center; 
+
+            .card{
+                .card-image{
+                    img{
+                       width: auto;
+                       height: 198px;
+                    }
+
+                    .card-body{
+                       a.bookmark i:hover,  a.view i:hover{
+                        color: $prim;
+                       }
+
+
+                    }
+                }
+            }
+          }
+
+          
+          
          }
          section#products-main{
             padding:0 0 5rem 0;
@@ -1079,6 +1107,10 @@ header{
             #col{
                 padding-top: 37rem;
             }
+        }
+
+        section#error{
+            padding: 8rem 0 5rem 0;
         }
     } 
 
@@ -1338,7 +1370,7 @@ header{
         }
 
         section#rnd{
-            padding: 6rem 0;
+            padding:0 0 6rem 0;
 
             .row.row-cols-2{
                 img{
@@ -1445,14 +1477,13 @@ header{
             padding: 3rem 0 6rem 0;
             .container-img {
                 grid-template-columns: repeat(2, 1fr);
-              }
-
-            .card-image{
-                height: 230px;
-                img{
+                .card-image{
                     height: 230px;
+                    img{
+                        height: 230px;
+                    }
                 }
-            }
+              }
          }
 
          section#infras-gallery{
@@ -1479,6 +1510,13 @@ header{
             }
         }
 
+        section#blog.single_blog{
+            padding: 6rem 0;
+        }
+
+        section#error{
+            padding: 9rem 0 6rem 0;
+        }
     }
 
  }
@@ -1731,7 +1769,7 @@ header{
         }
 
         section#rnd{
-            padding: 6rem 0;
+            padding:0 0 6rem 0;
 
             .row.row-cols-2{
                 img{
@@ -1795,7 +1833,7 @@ header{
             #featured_prod_aside{
                 a{
                     img{
-                        height: 134px;
+                        height: 200px;
                         width: 100%;
                     }
                 }
@@ -1835,12 +1873,14 @@ header{
         section#main{
             padding: 0 0 7rem 0;
 
+           .container-img{
             .card-image{
                 height: 140px;
                 img{
                     height: 140px;
                 }
             }
+           }
         }
         section#products-main{
             padding:0 0 7rem 0;
@@ -1886,6 +1926,14 @@ header{
         }
         section#inq{
             padding: 0 0 6rem 0;
+        }
+
+        section#blog.single_blog{
+            padding: 6rem 0;
+        }
+
+        section#error{
+            padding: 9rem 0 7rem 0;
         }
     }
  }
@@ -2181,7 +2229,7 @@ header{
         }
 
         section#rnd{
-            padding: 6rem 0;
+            padding:0 0 6rem 0;
 
             .row.row-cols-2{
                 img{
@@ -2239,7 +2287,7 @@ header{
             #featured_prod_aside{
                 a{
                     img{
-                        height: 100px;
+                        height: 210px;
                         width: 100%;
                     }
                 }
@@ -2271,14 +2319,20 @@ header{
 
             .container-img {
                 grid-template-columns: repeat(3, 1fr);
+
+                .card-image{
+                    height: 200px;
+                    img{
+                        height: 200px;
+                    }
+                }
+
               }
 
-            .card-image{
-                height: 200px;
-                img{
-                    height: 200px;
-                }
-            }
+              .container-img-pdf {
+                grid-template-columns: repeat(3, 1fr);
+              }
+           
          }
 
          section#infras-gallery{
@@ -2320,6 +2374,14 @@ header{
                     width: 80%;
                 }
             }
+        }
+
+        section#blog.single_blog{
+            padding: 7rem 0;
+        }
+
+        section#error{
+            padding: 9rem 0 7rem 0;
         }
     }
  }
@@ -2804,7 +2866,7 @@ header{
         }
 
         section#rnd{
-            padding: 10rem 0;
+            padding:0 0 10rem 0;
 
             .row.row-cols-2{
                 img{
@@ -2913,9 +2975,9 @@ header{
             padding: 0 0 12rem 0;
             
             .container-img {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 .card{
-                    border-radius: 5px;
+                    // border-radius: 5px;
                     .card-image{
                         // height: 300px;
                         a{
@@ -2931,7 +2993,27 @@ header{
                 } 
             }
 
+            .container-img-pdf {
+                grid-template-columns: repeat(4, 1fr);
+             
+              }
+
             ul#filter-menu{
+                position: relative;
+                overflow-x: hidden;
+                button.filter-item{
+                    position: relative;
+                    overflow-x: hidden;
+                    transition: $trans;
+                    background-color: transparent!important;
+                    left: 0;
+                }
+                button.filter-item:hover{
+                    left: .5rem;
+                }
+            }
+
+            ul#filter-menu-2{
                 position: relative;
                 overflow-x: hidden;
                 button.filter-item{
@@ -2949,7 +3031,7 @@ header{
         section#infras-gallery{
             padding: 10rem 0;
             .container-img {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 .card{
                     .card-image{
                         height: 350px;
@@ -2971,11 +3053,11 @@ header{
                 .card{
                     border-radius: 5px;
                     .card-image{
-                        height: 260px;
+                        height: 190px;
                         a{
                             img{
                                 border-radius: 5px;
-                                height: 260px;
+                                height: 190px;
                             }
                         }
                     }
@@ -3022,6 +3104,13 @@ header{
         }
         section#inq{
             padding: 0 0 10rem 0;
+        }
+        section#blog.single_blog{
+            padding: 10rem 0;
+        }
+
+        section#error{
+            padding: 12rem 0 10rem 0;
         }
     }
 
@@ -3456,7 +3545,7 @@ header{
         }
 
         section#rnd{
-            padding: 10rem 0;
+            padding:0 0 10rem 0;
 
             .row.row-cols-2{
                 img{
@@ -3514,10 +3603,10 @@ header{
             padding: 10rem 0;
             .card{
                 .card-header{
-                    height: 250px;
+                    height: 270px;
                 }
                 img{
-                    height: 250px;
+                    height: 270px;
                     
                 }
             }
@@ -3565,22 +3654,28 @@ header{
             padding: 0 0 12rem 0;
             
             .container-img {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 .card{
                     .card-image{
-                        height: 300px;
+                        height: 215px;
                         a{
                             overflow: hidden;
                             h6{
                                 bottom: -3rem;
                             }
                             img{
-                                height: 300px;
+                                height: 215px;
                             }
                         }
                     }
                 } 
             }
+
+            .container-img-pdf {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+
 
             ul#filter-menu{
                 position: relative;
@@ -3600,17 +3695,17 @@ header{
         section#infras-gallery{
             padding: 10rem 0;
             .container-img {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 .card{
                     .card-image{
-                        height: 400px;
+                        height: 230px;
                         a{
                             overflow: hidden;
                             h6{
                                 bottom: -3rem;
                             }
                             img{
-                                height: 400px;
+                                height: 230px;
                             }
                         }
                     }
@@ -3621,10 +3716,10 @@ header{
             .container-img {
                 .card{
                     .card-image{
-                        height: 300px;
+                        height: 215px;
                         a{
                             img{
-                                height: 300px;
+                                height: 215px;
                             }
                         }
                     }
@@ -3674,6 +3769,10 @@ header{
         }
         section#inq{
             padding: 0 0 10rem 0;
+        }
+
+        section#error{
+            padding: 13rem 0 10rem 0;
         }
     }
 
