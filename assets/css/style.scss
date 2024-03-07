@@ -1112,6 +1112,15 @@ header{
         section#error{
             padding: 8rem 0 5rem 0;
         }
+
+        section#main-pdf{
+            padding: 5rem 0;
+            center{
+                #obj{
+                    height: 100svh;
+                }
+            }
+        }
     } 
 
     footer{
@@ -1139,6 +1148,16 @@ header{
     }
     // INDEX PAGE
     main{
+        section#main-pdf{
+            padding: 8rem 0;
+            center{
+                #obj{
+                    height: 100svh;
+                }
+            }
+        }
+
+
         section#jumbotron{
             height: 140svh;
           
@@ -1525,6 +1544,17 @@ header{
 @media (min-width: 768px) { 
     
     main{
+
+        section#main-pdf{
+            padding: 9rem 0;
+            center{
+                #obj{
+                    height: 100svh;
+                }
+            }
+        }
+
+
         section#jumbotron{
             height: 70svh;
           
@@ -1961,6 +1991,16 @@ header{
         }
     }
     main{
+        section#main-pdf{
+            padding: 8rem 0;
+            center{
+                #obj{
+                    height: 100svh;
+                }
+            }
+        }
+
+
         section#jumbotron{
             height: 100svh;
           
@@ -2439,6 +2479,14 @@ header{
     }
 
     main{
+        section#main-pdf{
+            padding: 14rem 0 10rem 0 ;
+            center{
+                #obj{
+                    height: 100svh;
+                }
+            }
+        }
         section#jumbotron{
             height: $maxHeightSVH;
             width: 100%;
