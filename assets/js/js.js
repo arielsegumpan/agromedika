@@ -31,17 +31,41 @@
 //     dropdown.querySelector('.dropdown-menu').style.transition = 'opacity 0.3s ease';
 // });
 
- // Add hover event handlers
- $('.dropdown').hover(
-  function () {
-      // On hover in
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(300);
-  },
-  function () {
-      // On hover out
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
-  }
-);
+//  Add hover event handlers
+//  $('.dropdown').hover(
+//   function () {
+//       // On hover in
+//       $(this).find('.dropdown-menu.drop-1').stop(true, true).delay(200).fadeIn(300);
+//   },
+//   function () {
+//       // On hover out
+//       $(this).find('.dropdown-menu.drop-1').stop(true, true).delay(200).fadeOut(300);
+//   },
+
+//   function () {
+//     // On hover in
+//     $(this).find('.dropdown-menu.drop-2').stop(true, true).delay(200).fadeIn(300);
+//   },
+//   function () {
+//       // On hover out
+//       $(this).find('.dropdown-menu.drop-2').stop(true, true).delay(200).fadeOut(300);
+//   }
+// );
+
+// Close dropdown menus when clicking outside of them
+// $(document).on('click', function(e) {
+//   if (!$(e.target).closest('.dropdown').length) {
+//       $('.dropdown-menu').removeClass('show');
+//   }
+// });
+
+// // Prevent closing dropdown menu when clicking inside it
+// $('.dropdown-menu').on('click', function(e) {
+//   e.stopPropagation();
+// });
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const scrollBtn = document.getElementById('scroll_btn');
@@ -303,3 +327,4 @@ function nextCard() {
     styles('#third', 0, -50, 0, 1, shadow);
   }
 }
+

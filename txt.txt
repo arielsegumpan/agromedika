@@ -271,3 +271,39 @@ INFO GRAPHIC
                       <img src="assets/imgs/moringa-6582660_1280.jpg" alt="" class="img-fluid rounded-4">
                     </div>
                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- <section id="jumbotron" class="w-100 position-relative">
+        <div class="jumbotron-content position-relative w-100">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-9 col-xxl-6 me-auto my-auto text-center text-lg-start px-4 px-lg-1">
+                <h1 class="display-5 fw-bold text-black">Standardized herbal extracts and raw materials</h1>
+                <h5 class=" mt-4 fw-bold">Premium-grade nutracuetical ingredients from the Philippines</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="img-wrap" class="position-absolute w-100 bottom-0">
+          <div class="container px-0">
+            <div class="row">
+              <div class="col-12">
+                <img src="assets/imgs/natural-spa-sand-bowls-leaves.jpg" alt="" class="object-fit-cover rounded-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->

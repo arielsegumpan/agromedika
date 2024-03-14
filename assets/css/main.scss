@@ -9,7 +9,7 @@ $nav-size: 15px;
 $y-green: #91BF21;
 $black: #111111;
 $lteal: #EEFFF5;
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..600;1,300..800&display=swap');
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
@@ -19,17 +19,18 @@ $lteal: #EEFFF5;
 $dropdown-border-width: 0!default;
 $dropdown-border-radius: 10px;
 $nav-link-hover-color: $prim!default;;
-$dropdown-link-hover-color: $prim;
+$dropdown-link-hover-color: $prim!default;;
 $dropdown-link-hover-bg: none!default;
 $nav-link-font-size: $nav-size!default;
 $dropdown-font-size:$nav-size!default;
 $dropdown-bg: $lteal!default;
 // $btn-border-radius: 100px!default;
 // $btn-border-radius-sm: 100px!default;
-// $btn-border-radius-lg: 100px!default;
+// $btn-border-radius-lg: 100px!default; 
 // $input-border-radius:  100px!default;
 $dropdown-link-active-bg:  $prim!default;
-
+$dropdown-link-active-color: $lteal!important;
+ 
 $theme-colors:(
     "primary": $prim,
     "secondary" : $sec,

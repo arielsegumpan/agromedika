@@ -18,7 +18,7 @@
 
     <header class="position-absolute w-100">
       <nav class="navbar navbar-expand-xl bg-transparent">
-          <div class="container position-relative">
+          <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="assets/imgs/agromedika.png" alt="">
             </a>
@@ -41,17 +41,38 @@
                 <li class="nav-item me-3">
                   <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Home</a>
                 </li>
+
                 <li class="nav-item dropdown me-3">
                   <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Products <i class="bi bi-chevron-down"></i>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu drop-1">
                     <li><a class="dropdown-item text-uppercase" href="products.html">All Herbs</a></li>
+
+                    <li class="nav-item dropend ps-3 ps-lg-0">
+                      <a class="nav-link dropdown-toggle text-uppercase text-black fw-normal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Customized Ingredients <i class="bi bi-chevron-right"></i>
+                      </a> 
+                      <ul class="dropdown-menu drop-2">
+                        <li><a class="dropdown-item text-uppercase" href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="extract.html">Dietary Supplements</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_extract.html">Essential Oils</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Functional Foods</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Personal Care/Cosmetic</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Animal Nutrition</a></li>
+                      </ul>
+                    </li>
+
+
+
+
                     <li><a class="dropdown-item text-uppercase" href="extract.html">Extract List</a></li>
                     <li><a class="dropdown-item text-uppercase" href="price_list_extract.html">Price List Extract</a></li>
                     <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Price List Powder</a></li>
                   </ul>
                 </li>
+
+
                 <li class="nav-item dropdown me-3">
                   <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About Us <i class="bi bi-chevron-down"></i>
@@ -88,7 +109,6 @@
                     <label class="button searchbutton" for="searchright"><i class="bi bi-search btn btn-primary text-white"></i></label>
                   </form>
                 </div>
-                <a href="#!" class="btn btn-primary text-white me-2"><i class="bi bi-whatsapp"></i></a>
                 <a href="#!" class="btn btn-primary text-white"><i class="bi bi-person"></i></a>
               </div>
 
@@ -98,34 +118,28 @@
     </header>
 
     <main>
-      <section id="jumbotron" style="background: url('assets/imgs/natural-spa-sand-bowls-leaves.jpg') center/cover no-repeat;">
+      <section id="jumbotron" class="bg-lteal">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-9 col-xxl-6 me-auto my-auto text-center text-lg-start px-4 px-lg-1">
-              <h1 class="display-3 fw-bold text-black">Standardized herbal extracts and raw materials</h1>
-              <h5 class=" mt-4 fw-bold">Premium-grade nutracuetical ingredients from the Philippines</h5>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="bg-lteal">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-lg-7">
-              <div class="row row-cols-1 row-cols-lg-3 about-imgs">
-                <div class="col">
-                  <img src="assets/imgs/dishes-with-sand-leaves.jpg" alt="" class="rounded-5">
-                </div>
-                <div class="col">
-                  <img src="assets/imgs/therapy-relaxing-spa-sand-close-up.jpg" alt="" class="rounded-5">
-                </div>
-                <div class="col">
-                  <img src="assets/imgs/top-view-bowls-with-sand-leaves.jpg" alt="" class="rounded-5">
+              <div class="jumb-wrap position-relative">
+                <img src="assets/imgs/natural-spa-sand-bowls-leaves.jpg" alt="" class="object-fit-cover rounded-5">
+                <div id="content-wrap" class="col-12 col-lg-8 col-xxl-6 me-auto my-auto text-center text-xl-start px-5 px-lg-1">
+                  <h1 class="display-5 fw-bold text-black px-md-3 px-lg-0">Standardized herbal extracts and raw materials</h1>
+                  <h5 class=" mt-4 fw-bold px-md-3 px-lg-0">Premium-grade nutracuetical ingredients from the Philippines</h5>
                 </div>
               </div>
+          </div>
+        </div>
+    </section>
+
+
+      <section id="about" class="bg-lteal">
+        <div class="container container-lg-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
+              <img id="home-about-img" src="assets/imgs/top-view-bowls-with-sand-leaves.jpg" alt="" class="rounded-5 object-fit-cover">
             </div>
-            <div class="col-12 col-lg-5 my-auto mt-5 text-center text-lg-start">
+            <div class="col-12 col-lg-6 my-auto mt-lg-5 text-center text-lg-start  order-1 order-lg-2">
               <a href="about.html" class="text-decoration-none">
                 <h1 class="fw-bold text-black">About Us</h1>
                 <p class="lh-lg text-secondary mt-4 mt-lg-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatum impedit excepturi, perferendis aspernatur dolore sunt eius nobis delectus, magnam, possimus obcaecati molestias ex fugit quo aperiam cum soluta optio. Saepe earum totam reiciendis quis, voluptatum delectus molestiae ipsum veritatis placeat porro dignissimos voluptatem tempora atque sapiente, voluptate error nesciunt recusandae quasi sed ea harum fugit necessitatibus? Error, quidem possimus?</p>
@@ -152,7 +166,7 @@
             <div class="col-12 img-prod-front mt-5">
               <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 prod-display g-4 g-lg-5">
 
-                <div class="col">
+                <div class="col text-center">
                  <a href="#!" class="text-decoration-none">
                   <div class="card border-0 bg-transparent">
                     <div class="rounded-5">
@@ -165,103 +179,164 @@
                   </div>
                  </a>
                 </div>
-                <div class="col">
-                  <a href="#!" class="text-decoration-none">
-                    <div class="card border-0 bg-transparent">
-                      <div class="rounded-5">
-                        <img src="assets/imgs/sambong.jpeg" alt="" class="rounded-5">
-                      </div>
-                      <div class="prod-title text-center mt-4">
-                        <h6 class="text-primary">Sambong</h6>
-                        <small class="text-secondary">(Blumea balsamifera)</small>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col">
-                  <a href="#!" class="text-decoration-none">
-                    <div class="rounded-5">
-                      <img src="assets/imgs/banaba.jpg" alt="" class="rounded-5">
-                    </div>
-                  </a>
-                </div>
-                <div class="col">
-                  <a href="#!" class="text-decoration-none">
-                    <div class="rounded-5">
-                      <img src="assets/imgs/gotukola-1.jpg" alt="" class="rounded-5">
-                    </div>
-                  </a> 
-                </div>
-                <div class="col">
-                  <a href="#!" class="text-decoration-none">
-                    <div class="rounded-5">
-                      <img src="assets/imgs/banaba.jpg" alt="" class="rounded-5">
-                    </div>
-                  </a>
-                </div>
-                <div class="col">
-                  <a href="#!" class="text-decoration-none">
-                    <div class="rounded-5">
-                      <img src="assets/imgs/gotukola-1.jpg" alt="" class="rounded-5">
-                    </div>
-                  </a> 
-                </div>
 
-                <div class="col">
+
+                <div class="col text-center">
                   <a href="#!" class="text-decoration-none">
                    <div class="card border-0 bg-transparent">
                      <div class="rounded-5">
                        <img src="assets/imgs/tawa-tawa.png" alt="" class="rounded-5">
                      </div>
                      <div class="prod-title text-center mt-4">
-                       <h6 class="text-primary">Tawa-tawa</h6>
+                       <h6 class="text-primary">Banaba (Queen’s Crape Myrthle)</h6>
                        <small class="text-secondary">(Euphorbia hirta)</small>
                      </div>
                    </div>
                   </a>
                  </div>
-                 <div class="col">
-                   <a href="#!" class="text-decoration-none">
-                     <div class="card border-0 bg-transparent">
-                       <div class="rounded-5">
-                         <img src="assets/imgs/sambong.jpeg" alt="" class="rounded-5">
-                       </div>
-                       <div class="prod-title text-center mt-4">
-                         <h6 class="text-primary">Sambong</h6>
-                         <small class="text-secondary">(Blumea balsamifera)</small>
-                       </div>
-                     </div>
-                   </a>
-                 </div>
-                 <div class="col">
-                   <a href="#!" class="text-decoration-none">
+
+                 <div class="col text-center">
+                  <a href="#!" class="text-decoration-none">
+                   <div class="card border-0 bg-transparent">
                      <div class="rounded-5">
-                       <img src="assets/imgs/banaba.jpg" alt="" class="rounded-5">
+                       <img src="assets/imgs/tawa-tawa.png" alt="" class="rounded-5">
                      </div>
-                   </a>
-                 </div>
-                 <div class="col">
-                   <a href="#!" class="text-decoration-none">
-                     <div class="rounded-5">
-                       <img src="assets/imgs/gotukola-1.jpg" alt="" class="rounded-5">
+                     <div class="prod-title text-center mt-4">
+                       <h6 class="text-primary">Banaba (Queen’s Crape Myrthle)</h6>
+                       <small class="text-secondary">(Euphorbia hirta)</small>
                      </div>
-                   </a> 
-                 </div>
-                 <div class="col">
-                   <a href="#!" class="text-decoration-none">
-                     <div class="rounded-5">
-                       <img src="assets/imgs/banaba.jpg" alt="" class="rounded-5">
-                     </div>
-                   </a>
-                 </div>
-                 <div class="col">
-                   <a href="#!" class="text-decoration-none">
-                     <div class="rounded-5">
-                       <img src="assets/imgs/gotukola-1.jpg" alt="" class="rounded-5">
-                     </div>
-                   </a> 
+                   </div>
+                  </a>
                  </div>
 
+                 <div class="col text-center">
+                  <a href="#!" class="text-decoration-none">
+                   <div class="card border-0 bg-transparent">
+                     <div class="rounded-5">
+                       <img src="assets/imgs/tawa-tawa.png" alt="" class="rounded-5">
+                     </div>
+                     <div class="prod-title text-center mt-4">
+                       <h6 class="text-primary">Banaba (Queen’s Crape Myrthle)</h6>
+                       <small class="text-secondary">(Euphorbia hirta)</small>
+                     </div>
+                   </div>
+                  </a>
+                 </div>
+
+                 <div class="col text-center">
+                  <a href="#!" class="text-decoration-none">
+                   <div class="card border-0 bg-transparent">
+                     <div class="rounded-5">
+                       <img src="assets/imgs/tawa-tawa.png" alt="" class="rounded-5">
+                     </div>
+                     <div class="prod-title text-center mt-4">
+                       <h6 class="text-primary">Banaba (Queen’s Crape Myrthle)</h6>
+                       <small class="text-secondary">(Euphorbia hirta)</small>
+                     </div>
+                   </div>
+                  </a>
+                 </div>
+
+                 <div class="col text-center">
+                  <a href="#!" class="text-decoration-none">
+                   <div class="card border-0 bg-transparent">
+                     <div class="rounded-5">
+                       <img src="assets/imgs/tawa-tawa.png" alt="" class="rounded-5">
+                     </div>
+                     <div class="prod-title text-center mt-4">
+                       <h6 class="text-primary">Banaba (Queen’s Crape Myrthle)</h6>
+                       <small class="text-secondary">(Euphorbia hirta)</small>
+                     </div>
+                   </div>
+                  </a>
+                 </div>
+
+                 <div class="col text-center">
+                  <a href="#!" class="text-decoration-none">
+                   <div class="card border-0 bg-transparent">
+                     <div class="rounded-5">
+                       <img src="assets/imgs/tawa-tawa.png" alt="" class="rounded-5">
+                     </div>
+                     <div class="prod-title text-center mt-4">
+                       <h6 class="text-primary">Banaba (Queen’s Crape Myrthle)</h6>
+                       <small class="text-secondary">(Euphorbia hirta)</small>
+                     </div>
+                   </div>
+                  </a>
+                 </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div id="carous_product">
+                <div id="prod-carouselAutoPlaying" class="carousel slide position-relative" data-bs-ride="carousel">
+                  <div class="carousel-inner rounded-5">
+                    <div class="carousel-item active">
+                      <img src="https://source.unsplash.com/1280x720/?herbal" class="d-block w-100" alt="...">
+                      <div class="carous_caption position-absolute text-white">
+                       <a href="index.html" class="text-decoration-none text-white">
+                        <h2>Essential Oils</h2>
+                        <small class="text-uppercase">Explore More<i class="bi bi-arrow-right ms-2 text-primary"></i></small>
+                       </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://source.unsplash.com/1280x720/?oil" class="d-block w-100" alt="...">
+                      <div class="carous_caption position-absolute text-white">
+                        <a href="index.html" class="text-decoration-none text-white">
+                          <h2>Pharmaceuticals</h2>
+                          <small class="text-uppercase">Explore More<i class="bi bi-arrow-right ms-2 text-primary"></i></small>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://source.unsplash.com/1280x720/?plant" class="d-block w-100" alt="...">
+                      <div class="carous_caption position-absolute text-white">
+                        <a href="index.html" class="text-decoration-none text-white">
+                          <h2>Dietary Supplements</h2>
+                          <small class="text-uppercase">Explore More<i class="bi bi-arrow-right ms-2 text-primary"></i></small>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://source.unsplash.com/1280x720/?plant" class="d-block w-100" alt="...">
+                      <div class="carous_caption position-absolute text-white">
+                        <a href="index.html" class="text-decoration-none text-white">
+                          <h2>Functional Foods</h2>
+                          <small class="text-uppercase">Explore More<i class="bi bi-arrow-right ms-2 text-primary"></i></small>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://source.unsplash.com/1280x720/?plant" class="d-block w-100" alt="...">
+                      <div class="carous_caption position-absolute text-white">
+                        <a href="index.html" class="text-decoration-none text-white">
+                          <h2>Personal Care/Cosmetic</h2>
+                          <small class="text-uppercase">Explore More<i class="bi bi-arrow-right ms-2 text-primary"></i></small>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://source.unsplash.com/1280x720/?plant" class="d-block w-100" alt="...">
+                      <div class="carous_caption position-absolute text-white">
+                        <a href="index.html" class="text-decoration-none text-white">
+                          <h2>Animal Nutrition</h2>
+                          <small class="text-uppercase">Explore More<i class="bi bi-arrow-right ms-2 text-primary"></i></small>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#prod-carouselAutoPlaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#prod-carouselAutoPlaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -279,7 +354,7 @@
         </div>
       </section>
 
-      <section id="certificate" class="bg-lteal">
+      <!-- <section id="certificate" class="bg-lteal">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-9 mx-auto text-center mb-5 mb-md-auto">
@@ -306,13 +381,13 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="infographics" class="bg-primary">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12">
-              <div id="infographic" class="row">
+            <div class="col-12 px-lg-5">
+              <div id="infographic" class="row px-lg-4">
                 <div class="col-12 col-md-6 col-xl-3 text-center text-lg-start mb-5 mb-xl-0">
                   <div class="card border-0 bg-transparent text-center">
                     <div class="card-body">
@@ -482,6 +557,13 @@
             <p class="text-lteal mb-4"><i class="bi bi-phone text-lteal fs-6 me-2"></i>+639 129 234 2348</p>
             <p class="text-lteal mb-4"><a class="text-lteal" href="mailto:agromedika@gmail.com"><i class="bi bi-envelope text-lteal fs-6 me-2"></i>agromedika@gmail.com</a></p>
              
+            <div class="d-flex flex-row gap-4 justify-content-center justify-content-lg-start">
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-linkedin"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-youtube"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-twitter"></i></a>
+            </div>
             
           </div>
           <div class="col-12 col-lg-3 text-center text-lg-start mt-5 mt-lg-0">
@@ -492,14 +574,27 @@
         </div>
         <div class="row pb-2">
           <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-lg-center">
-            <p class="text-center text-lg-start"><span class="small text-lteal">Copyright © 2024 All rights reserved.</span>&nbsp; <a target="_blank" href="#!" class="text-lteal small">Privacy Policy</a> &nbsp;<a target="_blank" href="#!" class="text-lteal small">Terms and Conditions</a></p>
+            <div class="mt-lg-3 order-2 order-lg-1 mt-3">
+              <p class="text-center text-lg-start"><span class="small text-lteal">Copyright © 2024 All rights reserved.</span>&nbsp; <a target="_blank" href="#!" class="text-lteal small">Privacy Policy</a> &nbsp;<a target="_blank" href="#!" class="text-lteal small">Terms and Conditions</a></p>
+            </div>
 
-            <div class="d-flex flex-row gap-4 justify-content-center justify-content-lg-start">
-              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-linkedin"></i></a>
-              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-facebook"></i></a>
-              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-youtube"></i></a>
-              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-instagram"></i></a>
-              <a target="_blank" href="#!" class="text-decoration-none text-lteal fs-5"><i class="bi bi-twitter"></i></a>
+            <div id="cert_logo" class="order-1 order-lg-2 d-flex flex-row gap-3 justify-content-center justify-content-lg-start align-items-lg-center mb-lg-2">
+              <div>
+                <img src="assets/imgs/GMP_Certified.png" alt="">
+              </div>
+
+              <div>
+                <img src="assets/imgs/occp2.png" alt="">
+              </div>
+
+              <div>
+                <img src="assets/imgs/Halal.png" alt="">
+              </div>
+
+              <div>
+                <img src="assets/imgs/HACCP.png" alt="">
+              </div>
+
             </div>
           </div>
         </div>
