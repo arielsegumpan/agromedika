@@ -307,3 +307,134 @@ INFO GRAPHIC
           </div>
         </div>
       </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Coconut Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Sunflower Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Lemon Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Sesame Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Pili Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Coconut Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Sunflower Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Lemon Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#!" class="text-decoration-none">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/pdf view/PNG/product-catalogue.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="flex-grow-1 ms-2 ms-lg-3">
+                      <div class="text-secondary">Sesame Oil</div>
+                    </div>
+                  </div>
+                </a>
+              </div>

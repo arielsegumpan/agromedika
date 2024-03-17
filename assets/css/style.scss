@@ -611,7 +611,13 @@ header{
                 //     }
                 // }
             }
-
+            .card{
+                .prod-title{
+                    small{
+                        font-size: .9em!important;
+                    }
+                }
+            }
             // .col-12:nth-child(1){
             //     img{
             //         width: 100%;
@@ -638,12 +644,13 @@ header{
                                 z-index: 2;
                                 top: 10%;
                                 left: 10%;
-
+                                position: relative;
                                 h2, small {
                                     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add your desired shadow values here */
                                 }
                                 
                                 a{
+                                   position: relative;
                                     small{
                                         i{
                                             transition: .8s ease;
@@ -658,8 +665,8 @@ header{
                                         }
                                     }
                                 }
-                                  
                             }
+
                         }
                     }
                 }
@@ -1179,6 +1186,58 @@ header{
                     object-fit: cover;
                 }
             }
+
+
+            div#nav-tabContent{
+                swiper-container {
+                    width: 100%;
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    swiper-slide {
+                        text-align: center;
+                        font-size: 8px;
+                        background: transparent!important;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: cover;
+                        background-position: center;
+
+                    }
+                  
+                    swiper-slide img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }   
+                }
+
+                .mySwiper { 
+                    height: 80%;
+                    width: 100%;
+                }
+              
+                .mySwiper2 {
+                    height: 20%;
+                    box-sizing: border-box;
+                    padding: 10px 0;
+                }
+              
+                .mySwiper2 swiper-slide {
+                    width: 25%;
+                    height: 80px;
+                    opacity: 0.4;
+                    transition: .5s ease;
+                }
+              
+                .mySwiper2 .swiper-slide-thumb-active {
+                    opacity: 1;
+                }
+            }
+
         }
         section#custom-content{
             padding: 0 0 5rem 0;
@@ -1235,12 +1294,23 @@ header{
                 }
             }
         }
+
+        // PHARMACEIUTICALS
+        section#product_cat{
+            padding: 6rem 0;
+            img{
+                width:70px;
+                height: 70px;
+                object-fit: cover;
+                background: cover/center no-repeat;
+            }
+        }
     } 
 
     footer{
        
         .row:nth-child(1){
-            padding: 6rem 0 4rem 0;
+            padding: 6rem 0 2rem 0;
         }
 
         .footer-logo{
@@ -1251,6 +1321,7 @@ header{
         }
 
         #cert_logo{
+            padding: 2rem 0 2rem 0;
             img{
                 width: auto;
                 height: 70px;
@@ -1692,6 +1763,22 @@ header{
                     height: 300px;
                 }
             }
+
+           div#nav-tabContent{
+            .mySwiper { 
+                height: 50%;
+                width: 100%;
+            }
+
+            .mySwiper2 swiper-slide {
+                width: 25%;
+                height: 110px;
+                opacity: 0.4;
+                transition: .5s ease;
+            }
+
+           }
+          
         }
 
         section#blog.single_blog{
@@ -1703,6 +1790,28 @@ header{
         }
     }
 
+    
+    footer{
+       
+        .row:nth-child(1){
+            padding: 6rem 0 1rem 0;
+        }
+
+        .footer-logo{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        #cert_logo{
+            padding: 2rem 0 0 0;
+            img{
+                width: auto;
+                height: 105px;
+            }
+        }
+    }
  }
 
 // Medium devices (tablets, 768px and up)
@@ -1735,7 +1844,7 @@ header{
         // }
 
         section#jumbotron{
-            padding: 8rem 0 0rem 0;
+            padding: 6rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
             img{
@@ -1888,8 +1997,8 @@ header{
 
                             .carous_caption{
                                 z-index: 2;
-                                top: 10%;
-                                left: 10%;
+                                top: 8%;
+                                left: 6%;
                             }
                         }
                     }
@@ -2161,7 +2270,16 @@ header{
                 .card{
                     width: 80%;
                 }
+                swiper-container {
+                    swiper-slide {
+                        height: 500px;
+                    }
+                }
+                .mySwiper2 swiper-slide {
+                    height: 150px;
+                }
             }
+
         }
         section#custom-content{
             padding: 0 0 6rem 0;
@@ -2176,6 +2294,32 @@ header{
 
         section#error{
             padding: 9rem 0 7rem 0;
+        }
+        section#product_cat{
+            padding: 7rem 0;
+          
+        }
+    }
+
+    footer{
+       
+        .row:nth-child(1){
+            padding: 6rem 0 2rem 0;
+        }
+
+        .footer-logo{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        #cert_logo{
+            padding: 2rem 0 2rem 0;
+            img{
+                width: auto;
+                height: 140px;
+            }
         }
     }
  }
@@ -2201,14 +2345,7 @@ header{
             //     padding-bottom: 1.25rem;
             // } 
 
-            .dropend:hover > .dropdown-menu{
-                position: absolute;
-                top: 0;
-                left: 100%;
-              }
-              .dropend .dropdown-toggle{
-                margin-left: .5em;
-              }
+           
         }
     }
     main{
@@ -2415,7 +2552,7 @@ header{
                     .carousel-inner{
                         .carousel-item{
                             position: relative;
-                            height: 450px;
+                            height: 400px;
                             img{
                                 height: 450px;
                             }
@@ -2423,7 +2560,7 @@ header{
                             .carous_caption{
                                 z-index: 2;
                                 top: 10%;
-                                left: 10%;
+                                left: 6%;
                             }
                         }
                     }
@@ -2460,7 +2597,7 @@ header{
         }
 
         section#newsupdate{
-            padding: 5rem 0;
+            padding:6rem 0;
 
             .row.row-cols-lg-2{
                 img{
@@ -2680,6 +2817,16 @@ header{
                 .card{
                     width: 80%;
                 }
+
+                swiper-container {
+                    swiper-slide {
+                        height:350px;
+                    }
+                }
+
+                .mySwiper2 swiper-slide {
+                    height: 90px;
+                }
             }
         }
 
@@ -2689,6 +2836,33 @@ header{
 
         section#error{
             padding: 9rem 0 7rem 0;
+        }
+
+        section#product_cat{
+            padding: 8rem 0;
+          
+        }
+    }
+
+    footer{
+       
+        .row:nth-child(1){
+            padding: 6rem 0 2rem 0;
+        }
+
+        .footer-logo{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        #cert_logo{
+            padding: 1rem 0 0 0;
+            img{
+                width: auto;
+                height: 100px;
+            }
         }
     }
  }
@@ -2706,7 +2880,7 @@ header{
         nav{
             a.navbar-brand{
                 img{
-                    height: 90px;
+                    height: 80px;
                 }
             }
 
@@ -2716,6 +2890,15 @@ header{
         //    div.d-flex.flex-row{
         //         padding-bottom: 1.25rem;
         //     }
+
+            .dropend:hover > .dropdown-menu{
+                position: absolute;
+                top: 0;
+                left: 100%;
+            }
+            .dropend .dropdown-toggle{
+                margin-left: .5em;
+            }
         }
     }
     a{
@@ -2773,7 +2956,7 @@ header{
         // }
 
         section#jumbotron{
-            padding: 8rem 0 0rem 0;
+            padding: 6.5rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
             img{
@@ -3057,9 +3240,13 @@ header{
                             .carous_caption{
                                 z-index: 2;
                                 top: 10%;
-                                left: 10%;
+                                left: 5%;
                             }
                         }
+                    }
+
+                    .carousel-control-prev, .carousel-control-next{
+                        width: 10%;
                     }
                 }
             }
@@ -3470,6 +3657,29 @@ header{
                 .card{
                     width: 70%;
                 }
+
+                swiper-container {
+                    swiper-slide {
+                        height: 400px;
+                    }
+                }
+
+                
+                .mySwiper {
+
+                    swiper-slide:hover{
+                        cursor: zoom-in;
+                    }
+                }
+              
+                .mySwiper2 {
+                    swiper-slide:hover{
+                        cursor:pointer;
+                    }
+                }
+                .mySwiper2 swiper-slide {
+                    height: 100px;
+                }
             }
         }
         section#custom-content{
@@ -3485,13 +3695,17 @@ header{
         section#error{
             padding: 12rem 0 10rem 0;
         }
+
+        section#product_cat{
+            padding: 10rem 0;
+        }
     }
 
 
     footer{
        
         .row:nth-child(1){
-            padding: 10rem 0 8rem 0;
+            padding: 10rem 0 3rem 0;
         }
 
         .footer-logo{
@@ -3506,9 +3720,10 @@ header{
         }
 
         #cert_logo{
+            padding: 0;
             img{
                 width: auto;
-                height: 60px;
+                height: 100px;
             }
         }
     }
@@ -3602,18 +3817,18 @@ header{
         // }
 
         section#jumbotron{
-            padding: 9rem 0 10rem 0;
+            padding: 7.5rem 0 10rem 0;
            .jumb-wrap{
             width: 100%;
             img{
                 width: 100%;
-                height: 500px;
+                height: 550px;
             }
 
             #content-wrap{
                 position: absolute;
                 top: 50%;
-                left: 5%;
+                left: 7%;
                 transform: translateY(-50%);
             }
            }
@@ -4191,6 +4406,65 @@ header{
                 .card{
                     width: 70%;
                 }
+
+
+                swiper-container {
+                    width: 100%;
+                    height:300px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    swiper-slide {
+                        text-align: center;
+                        font-size: 8px;
+                        background: transparent!important;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: cover;
+                        background-position: center;
+                        overflow: hidden;
+                        height: 450px;
+                    }
+                  
+                    swiper-slide img {
+                        display: block;
+                        width: 100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                   
+                }
+
+               
+                .mySwiper {
+                    height:10%;
+                    width: 100%;
+
+                    swiper-slide:hover{
+                        cursor: zoom-in;
+                    }
+                }
+              
+                .mySwiper2 {
+                    height: 20%;
+                    box-sizing: border-box;
+                    padding: 10px 0;
+
+                    swiper-slide:hover{
+                        cursor:pointer;
+                    }
+                }
+              
+                .mySwiper2 swiper-slide {
+                    width: 25%;
+                    height: 110px;
+                    opacity: 0.4;
+                }
+              
+                .mySwiper2 .swiper-slide-thumb-active {
+                    opacity: 1;
+                }
             }
         }
 
@@ -4210,7 +4484,7 @@ header{
     footer{
        
         .row:nth-child(1){
-            padding: 10rem 0 8rem 0;
+            padding: 10rem 0 3rem 0;
         }
 
         .footer-logo{
@@ -4223,7 +4497,7 @@ header{
         #cert_logo{
             img{
                 width: auto;
-                height: 70px;
+                height: 120px;
             }
         }
     }
