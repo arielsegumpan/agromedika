@@ -30,7 +30,12 @@ $dropdown-bg: $lteal!default;
 // $input-border-radius:  100px!default;
 $dropdown-link-active-bg:  $prim!default;
 $dropdown-link-active-color: $lteal!important;
- 
+
+$form-check-input-checked-bg-color: $prim;
+$form-check-input-checked-border-color: $prim;
+
+$table-striped-bg: rgba($prim, .05); 
+
 $theme-colors:(
     "primary": $prim,
     "secondary" : $sec,
@@ -77,6 +82,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/close";
 @import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/tables";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../node_modules/bootstrap/scss/utilities/api";

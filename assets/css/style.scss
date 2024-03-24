@@ -314,7 +314,7 @@ header{
         // }
 
         section#jumbotron{
-            padding: 8rem 0 0rem 0;
+            padding: 6rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
             img{
@@ -458,23 +458,90 @@ header{
         
         }
 
-        section#jumbotron-product{
-            height:80svh;
-            width: 100%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
+
+        section#blog_jumb{
+            padding: 6rem 0 0 0;
+            img.single-blog-img{
+                height: 65svh;
+                object-fit: cover;
+                background: cover/center no-repeat;
+                z-index: -3;
+            }
+
             .container{
-                position: relative;
-                height: 80svh;
-                z-index: 1;
-                .col-12{
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-80%);
-                }
+                z-index: 2;
+            }
+            .jumb-overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 0;
+                background: linear-gradient(14deg, rgba(238,255,245,0.1758754527201506) 0%, rgba(233,255,243,0.5792367972579657) 100%);
+            }
+        }
+
+        section#blog_jumb_2{
+            padding: 6rem 0 0 0;
+            img.single-blog-img{
+                height: 50svh;
+                object-fit: cover;
+            }
+            .container{
+                z-index: 2;
+            }
+            .jumb-overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 0;
+                background: linear-gradient(14deg, rgba(238,255,245,0.1758754527201506) 0%, rgba(233,255,243,0.5792367972579657) 100%);
+            }
+        }
+
+        section#jumbotron-product{
+            width: 100%;
+            
+            // .container{
+            //     position: relative;
+            //     height: 80svh;
+            //     z-index: 1;
+            //     .col-12{
+            //         position: absolute;
+            //         top: 50%;
+            //         transform: translateY(-80%);
+            //     }
+            // }
+
+            .container{
+                left: 50%;
+                height: 50%;
+                transform: translate(-50%, -87%);
+                z-index: 2;
+            }
+            img.comp-jumb-img{
+                height: 70svh;
+                width: 100%;
+                object-fit: cover;
+                opacity: .4;
+            }
+            .jumb-overlay{
+                position: absolute;
+                width: 100%;
+                height: 70svh;
+                overflow: hidden;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 0;
+                background: linear-gradient(14deg, rgba(238,255,245,0.1758754527201506) 0%, rgba(233,255,243,0.5792367972579657) 100%);
             }
 
             .l-realise-slider-card-block {
@@ -540,7 +607,7 @@ header{
               }
         
         }
-     
+
         section#about{
             padding: 5rem 0;
             // .about-imgs{
@@ -675,9 +742,23 @@ header{
     
         section#grow{
             position: relative;
-            padding: 6rem 0;
-            background-blend-mode: screen;
-            background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+           // padding: 6rem 0;
+            // background-blend-mode: screen;
+            // background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+
+            img{
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+                opacity: .5;
+            }
+
+            .container{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
         }
 
         // section#certificate{
@@ -695,8 +776,9 @@ header{
                 .card-body{
                     .num-wrap{
                         img{
-                            width: auto;
+                            width: 100px;
                             height: 100px;
+                            object-fit: cover;
                         }
                     }
                 //  .cont-img{
@@ -717,57 +799,73 @@ header{
         section#newsupdate{
             padding: 5rem 0;
 
-            .row.row-cols-lg-2{
+            // .row.row-cols-lg-2{
+            //     img{
+            //         width: 100%;
+            //         height: 100%;
+            //         object-fit: cover;
+            //         background: center/cover no-repeat;
+            //     }
+            //     .col:nth-child(1){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(2){
+            //         height: auto;
+            //     }
+            //     .col:nth-child(3){
+            //         height: 160px;
+            //     }
+            //     .col:nth-child(4){
+            //         height: 160px;
+            //     }
+            // }
+            .row.blog-display{
                 img{
                     width: 100%;
-                    height: 100%;
                     object-fit: cover;
                     background: center/cover no-repeat;
-                }
-                .col:nth-child(1){
-                    height: 300px;
-                }
-                .col:nth-child(2){
-                    height: auto;
-                }
-                .col:nth-child(3){
-                    height: 160px;
-                }
-                .col:nth-child(4){
-                    height: 160px;
+                    height: 220px;
                 }
             }
+            
         }
 
         // ABOUT PAGE
         section#who{
-            padding:0 0 5rem 0;
+            padding:5rem 0 5rem 0;
 
-            .who-imgs{
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                    background: center/cover no-repeat;
-                }
-                .col-12{
-                    img{
-                        height: 250px;
-                        background-size: cover;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
+            // .who-imgs{
+            //     img{
+            //         width: 100%;
+            //         object-fit: cover;
+            //         background: center/cover no-repeat;
+            //     }
+            //     .col-12{
+            //         img{
+            //             height: 250px;
+            //             background-size: cover;
+            //             object-fit: cover;
+            //             background-repeat: no-repeat;
+            //         }
+            //     }
 
-                .who-img.col{
-                   img{
-                    height: 150px;
-                   }
-                }
+            //     .who-img.col{
+            //        img{
+            //         height: 150px;
+            //        }
+            //     }
         
+            // }
+ 
+
+            .who-img{
+                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 240px;
             }
-
-
-            
         }
         section#company-info{
             padding: 5rem 0;
@@ -1142,8 +1240,6 @@ header{
                 }
             }
 
-          
-
             .card{
                 transition: .8s ease;
                 width: 100%;
@@ -1180,8 +1276,8 @@ header{
 
             .prod-img{
                 img{
-                    width: 100%;
-                    height: 200px;
+                    width: 300px;
+                    height: 250px;
                     background: center/cover no-repeat;
                     object-fit: cover;
                 }
@@ -1207,34 +1303,53 @@ header{
 
                     }
                   
-                    swiper-slide img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }   
+                    swiper-slide figure
+                    {
+                        height: 300px;
+                        img {
+                            display: block;
+                            width: 100%;
+                            height:300px;
+                            object-fit: cover;
+                        }
+                        figcaption{
+                            font-size: .8rem!important;
+
+                        }
+                    }
+
+                    swiper-slide figure:hover{
+                        cursor: zoom-in;
+                    }
                 }
 
                 .mySwiper { 
-                    height: 80%;
+                    height:auto;
                     width: 100%;
+                    swiper-slide{
+                        height: 325px;
+                    }
                 }
-              
+
                 .mySwiper2 {
                     height: 20%;
                     box-sizing: border-box;
                     padding: 10px 0;
                 }
               
-                .mySwiper2 swiper-slide {
-                    width: 25%;
+                .mySwiper2 swiper-slide img {
+                    width:100%;
                     height: 80px;
                     opacity: 0.4;
                     transition: .5s ease;
+                    cursor: pointer;
+                    object-fit: cover;
                 }
               
                 .mySwiper2 .swiper-slide-thumb-active {
-                    opacity: 1;
+                    img{
+                        opacity: 1!important;
+                    }
                 }
             }
 
@@ -1305,6 +1420,10 @@ header{
                 background: cover/center no-repeat;
             }
         }
+
+        section#prod_cat_pharm{
+            padding: 6rem 0;
+        }
     } 
 
     footer{
@@ -1321,10 +1440,10 @@ header{
         }
 
         #cert_logo{
-            padding: 2rem 0 2rem 0;
+            padding: 0;
             img{
                 width: auto;
-                height: 70px;
+                height: 75px;
             }
         }
     }
@@ -1445,25 +1564,34 @@ header{
         section#jumbotron-product{
             height: 120svh;
             width: 100%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            // overflow: hidden;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            // position: relative;
+            // .container{
+            //     position: relative;
+            //     height: $maxHeightSVH;
+            //     .col-12{
+            //         position: absolute;
+            //         top: 50%;
+            //         transform: translateY(55%);
+            //     }
+            // }
+
+            // .jumb-overlay{
+            //     height: 140svh;
+            // }
+
             .container{
-                position: relative;
-                height: $maxHeightSVH;
-                .col-12{
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(55%);
-                }
+                transform: translate(-50%, -85%);
             }
-
+            img.comp-jumb-img{
+                height: 120svh;
+            }
             .jumb-overlay{
-                height: 140svh;
+                height: 120svh;
             }
-
             
             .l-realise-slider-card-block {
                 -webkit-perspective: 800px;
@@ -1482,6 +1610,20 @@ header{
                 transform: translate(-50%, -50%);
                 width: 450px;
               }
+        }
+
+        section#blog_jumb{
+            padding: 6rem 0 0 0;
+            img.single-blog-img{
+                height: 100svh;
+            }
+        }
+
+        section#blog_jumb_2{
+            padding: 6rem 0 0 0;
+            img.single-blog-img{
+                height: 95svh;
+            }
         }
     
         section#about{
@@ -1553,33 +1695,44 @@ header{
         section#newsupdate{
             padding: 6rem 0;
 
-            .row.row-cols-lg-2{
-                .col:nth-child(3){
-                    height: 190px;
-                }
-                .col:nth-child(4){
-                    height: 190px;
+            // .row.row-cols-lg-2{
+            //     .col:nth-child(3){
+            //         height: 190px;
+            //     }
+            //     .col:nth-child(4){
+            //         height: 190px;
+            //     }
+            // }
+
+            .row.blog-display{
+                img{
+                    height: 270px;
                 }
             }
+            
         }
 
         // ABOUT PAGE
         section#who{
-            padding:0 0 6rem 0;
-            .who-imgs{
-                .col-12{
-                    img{
-                        height: 260px;
-                    }
-                }
+            padding:6rem 0 6rem 0;
+            // .who-imgs{
+            //     .col-12{
+            //         img{
+            //             height: 260px;
+            //         }
+            //     }
 
-                .who-img.col{
-                    img{
-                     height: 160px;
-                    }
-                 }
+            //     .who-img.col{
+            //         img{
+            //          height: 160px;
+            //         }
+            //      }
          
+            // }
+            .who-img{
+                height: 300px;
             }
+            
         }
         section#company-info{
             padding: 6rem 0;
@@ -1760,23 +1913,37 @@ header{
 
             .prod-img{
                 img{
-                    height: 300px;
+                    height: 250px;
                 }
             }
 
            div#nav-tabContent{
-            .mySwiper { 
-                height: 50%;
+            swiper-container {
+                swiper-slide figure
+                {
+                    height: 370px;
+                    img {
+                        height:370px;
+                    }
+                }
+            }
+
+            .mySwiper {
                 width: 100%;
+                swiper-slide{
+                    height: 395px;
+                }
             }
-
-            .mySwiper2 swiper-slide {
-                width: 25%;
+          
+            .mySwiper2 swiper-slide img {
                 height: 110px;
-                opacity: 0.4;
-                transition: .5s ease;
             }
-
+          
+            .mySwiper2 .swiper-slide-thumb-active {
+                img{
+                    opacity: 1!important;
+                }
+            }
            }
           
         }
@@ -1787,6 +1954,10 @@ header{
 
         section#error{
             padding: 9rem 0 6rem 0;
+        }
+
+        section#prod_cat_pharm{
+            padding: 6rem 0;
         }
     }
 
@@ -1895,22 +2066,34 @@ header{
         }
 
         section#jumbotron-product{
-            height: 50svh;
-            width: 100%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            // height: 50svh;
+            // width: 100%;
+            // overflow: hidden;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            // position: relative;
+            // .container{
+            //     position: relative;
+            //     height: 50svh;
+            //     .col-12{
+            //         position: absolute;
+            //         top: 50%;
+            //         transform: translateY(50%);
+            //     }
+            // } 
+            
+            height: 55svh;
             .container{
-                position: relative;
-                height: 50svh;
-                .col-12{
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(50%);
-                }
-            }   
+                transform: translate(-50%, -90%);
+            }
+
+            img.comp-jumb-img{
+                height: 55svh;
+            }
+            .jumb-overlay{
+                height: 100%;
+            }
             
             .l-realise-slider-card-block {
                 -webkit-perspective: 800px;
@@ -1966,6 +2149,21 @@ header{
 
         }
     
+        section#blog_jumb{
+            padding: 6rem 0 0 0;
+            img.single-blog-img{
+                height: 40svh;
+            }
+        }
+
+        section#blog_jumb_2{
+            padding: 6rem 0 0 0;
+            img.single-blog-img{
+                height: 40svh;
+            }
+        }
+
+
         section#about{
             padding: 6rem 0;
         }
@@ -2035,43 +2233,54 @@ header{
         }
 
         section#newsupdate{
-            padding: 5rem 0;
+            padding: 6.5rem 0;
 
-            .row.row-cols-lg-2{
+            // .row.row-cols-lg-2{
+            //     img{
+            //         width: 100%;
+            //         height: 100%;
+            //     }
+            //     .col:nth-child(1){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(2){
+            //         height: auto;
+            //     }
+            //     .col:nth-child(3){
+            //         height: 190px;
+            //     }
+            //     .col:nth-child(4){
+            //         height: 190px;
+            //     }
+            // }
+
+            .row.blog-display{
                 img{
-                    width: 100%;
-                    height: 100%;
-                }
-                .col:nth-child(1){
-                    height: 300px;
-                }
-                .col:nth-child(2){
-                    height: auto;
-                }
-                .col:nth-child(3){
-                    height: 190px;
-                }
-                .col:nth-child(4){
-                    height: 190px;
+                    height: 220px;
                 }
             }
         }
 
+
          // ABOUT PAGE
          section#who{
-            padding:2rem 0 6rem 0;
-            .who-imgs{
-                .col-12{
-                    img{
-                        height: 260px;
-                    }
-                }
+            padding:6rem 0 6rem 0;
+            // .who-imgs{
+            //     .col-12{
+            //         img{
+            //             height: 260px;
+            //         }
+            //     }
 
-                .who-img.col{
-                    img{
-                     height: 220px;
-                    }
-                 }
+            //     .who-img.col{
+            //         img{
+            //          height: 220px;
+            //         }
+            //      }
+            // }
+
+            .who-img{
+                height: 360px;
             }
         }
         section#company-info{
@@ -2262,7 +2471,7 @@ header{
 
             .prod-img{
                 img{
-                    height: 350px;
+                    height: 260px;
                 }
             }
             
@@ -2270,12 +2479,25 @@ header{
                 .card{
                     width: 80%;
                 }
+                
                 swiper-container {
-                    swiper-slide {
-                        height: 500px;
+                    swiper-slide figure
+                    {
+                        height: 460px;
+                        img {
+                            height:460px;
+                        }
                     }
                 }
-                .mySwiper2 swiper-slide {
+    
+                .mySwiper {
+                    width: 100%;
+                    swiper-slide{
+                        height: 485px;
+                    }
+                }
+              
+                .mySwiper2 swiper-slide img {
                     height: 150px;
                 }
             }
@@ -2298,6 +2520,10 @@ header{
         section#product_cat{
             padding: 7rem 0;
           
+        }
+
+        section#prod_cat_pharm{
+            padding: 6rem 0;
         }
     }
 
@@ -2374,7 +2600,7 @@ header{
         // }
 
         section#jumbotron{
-            padding: 8rem 0 0rem 0;
+            padding: 7rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
             img{
@@ -2430,23 +2656,34 @@ header{
         }
     
         section#jumbotron-product{
-            height: 60svh;
-            width: 100%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            height: 80svh;
+            // width: 100%;
+            // overflow: hidden;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            // position: relative;
+            // .container{
+            //     position: relative;
+            //     height: 60svh;
+            //     .col-12{
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         transform: translate(-50%, -50%);
+            //     }
+            // }  
+            
             .container{
-                position: relative;
-                height: 60svh;
-                .col-12{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }   
+                transform: translate(-50%, -90%);
+            }
+            img.comp-jumb-img{
+                height: 80svh;
+            }
+            .jumb-overlay{
+                height: 100%;
+            }
+
             
             .l-realise-slider-card-block {
                 -webkit-perspective: 800px;
@@ -2500,6 +2737,20 @@ header{
                 height: auto;
               }
 
+        }
+
+        section#blog_jumb{
+            padding: 7.2rem 0 0 0;
+            img.single-blog-img{
+                height: 50svh;
+            }
+        }
+
+        section#blog_jumb_2{
+            padding: 7.2rem 0 0 0;
+            img.single-blog-img{
+                height: 53svh;
+            }
         }
 
 
@@ -2599,35 +2850,45 @@ header{
         section#newsupdate{
             padding:6rem 0;
 
-            .row.row-cols-lg-2{
+            // .row.row-cols-lg-2{
+            //     img{
+            //         width: 100%;
+            //         height: 100%;
+            //     }
+            //     .col:nth-child(1){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(2){
+            //         height: auto;
+            //     }
+            //     .col:nth-child(3){
+            //         height: 190px;
+            //     }
+            //     .col:nth-child(4){
+            //         height: 190px;
+            //     }
+            // }
+
+            .row.blog-display{
                 img{
-                    width: 100%;
-                    height: 100%;
-                }
-                .col:nth-child(1){
-                    height: 300px;
-                }
-                .col:nth-child(2){
-                    height: auto;
-                }
-                .col:nth-child(3){
-                    height: 190px;
-                }
-                .col:nth-child(4){
-                    height: 190px;
+                    height: 220px;
                 }
             }
         }
 
          // ABOUT PAGE
          section#who{
-            padding: 6rem 0;
-            .who-imgs{
-                .col-12{
-                    img{
-                        height: 260px;
-                    }
-                }
+            padding: 7rem 0;
+            // .who-imgs{
+            //     .col-12{
+            //         img{
+            //             height: 260px;
+            //         }
+            //     }
+            // }
+
+            .who-img{
+                height: 400px;
             }
         }
         section#company-info{
@@ -2809,7 +3070,7 @@ header{
 
             .prod-img{
                 img{
-                    height: 360px;
+                    height: 280px;
                 }
             }
             
@@ -2819,13 +3080,24 @@ header{
                 }
 
                 swiper-container {
-                    swiper-slide {
-                        height:350px;
+                    swiper-slide figure
+                    {
+                        height: 350px;
+                        img {
+                            height:350px;
+                        }
                     }
                 }
-
-                .mySwiper2 swiper-slide {
-                    height: 90px;
+    
+                .mySwiper {
+                    width: 100%;
+                    swiper-slide{
+                        height: 375px;
+                    }
+                }
+              
+                .mySwiper2 swiper-slide img {
+                    height: 80px;
                 }
             }
         }
@@ -2841,6 +3113,10 @@ header{
         section#product_cat{
             padding: 8rem 0;
           
+        }
+
+        section#prod_cat_pharm{
+            padding: 8rem 0;
         }
     }
 
@@ -3090,23 +3366,37 @@ header{
         
         section#jumbotron-product{
             height: 70svh;
-            width: 100%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            .container{
-                position: relative;
-                height: 70svh;
-                .col-12{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }   
+            // width: 100%;
+            // overflow: hidden;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            // position: relative;
+            // .container{
+            //     position: relative;
+            //     height: 70svh;
+            //     .col-12{
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         transform: translate(-50%, -50%);
+            //     }
+            // }   
             
+
+            .container{
+                transform: translate(-50%, -120%);
+            }
+            img.comp-jumb-img{
+                height: 80svh;
+            }
+            .jumb-overlay{
+                height: 100%;
+            }
+
+
+
+
             .l-realise-slider-card-block {
                 -webkit-perspective: 800px;
                 perspective: 800px;
@@ -3159,6 +3449,21 @@ header{
                 height: auto;
               }
 
+        }
+
+        section#blog_jumb{
+            padding: 6.7rem 0 0 0;
+            img.single-blog-img{
+                height: 73svh;
+            }
+           
+        }
+
+        section#blog_jumb_2{
+            padding: 6.6rem 0 0 0;
+            img.single-blog-img{
+                height: 65svh;
+            }
         }
 
         section#about{
@@ -3254,9 +3559,13 @@ header{
     
         section#grow{
             position: relative;
-            padding: 8rem 0;
-            background-blend-mode: screen;
-            background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+           // padding: 8rem 0;
+            // background-blend-mode: screen;
+            // background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+
+            img{
+                height: 460px;
+            }
         }
 
         // section#certificate{
@@ -3301,24 +3610,30 @@ header{
         section#newsupdate{
             padding: 10rem 0;
 
-            .row.row-cols-2{
+            // .row.row-cols-2{
+            //     img{
+            //         width: 100%;
+            //         height: 100%;
+            //         object-fit: cover;
+            //         background: center/cover no-repeat;
+            //     }
+            //     .col:nth-child(1){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(2){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(3){
+            //         height: 150px;
+            //     }
+            //     .col:nth-child(4){
+            //         height: 150px;
+            //     }
+            // }
+
+            .row.blog-display{
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    background: center/cover no-repeat;
-                }
-                .col:nth-child(1){
-                    height: 300px;
-                }
-                .col:nth-child(2){
-                    height: 300px;
-                }
-                .col:nth-child(3){
-                    height: 150px;
-                }
-                .col:nth-child(4){
-                    height: 150px;
+                    height: 240px;
                 }
             }
         }
@@ -3356,26 +3671,30 @@ header{
         // }
         // ABOUT PAGE
         section#who{
-            padding:2rem 0 10rem 0;
+            padding:10rem 0 10rem 0;
 
-            .who-imgs{
-                img{
-                    width: 100%;
-                }
-                .col-12{
-                    img{
-                        height: 350px;
-                        background-size: cover;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
+            // .who-imgs{
+            //     img{
+            //         width: 100%;
+            //     }
+            //     .col-12{
+            //         img{
+            //             height: 350px;
+            //             background-size: cover;
+            //             object-fit: cover;
+            //             background-repeat: no-repeat;
+            //         }
+            //     }
 
-                .who-img.col{
-                    img{
-                     height: 230px;
-                    }
-                 }
+            //     .who-img.col{
+            //         img{
+            //          height: 230px;
+            //         }
+            //      }
+            // }
+
+            .who-img{
+                height: 500px;
             }
 
 
@@ -3649,7 +3968,7 @@ header{
 
             .prod-img{
                 img{
-                    height:400px;
+                    height:260px;
                 }
             }
             
@@ -3659,25 +3978,23 @@ header{
                 }
 
                 swiper-container {
-                    swiper-slide {
+                    swiper-slide figure
+                    {
                         height: 400px;
+                        img {
+                            height:400px;
+                        }
                     }
                 }
-
-                
+    
                 .mySwiper {
-
-                    swiper-slide:hover{
-                        cursor: zoom-in;
+                    width: 100%;
+                    swiper-slide{
+                        height: 430px;
                     }
                 }
               
-                .mySwiper2 {
-                    swiper-slide:hover{
-                        cursor:pointer;
-                    }
-                }
-                .mySwiper2 swiper-slide {
+                .mySwiper2 swiper-slide img {
                     height: 100px;
                 }
             }
@@ -3697,6 +4014,10 @@ header{
         }
 
         section#product_cat{
+            padding: 10rem 0;
+        }
+
+        section#prod_cat_pharm{
             padding: 10rem 0;
         }
     }
@@ -3893,26 +4214,33 @@ header{
             }
 
         }
+        section#blog_jumb{
+            img.single-blog-img{
+                height: 70svh;
+            }
+           
+        }
 
         section#jumbotron-product{
-            height: 70svh;
-            width: 100%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            .container{
-                position: relative;
-                height: 70svh;
-                .col-12{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }   
+            // width: 100%;
+            // overflow: hidden;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            // position: relative;
             
+            .container{
+                transform: translate(-50%, -160%);
+            }
+            img.comp-jumb-img{
+                height: 90svh;
+            }
+            .jumb-overlay{
+                height: 100%;
+            }
+
+
+
             .l-realise-slider-card-block {
                 -webkit-perspective: 800px;
                 perspective: 800px;
@@ -4033,9 +4361,13 @@ header{
     
         section#grow{
             position: relative;
-            padding: 8rem 0;
-            background-blend-mode: screen;
-            background: rgba(255, 255, 255, 0.5)  center/cover no-repeat  ;
+            //padding: 8rem 0;
+            //background-blend-mode: screen;
+            //background: rgba(255, 255, 255, 0.5)  center/cover no-repeat;
+            img{
+                height: 500px;
+            }
+
         }
 
         section#certificate{
@@ -4080,24 +4412,33 @@ header{
         section#newsupdate{
             padding: 10rem 0;
 
-            .row.row-cols-2{
+            // .row.row-cols-2{
+            //     img{
+            //         width: 100%;
+            //         height: 100%;
+            //         object-fit: cover;
+            //         background: center/cover no-repeat;
+            //     }
+            //     .col:nth-child(1){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(2){
+            //         height: 300px;
+            //     }
+            //     .col:nth-child(3){
+            //         height: 150px;
+            //     }
+            //     .col:nth-child(4){
+            //         height: 150px;
+            //     }
+            // }
+
+            .row.blog-display{
                 img{
                     width: 100%;
-                    height: 100%;
+                    height: 300px;
                     object-fit: cover;
                     background: center/cover no-repeat;
-                }
-                .col:nth-child(1){
-                    height: 300px;
-                }
-                .col:nth-child(2){
-                    height: 300px;
-                }
-                .col:nth-child(3){
-                    height: 150px;
-                }
-                .col:nth-child(4){
-                    height: 150px;
                 }
             }
         }
@@ -4122,26 +4463,31 @@ header{
         }
         // ABOUT PAGE
         section#who{
-            padding:2rem 0 10rem 0;
+            padding:10rem 0 10rem 0;
 
-            .who-imgs{
-                img{
-                    width: 100%;
-                }
-                .col-12{
-                    img{
-                        height: 350px;
-                        background-size: cover;
-                        object-fit: cover;
-                        background-repeat: no-repeat;
-                    }
-                }
+            // .who-imgs{
+            //     img{
+            //         width: 100%;
+            //     }
+            //     .col-12{
+            //         img{
+            //             height: 350px;
+            //             background-size: cover;
+            //             object-fit: cover;
+            //             background-repeat: no-repeat;
+            //         }
+            //     }
 
-                .who-img.col{
-                    img{
-                     height: 230px;
-                    }
-                 }
+            //     .who-img.col{
+            //         img{
+            //          height: 230px;
+            //         }
+            //      }
+            // }
+
+
+            .who-img{
+                height: 500px;
             }
 
 
@@ -4398,7 +4744,7 @@ header{
 
             .prod-img{
                 img{
-                    height:400px;
+                    height:260px;
                 }
             }
             
@@ -4407,64 +4753,27 @@ header{
                     width: 70%;
                 }
 
-
                 swiper-container {
-                    width: 100%;
-                    height:300px;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    swiper-slide {
-                        text-align: center;
-                        font-size: 8px;
-                        background: transparent!important;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-size: cover;
-                        background-position: center;
-                        overflow: hidden;
-                        height: 450px;
+                    swiper-slide figure
+                    {
+                        height: 430px;
+                        img {
+                            height:430px;
+                        }
                     }
-                  
-                    swiper-slide img {
-                        display: block;
-                        width: 100%;
-                        height:100%;
-                        object-fit: cover;
-                    }
-                   
                 }
-
-               
+    
                 .mySwiper {
-                    height:10%;
                     width: 100%;
-
-                    swiper-slide:hover{
-                        cursor: zoom-in;
+                    swiper-slide{
+                        height: 460px;
                     }
                 }
               
-                .mySwiper2 {
-                    height: 20%;
-                    box-sizing: border-box;
-                    padding: 10px 0;
-
-                    swiper-slide:hover{
-                        cursor:pointer;
-                    }
-                }
-              
-                .mySwiper2 swiper-slide {
-                    width: 25%;
+                .mySwiper2 swiper-slide img {
                     height: 110px;
-                    opacity: 0.4;
                 }
-              
-                .mySwiper2 .swiper-slide-thumb-active {
-                    opacity: 1;
-                }
+                
             }
         }
 
@@ -4489,7 +4798,7 @@ header{
 
         .footer-logo{
             img{
-                width: 200px;
+                width: 150px;
                 height: auto;
             }
         }
