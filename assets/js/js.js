@@ -229,6 +229,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // });
 $(document).ready(function () {
 
+  $('figure.wp-block-table').addClass('table-responsive table-striped');
+  $('figure.wp-block-table table').addClass('table align-middle');
+  $('figure.wp-block-table thead tr th').addClass('col');
   nextCard();
   setInterval(nextCard, 5000); 
 

@@ -99,7 +99,9 @@
     </header>
 
     <main>
-      
+      <section id="prod_jumbotron" class="bg-lteal">
+        <div class="jumb-overlay"></div>
+      </section>
       <!-- <section id="no-jumbotron" class="bg-lteal">
         <div class="container">
           <div class="row">
@@ -112,29 +114,36 @@
         <div class="jumb-overlay"></div>
       </section> -->
 
-      <section id="contact" class="bg-lteal">
+      <section id="contact" class="bg-white">
         <div class="container">
             <div class="row">
-              <div class="col-12 col-lg-6 mx-auto position-relative">
-                <div class="card rounded-5 border-0 p-3 p-xl-5 mt-5">
+              <div class="col-12 col-lg-10 mx-auto position-relative">
+                <div class="card rounded-5 border-0 p-3 p-xl-5 mt-5 bg-lteal">
                   <h1 class="fw-bold text-black text-center pt-4">Message Us</h1>
                   <div class="px-3 py-5 p-xl-5">
                     <form action="#!">
                       <div class="row mb-md-4">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
                           <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="name" placeholder="Name*">
                             <label for="name">Name <span class="text-danger">*</span></label>
                           </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
                           <div class="form-floating mb-3">
-                            <input type="phone" class="form-control" id="phone" placeholder="Phone*">
-                            <label for="phone">Phone<span class="text-danger">*</span></label>
+                            <input type="phone" class="form-control" id="phone" placeholder="Mobile Phone*">
+                            <label for="mobilephone">Mobile Phone<span class="text-danger">*</span></label>
                           </div>
                         </div>
+                        <div class="col-12 col-md-4">
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="youremail@gmail.com">
+                            <label for="email">Email Address<span class="text-danger">*</span></label>
+                          </div>
+                        </div>
+                        
                       </div>
-                      <div class="row mb-md-4">
+                      <!-- <div class="row mb-md-4">
                         <div class="col-12 col-md-6">
                           <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="email" placeholder="youremail@gmail.com">
@@ -147,14 +156,21 @@
                             <label for="phone">Phone Number<span class="text-danger">*</span></label>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="row mb-md-4">
-                        <div class="col-12">
+                        <div class="col-12 col-md-6">
+                          <div class="form-floating mb-3">
+                            <input type="phone" class="form-control" id="phone" placeholder="Telephone*">
+                            <label for="Telephone">Telephone Number<span class="text-danger">*</span></label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
                           <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="subject" placeholder="Subject*">
                             <label for="subject">Subject <span class="text-danger">*</span></label>
                           </div>
                         </div>
+                       
                       </div>
                       <div class="row">
                         <div class="col-12">
@@ -171,17 +187,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
-                <div class="map-wrapper pt-lg-5">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.8474368178963!2d122.91041601054606!3d10.59109878950301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aecf6926a1486b%3A0x5c43b6e1055dfe00!2sHerbanext%20Laboratories%2C%20Inc.!5e0!3m2!1sen!2sph!4v1707144132372!5m2!1sen!2sph" width="100%" height="auto" class="rounded-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="mt-4 text-xl-start text-center">
-                  <span><i class="bi bi-geo-alt fs-1 text-primary"></i></span>
-                  <p class="lh-lg text-secondary mb-3">Negros South Road, Bago City, Negros Occidental, Philippines</p>
-                  <p><a class="text-secondary" href="mailto:agromedika@gmail.com">agromedika@gmail.com</a></p>
-                  <p><a href="tel:+63347328106" class="text-secondary">+63 34 732-8106</a></p>
-                </div>
-              </div>
               <!-- <div id="col" class="col-12 col-lg-7 mx-auto text-center mt-5">
                 <span><i class="bi bi-geo-alt fs-1 text-primary"></i></span>
                 <div class="mt-4">
@@ -190,6 +195,19 @@
                   <p><a href="tel:+63347328106" class="text-secondary">+63 34 732-8106</a></p>
                 </div>
               </div> -->
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-10 mx-auto text-center">
+                <div class="map-wrapper pt-lg-5">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.8474368178963!2d122.91041601054606!3d10.59109878950301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aecf6926a1486b%3A0x5c43b6e1055dfe00!2sHerbanext%20Laboratories%2C%20Inc.!5e0!3m2!1sen!2sph!4v1707144132372!5m2!1sen!2sph" width="100%" height="auto" class="rounded-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                  <span><i class="bi bi-geo-alt fs-1 text-primary"></i></span>
+                  <p class="lh-lg text-secondary mb-3">Negros South Road, Bago City, Negros Occidental, Philippines</p>
+                  <p><a class="text-secondary" href="mailto:agromedika@gmail.com">agromedika@gmail.com</a></p>
+                  <p><a href="tel:+63347328106" class="text-secondary">+63 34 732-8106</a></p>
+                </div>
+              </div>
             </div>
         </div>
       </section>
@@ -271,3 +289,7 @@
     <script src="assets/js/js.js"></script>
   </body>
 </html>
+
+
+
+

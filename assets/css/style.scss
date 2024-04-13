@@ -9,9 +9,8 @@ $menu-size: 14px;
 *{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
+    // font-style: normal;
     font-variation-settings:"wdth" 100;
-
 
     #scroll_btn {
         position: absolute;
@@ -188,10 +187,78 @@ header{
     display: block !important;
  }
 
-
+#glt-translate-trigger {
+    border-bottom-left-radius: 10px!important;
+    border-bottom-right-radius: 10px!important;
+}
+#flags {
+    width: auto!important;
+}
 
 
 @media (min-width: 375px) { 
+    div#music{
+        position: absolute;
+        left: 1.5rem;
+        z-index: 999;
+        bottom: 1.25rem;
+        position: fixed;
+        cursor: pointer;
+        width:auto;
+        transition: opacity 0.8s ease;
+        audio{
+            width:50px;
+            opacity: 0;
+            height: 0;
+            transition: 0.5s ease;
+            
+        }
+        audio::-webkit-media-controls-panel{
+            background-color: $lteal;
+        }
+        audio::-webkit-media-controls-mute-button{
+            background-color: $lteal;
+            color: #252a32;
+        }
+        .card{
+            overflow: hidden;
+            small.music_title{
+                opacity: 0;
+                display: none;
+            }
+
+            #audio_btn{
+                justify-content: center;
+
+                i{
+                    animation: blink 2s infinite;
+                }
+
+                @keyframes blink {
+                    0% { color: $lteal; }
+                    100% { color: $prim; }
+                }
+            }
+        }
+    }
+
+    div#music:hover audio{
+        height: 50px;
+        width: 250px;
+        opacity: 1;
+    }
+
+    div#music:hover .card small.music_title{
+        opacity: 1;
+        display: block;
+    }
+    div#music:hover .card #audio_btn {
+        justify-content: start;
+    }
+
+
+
+
     header{
         nav{
             a.navbar-brand{
@@ -239,6 +306,62 @@ header{
         nav.navbar.navbar-expand-xl{
             background: $lteal!important;
 
+            // .search-container {
+            //     position: relative;
+            //     display: inline-block;
+            //     width: 50px;
+            //     vertical-align: bottom;
+            // }
+            
+            // .searchbutton {
+            //     position: absolute;
+            //     width: 100%;
+            //     margin: 0;
+            // }
+            
+            // .search:focus + .searchbutton {
+            //     transition-duration: 0.4s;
+            //     -moz-transition-duration: 0.4s;
+            //     -webkit-transition-duration: 0.4s;
+            //     -o-transition-duration: 0.4s;
+            //     color: black;
+            // }
+            
+            // .search {
+            //     position: absolute;
+            //     left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+            //     background-color: white;
+            //     outline: none;
+            //     border: none;
+
+            //     padding: 0;
+            //     width: 0;
+            //     height: 100%;
+            //     z-index: 10;
+            //     border-radius: 0 .5rem .5rem 0;
+            //     transition-duration: 0.4s;
+            //     -moz-transition-duration: 0.4s;
+            //     -webkit-transition-duration: 0.4s;
+            //     -o-transition-duration: 0.4s;
+            // }
+            
+            // .search:focus {
+            //     width: 550px; /* Bar width+1px */
+            //     padding: 15px 10px 15px 0;
+                
+
+            // }
+            
+            // .expandright {
+            //     // left: auto;
+            //     left: 300px;
+            //     right: unset; /* Button width-1px */
+            // }
+            
+            // .expandright:focus {
+            //     padding: 0 0 0 16px;
+            // }
+
             .search-container {
                 position: relative;
                 display: inline-block;
@@ -266,9 +389,8 @@ header{
                 background-color: white;
                 outline: none;
                 border: none;
-
                 padding: 0;
-                width: 0;
+                width: 0px;
                 height: 100%;
                 z-index: 10;
                 border-radius: 0 .5rem .5rem 0;
@@ -279,21 +401,21 @@ header{
             }
             
             .search:focus {
-                width: 250px; /* Bar width+1px */
+                width: 410px!important; /* Updated width to 700px */
                 padding: 15px 10px 15px 0;
-                
-
+                border: 1px solid $prim;
             }
             
             .expandright {
                 // left: auto;
-                left: 49px;
+                left: 300px;
                 right: unset; /* Button width-1px */
             }
             
             .expandright:focus {
                 padding: 0 0 0 16px;
             }
+            
         }
     }
     // INDEX PAGE
@@ -320,6 +442,7 @@ header{
             img{
                 width: 100%;
                 height: 500px;
+             
             }
             #content-wrap{
                 position: absolute;
@@ -329,35 +452,37 @@ header{
             }
            }
         }
-
+        section#prod_jumbotron{
+            padding:3rem 0;
+        }
 
         section#no-jumbotron{
-            height:60svh;
+            height:55svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: 60svh;
+                height: 55svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-30%);
+                    transform: translateY(-50%);
                 }
             }
         }
 
         section#jumb_custom_ing{
-            height:40svh;
+            height:30svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: 40svh;
+                height: 30svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,60%);
+                    transform: translate(-50%,-50%);
                 }
             }
         }
@@ -466,8 +591,14 @@ header{
                 object-fit: cover;
                 background: cover/center no-repeat;
                 z-index: -3;
+                // opacity: .6;
             }
 
+            #blog-cont{
+                h1, h5{
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+                }
+            }
             .container{
                 z-index: 2;
             }
@@ -530,7 +661,7 @@ header{
                 height: 70svh;
                 width: 100%;
                 object-fit: cover;
-                opacity: .4;
+                // opacity: .4;
             }
             .jumb-overlay{
                 position: absolute;
@@ -561,6 +692,9 @@ header{
                 height: 247px;
                 -webkit-transition: all .4s;
                 transition: all .4s;
+                h1{
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+                }
               }
               
               .card-block-wrap {
@@ -867,6 +1001,7 @@ header{
                 height: 240px;
             }
         }
+
         section#company-info{
             padding: 5rem 0;
 
@@ -882,7 +1017,7 @@ header{
             }
         }
         section#team{
-            padding: 5rem 0 0 0;
+            padding: 5rem 0 1rem 0;
         }
 
         section#yt{
@@ -941,6 +1076,17 @@ header{
                     }
                 }
             }
+
+            img{
+                .who-img{
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 100%;
+                    height: 240px;
+                }
+            }
         }
 
         section#organic{
@@ -988,7 +1134,7 @@ header{
 
        // CONTACT PAGE
        section#contact{
-            padding: 6rem 0;
+            padding: 3rem 0 6rem 0;
 
             .card{
                 transition: .8s ease;
@@ -1035,11 +1181,39 @@ header{
             .map-wrapper{
                 padding: 5rem 0 0 0;
                 iframe{
-                    height: 400px;
+                    height: 300px;
                 }
             }
         }   
 
+        #career_wrapper{
+            padding: 3rem 0 6rem 0;
+
+            .card{
+                .form-floating{
+                    position: relative;
+                    border-bottom: 1px solid rgba($black, .7);
+                    input, textarea{
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        background-color: transparent!important;
+                        border: 0;
+                        color: $black;
+                    }
+                    textarea{
+                        height: 100px;
+                    }
+                    label{
+                        color: $prim;
+                    }
+                    label::after{
+                        background-color: transparent;
+                        color: $prim!important;
+                    }
+                }
+            }
+        }   
         //BLOG PAGE
         section#blog{
             padding: 7rem 0;
@@ -1061,7 +1235,7 @@ header{
             }
             .card:hover{
                 img{
-                    transform:scale(1.25);
+                    transform:scale(1.05);
                 }
             }
         }
@@ -1072,12 +1246,18 @@ header{
         #aside{
             #featured_prod_aside{
                 a{
-                    img{
-                        height: 100px;
-                        width: 100%;
-                        background-position: center;
-                        background-size: cover;
-                        object-fit: cover;
+                    .card{
+                        .card-header{
+                            height: auto;
+                            img{
+                                transform: none;
+                                height: 300px;
+                                width: 100%;
+                                background-position: center;
+                                background-size: cover;
+                                object-fit: cover;
+                            }
+                        }
                     }
                 }
             }
@@ -1107,7 +1287,7 @@ header{
         }
 
          // GRID GALLERY
-         section#main, section#infras-gallery{
+        section#main, section#infras-gallery{
             padding: 5rem 0;
             .container-img {
                 display: grid;
@@ -1166,8 +1346,8 @@ header{
                   }
               }
          }
-         section#main{
-           padding:  2rem 0 6rem 0; 
+        section#main{
+           padding:  0 0 6rem 0; 
            .container-img-pdf {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -1202,9 +1382,9 @@ header{
             background: center/cover no-repeat;
           }
           
-         }
-         section#products-main{ 
-            padding:0 0 5rem 0;
+        }
+        section#products-main{ 
+            padding:5rem 0 5rem 0;
            .cont-prod{
             z-index: 5;
           
@@ -1230,7 +1410,7 @@ header{
         }
 
         section#products-single{
-            padding: 9rem 0 6rem 0;
+            padding: 7rem 0 6rem 0;
 
             div#nav-tab{
                 button.nav-link.active{
@@ -1422,7 +1602,26 @@ header{
         }
 
         section#prod_cat_pharm{
-            padding: 6rem 0;
+            padding: 0 0 6rem 0;
+        }
+
+        section#team{
+            div.team_img{
+                img{
+                    height: 350px;
+                }
+            }
+        }
+
+        // CORE VALUES
+        .core_values{
+            padding: 8rem 0;
+            .d-flex{
+                img{
+                    width: auto;
+                    height: 90px;
+                }
+            }
         }
     } 
 
@@ -1488,14 +1687,14 @@ header{
             .container{
                 height: 80svh;
                 .col-12{
-                    transform: translate(-50%, 40%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
 
 
         section#jumbotron{
-            padding: 8rem 0 0rem 0;
+            padding: 6rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
             img{
@@ -1504,6 +1703,9 @@ header{
             }
            }
 
+        }
+        section#prod_jumbotron{
+            padding: 3rem 0;
         }
         section#no-jumbotron{
             height: 90svh;
@@ -1514,7 +1716,7 @@ header{
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-10%);
+                    transform: translateY(-50%);
                 }
             }
         }
@@ -1798,6 +2000,12 @@ header{
                     }
                 }
             }
+
+            img{
+                .who-img{
+                    height: 300px;
+                }
+            }
         }
 
         section#organic{
@@ -1827,15 +2035,19 @@ header{
 
         // CONTACT PAGE
         section#contact{
-            padding: 6rem 0;
+            padding:4rem 0 6rem 0;
 
             .map-wrapper{
                 padding: 5rem 0 0 0;
                 iframe{
-                    height: 400px;
+                    height: 300px;
                 }
             }
         }
+
+        #career_wrapper{
+            padding: 4rem 0 5rem 0;
+        }   
 
         // BLOG PAGE
         section#blog{
@@ -1854,7 +2066,7 @@ header{
             #featured_prod_aside{
                 a{
                     img{
-                        height: 150px;
+                        height:250px;
                         width: 100%;
                     }
                 }
@@ -1882,7 +2094,7 @@ header{
 
         // GALLERY
         section#main{
-            padding: 3rem 0 6rem 0;
+            padding: 0 0 6rem 0;
             .container-img {
                 grid-template-columns: repeat(2, 1fr);
                 .card-image{
@@ -1901,7 +2113,7 @@ header{
               }
         }
          section#products-main{
-            padding:0 0 5rem 0;
+            padding:6rem 0 6rem 0;
             div.img-wrap{
                 img{
                     height: 250px;
@@ -1957,7 +2169,26 @@ header{
         }
 
         section#prod_cat_pharm{
-            padding: 6rem 0;
+            padding:  0 0 6rem 0;
+        }
+
+        section#team{
+            div.team_img{
+                img{
+                    height: 350px;
+                }
+            }
+        }
+
+        // CORE VALUES
+        .core_values{
+            padding: 10rem 0;
+            .d-flex{
+                img{
+                    width: auto;
+                    height: 110px;
+                }
+            }
         }
     }
 
@@ -2026,26 +2257,30 @@ header{
 
         }
 
+        section#prod_jumbotron{
+            padding: 3rem 0;
+        }
+
         section#jumb_custom_ing{
             height:30svh;
             .container{
                 height: 30svh;
                 .col-12{
-                    transform: translate(-50%, -10%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
 
         section#no-jumbotron{
-            height: 40svh;
+            height: 30svh;
           
             .container{
                 position: relative;
-                height: 40svh;
+                height: 30svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-40%);
+                    transform: translateY(-50%);
                 }
             }
         }
@@ -2295,7 +2530,7 @@ header{
             }
         }
         section#team{
-            padding: 7rem 0 0 0;
+            padding: 7rem 0 1rem 0;
         }
         section#yt{
             margin: 0 0 7rem 0;
@@ -2344,6 +2579,12 @@ header{
                     }
                 }
             }
+
+            img{
+                .who-img{
+                    height: 360px;
+                }
+            }
         }
 
         section#organic{
@@ -2388,10 +2629,14 @@ header{
         #aside{
             #featured_prod_aside{
                 a{
-                    img{
-                        height: 200px;
-                        width: 100%;
+                   .card{
+                    .card-header{
+                        img{
+                            height: 220px;
+                            width: 100%;
+                        }
                     }
+                   }
                 }
             }
         }
@@ -2443,7 +2688,7 @@ header{
           }
         }
         section#products-main{
-            padding:0 0 7rem 0;
+            padding:6rem 0 7rem 0;
             div.img-wrap{
                 img{
                     height: 200px;
@@ -2452,7 +2697,7 @@ header{
         }
 
         section#contact{
-            padding: 7rem 0;
+            padding:5rem 0 7rem 0;
             .map-wrapper{
                 padding: 6rem 0 0 0;
             }
@@ -2466,8 +2711,12 @@ header{
             // }
         }
 
+        #career_wrapper{
+            padding: 5rem 0 6rem 0;
+        }  
+
         section#products-single{
-            padding: 10rem 0 6rem 0;
+            padding: 7rem 0 6rem 0;
 
             .prod-img{
                 img{
@@ -2523,7 +2772,24 @@ header{
         }
 
         section#prod_cat_pharm{
-            padding: 6rem 0;
+            padding:  0 0 6rem 0;
+        }
+        section#team{
+            div.team_img{
+                img{
+                    height: 250px;
+                }
+            }
+        }
+        // CORE VALUES  
+        .core_values{
+            padding: 10rem 0;
+            .d-flex{
+                img{
+                    width: auto;
+                    height: 90px;
+                }
+            }
         }
     }
 
@@ -2609,23 +2875,27 @@ header{
             }
            }
         }
+        
+        section#prod_jumbotron{
+            padding: 3.5rem 0;
+        }
 
         section#jumb_custom_ing{
-            height:40svh;
+            height:35svh;
             .container{
-                height: 40svh;
+                height: 35svh;
                 .col-12{
-                    transform: translate(-50%,-20%);
+                    transform: translate(-50%,-50%);
                 }
             }
         }
 
         section#no-jumbotron{
-            height: 60svh;
+            height: 55svh;
           
             .container{
                 position: relative;
-                height: 60svh;
+                height: 55svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -2742,7 +3012,7 @@ header{
         section#blog_jumb{
             padding: 7.2rem 0 0 0;
             img.single-blog-img{
-                height: 50svh;
+                height: 45svh;
             }
         }
 
@@ -2948,6 +3218,11 @@ header{
                     }
                 }
             }
+            img{
+                .who-img{
+                    height: 400px;
+                }
+            }
         }
 
         section#organic{
@@ -2968,16 +3243,19 @@ header{
 
         // CONTACT PAGE
         section#contact{
-            padding: 8rem 0;
+            padding:6rem 0 8rem 0;
 
             .map-wrapper{
                 padding: unset;
                 iframe{
-                    height: 500px;
+                    height: 250px;
                 }
             }
             
         }
+        #career_wrapper{
+            padding: 6rem 0 7rem 0;
+        }  
         // BLOG PAGE
         section#blog{
             padding: 10rem 0;
@@ -2991,10 +3269,13 @@ header{
         #aside{
             #featured_prod_aside{
                 a{
-                    img{
-                        height: 210px;
-                        width: 100%;
-                    }
+                    .card{
+                        .card-header{
+                            img{
+                                height: 220px;
+                            }
+                        }
+                       }
                 }
             }
         }
@@ -3047,7 +3328,7 @@ header{
               }
          }
          section#products-main{
-            padding:0 0 6rem 0;
+            padding:7rem 0 6rem 0;
             div.img-wrap{
                 img{
                     height:205px;
@@ -3066,7 +3347,7 @@ header{
         }
 
         section#products-single{
-            padding: 10rem 0 6rem 0;
+            padding: 8rem 0 6rem 0;
 
             .prod-img{
                 img{
@@ -3116,7 +3397,24 @@ header{
         }
 
         section#prod_cat_pharm{
-            padding: 8rem 0;
+            padding:  0 0 8rem 0;
+        }
+        section#team{
+            div.team_img{
+                img{
+                    height: 220px;
+                }
+            }
+        }
+        // CORE VALUES  
+        .core_values{
+            padding: 7rem 0;
+            .d-flex{
+                img{
+                    width: auto;
+                    height: 80px;
+                }
+            }
         }
     }
 
@@ -3248,24 +3546,26 @@ header{
             }
            }
         }
-
+        section#prod_jumbotron{
+            padding: 3.25rem 0;
+        }
         section#jumb_custom_ing{
-            height:60svh;
+            height:40svh;
             .container{
-                height: 60svh;
+                height: 40svh;
                 .col-12{
-                    transform: translate(-50%, 0%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
 
         section#no-jumbotron{
-            height: 90svh;
+            height: 50svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: 90svh;
+                height: 50svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -3275,6 +3575,7 @@ header{
             }
         }
 
+        
         section#jumbotron-2, section#product-jumbotron{
             height: 70svh;
             width: 100%;
@@ -3452,9 +3753,9 @@ header{
         }
 
         section#blog_jumb{
-            padding: 6.7rem 0 0 0;
+            padding: 7.5rem 0 0 0;
             img.single-blog-img{
-                height: 73svh;
+                height: 50svh;
             }
            
         }
@@ -3633,19 +3934,19 @@ header{
 
             .row.blog-display{
                 img{
-                    height: 240px;
+                    height: 230px;
                 }
             }
         }
         // ABOUT PAGE
         section#contact{
-            padding: 10rem 0;
+            padding:6rem 0 10rem 0;
 
             
             .map-wrapper{
                 padding: unset;
                 iframe{
-                    height: 500px;
+                    height: 300px;
                 }
             }
             // .card{
@@ -3656,6 +3957,10 @@ header{
             //     padding-top: 29rem;
             // }
         }
+
+        #career_wrapper{
+            padding: 6rem 0 8rem 0;
+        }  
 
         // section#content{
         //     padding: 10rem 0;
@@ -3713,7 +4018,7 @@ header{
         }
 
         section#team{
-            padding: 10rem 0 3rem 0;
+            padding: 10rem 0 6rem 0;
         }
         section#yt{
             margin: 0 0 10rem 0;
@@ -3765,6 +4070,12 @@ header{
                     }
                 }
             }
+
+            img{
+                .who-img{
+                    height: 500px;
+                }
+            }
         }
 
         section#organic{
@@ -3800,7 +4111,7 @@ header{
 
         //BLOG PAGE
         section#blog{
-            padding: 10rem 0;
+            padding: 7rem 0 10rem 0;
             .card{
                 .card-header{
                     height: 220px;
@@ -3946,7 +4257,7 @@ header{
         }
         
         section#products-main{
-            padding: 2rem 0 10rem 0;
+            padding: 9rem 0 10rem 0;
             div.img-wrap{
                 img{
                     width: 100%;
@@ -3964,7 +4275,7 @@ header{
         }
 
         section#products-single{
-            padding: 11rem 0;
+            padding: 8rem 0 9rem 0;
 
             .prod-img{
                 img{
@@ -3995,7 +4306,7 @@ header{
                 }
               
                 .mySwiper2 swiper-slide img {
-                    height: 100px;
+                    height: 85px;
                 }
             }
         }
@@ -4018,11 +4329,28 @@ header{
         }
 
         section#prod_cat_pharm{
-            padding: 10rem 0;
+            padding:  0 0 10rem 0;
         }
+
+        section#team{
+            div.team_img{
+                img{
+                    height: 270px;
+                }
+            }
+        }
+        // CORE VALUES
+        .core_values{
+            padding: 9rem 0;
+            .d-flex{
+                img{
+                    width: auto;
+                    height: 80px;
+                }
+            }
+        }
+
     }
-
-
     footer{
        
         .row:nth-child(1){
@@ -4156,31 +4484,33 @@ header{
         }
 
         section#no-jumbotron{
-            height: 70svh;
+            height: 50svh;
             width: 100%;
           
             .container{
                 position: relative;
-                height: 70svh;
+                height: 50svh;
                 .col-12{
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%, -35%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
 
         section#jumb_custom_ing{
-            height:60svh;
+            height:50svh;
             .container{
-                height: 60svh;
+                height:50svh; 
                 .col-12{
-                    transform: translate(-50%, 10%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
-
+        section#prod_jumbotron{
+            padding: 3.75rem 0;
+        }
         section#jumbotron-2, section#product-jumbotron{
             height: 75svh;
             width: 100%;
@@ -4216,9 +4546,13 @@ header{
         }
         section#blog_jumb{
             img.single-blog-img{
-                height: 70svh;
+                height: 50svh;
             }
            
+        }
+        
+        section#blog_jumb_2{
+            padding: 7.5rem 0 0 0;
         }
 
         section#jumbotron-product{
@@ -4436,7 +4770,7 @@ header{
             .row.blog-display{
                 img{
                     width: 100%;
-                    height: 300px;
+                    height: 280px;
                     object-fit: cover;
                     background: center/cover no-repeat;
                 }
@@ -4444,13 +4778,13 @@ header{
         }
         // ABOUT PAGE
         section#contact{
-            padding: 10rem 0;
+            padding: 6rem 0 10rem 0;
 
             
             .map-wrapper{
                 padding: unset;
                 iframe{
-                    height: 500px;
+                    height: 300px;
                 }
             }
             // .card{
@@ -4461,6 +4795,9 @@ header{
             //     padding-top: 29rem;
             // }
         }
+        #career_wrapper{
+            padding: 6rem 0 8rem 0;
+        }  
         // ABOUT PAGE
         section#who{
             padding:10rem 0 10rem 0;
@@ -4556,6 +4893,12 @@ header{
                     }
                 }
             }
+
+            img{
+                .who-img{
+                    height: 500px;
+                }
+            }
         }
 
         section#organic{
@@ -4606,12 +4949,16 @@ header{
         #aside{
             #featured_prod_aside{
                 a{
-                    img{
-                        height: 150px;
-                        width: 100%;
-                        background-position: center;
-                        background-size: cover;
-                        object-fit: cover;
+                    .card{
+                        .card-header{
+                            img{
+                                height: 290px;
+                                width: 100%;
+                                background-position: center;
+                                background-size: cover;
+                                object-fit: cover;
+                            }
+                        }
                     }
                 }
             }
@@ -4720,7 +5067,7 @@ header{
         }
         
         section#products-main{
-            padding: 0 0 10rem 0;
+            padding: 9rem 0 10rem 0;
             div.img-wrap{
                 overflow: hidden;
                 // border-radius: 1rem;
@@ -4740,7 +5087,7 @@ header{
         }
 
         section#products-single{
-            padding: 11rem 0;
+            padding: 9rem 0;
 
             .prod-img{
                 img{
@@ -4771,7 +5118,7 @@ header{
                 }
               
                 .mySwiper2 swiper-slide img {
-                    height: 110px;
+                    height: 90px;
                 }
                 
             }
@@ -4787,13 +5134,32 @@ header{
         section#error{
             padding: 13rem 0 10rem 0;
         }
+        section#team{
+            div.team_img{
+                img{
+                    height: 350px;
+                }
+            }
+        }
+
+        // CORE VALUES
+        .core_values{
+            padding: 10rem 0;
+            .d-flex{
+                img{
+                    width: auto;
+                    height: 90px;
+                }
+            }
+        }
+
     }
 
 
     footer{
        
         .row:nth-child(1){
-            padding: 10rem 0 3rem 0;
+            padding: 10rem 0 2rem 0;
         }
 
         .footer-logo{
