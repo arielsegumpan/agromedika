@@ -14,8 +14,10 @@ $menu-size: 14px;
 
     #scroll_btn {
         position: absolute;
-        right: 1.5rem;
+        // right: 1.5rem;
+        right: 1.8rem;
         z-index: 999;
+        // bottom: 7.5rem;
         bottom: 2rem;
         position: fixed;
         cursor: pointer;
@@ -401,7 +403,7 @@ header{
             }
             
             .search:focus {
-                width: 410px!important; /* Updated width to 700px */
+                width: 450px!important; /* Updated width to 700px */
                 padding: 15px 10px 15px 0;
                 border: 1px solid $prim;
             }
@@ -1076,16 +1078,16 @@ header{
                     }
                 }
             }
+        }
 
-            img{
-                .who-img{
-                    object-fit: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 100%;
-                    height: 240px;
-                }
+        div#mission_vision{
+            img.who-img{
+                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 240px;
             }
         }
 
@@ -2000,11 +2002,11 @@ header{
                     }
                 }
             }
+        }
 
-            img{
-                .who-img{
-                    height: 300px;
-                }
+        div#mission_vision{
+            img.who-img{
+                height: 300px;
             }
         }
 
@@ -2579,11 +2581,11 @@ header{
                     }
                 }
             }
+        }
 
-            img{
-                .who-img{
-                    height: 360px;
-                }
+        div#mission_vision{
+            img.who-img{
+                height: 360px;
             }
         }
 
@@ -3218,13 +3220,12 @@ header{
                     }
                 }
             }
-            img{
-                .who-img{
-                    height: 400px;
-                }
+        }
+        div#mission_vision{
+            img.who-img{
+                height: 400px;
             }
         }
-
         section#organic{
             padding: 6rem 0;
         }
@@ -4071,10 +4072,12 @@ header{
                 }
             }
 
-            img{
-                .who-img{
-                    height: 500px;
-                }
+            
+        }
+
+        div#mission_vision{
+            img.who-img{
+                height: 500px;
             }
         }
 
@@ -4894,10 +4897,12 @@ header{
                 }
             }
 
-            img{
-                .who-img{
-                    height: 500px;
-                }
+           
+        }
+
+        div#mission_vision{
+            img.who-img{
+                height: 500px;
             }
         }
 
