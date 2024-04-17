@@ -197,6 +197,10 @@ header{
     width: auto!important;
 }
 
+header.bg-lteal.position-fixed.w-100 {
+    transition: background-color 0.5s ease; /* Adjust duration and timing function as needed */
+}
+
 
 @media (min-width: 375px) { 
     div#music{
@@ -438,13 +442,14 @@ header{
         // }
 
         section#jumbotron{
-            padding: 6rem 0 0rem 0;
+            // padding: 6rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
+            height: calc(550px - 96px);
+            margin-top: 96px;
             img{
                 width: 100%;
-                height: 500px;
-             
+                height: 454px;
             }
             #content-wrap{
                 position: absolute;
@@ -459,12 +464,13 @@ header{
         }
 
         section#no-jumbotron{
-            height:55svh;
+            margin-top: 96px;
+            height: calc(65svh - 96px);
             width: 100%;
           
             .container{
                 position: relative;
-                height: 55svh;
+                height: calc(65svh - 96px);
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -474,6 +480,7 @@ header{
         }
 
         section#jumb_custom_ing{
+            margin:7.5rem 0 0rem 0;
             height:30svh;
             width: 100%;
           
@@ -587,7 +594,8 @@ header{
 
 
         section#blog_jumb{
-            padding: 6rem 0 0 0;
+            padding: 96px 0 0 0;
+            height: calc(65svh + 96px);
             img.single-blog-img{
                 height: 65svh;
                 object-fit: cover;
@@ -787,7 +795,7 @@ header{
         section#products{
             padding: 5rem 0;
             .prod-display{
-                div.rounded-5,{
+                div.rounded-5{
                     width: auto;
                     height: auto;
                     overflow: hidden;
@@ -1136,7 +1144,7 @@ header{
 
        // CONTACT PAGE
        section#contact{
-            padding: 3rem 0 6rem 0;
+            padding: 7rem 0 6rem 0;
 
             .card{
                 transition: .8s ease;
@@ -1386,7 +1394,7 @@ header{
           
         }
         section#products-main{ 
-            padding:5rem 0 5rem 0;
+            padding:13rem 0 5rem 0;
            .cont-prod{
             z-index: 5;
           
@@ -1685,6 +1693,7 @@ header{
         // }
 
         section#jumb_custom_ing{
+            margin:6.5rem 0 0rem 0;
             height:80svh;
             .container{
                 height: 80svh;
@@ -1696,12 +1705,13 @@ header{
 
 
         section#jumbotron{
-            padding: 6rem 0 0rem 0;
+            // padding: 6rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
+            height: calc(500px - 96px);
             img{
                 width: 100%;
-                height: 500px;
+                height: 404px;
             }
            }
 
@@ -1710,11 +1720,12 @@ header{
             padding: 3rem 0;
         }
         section#no-jumbotron{
-            height: 90svh;
+            margin-top: 96px;
+            height: calc(120svh - 96px);
           
             .container{
                 position: relative;
-                height: 90svh;
+                height: calc(120svh - 96px);
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -1817,7 +1828,8 @@ header{
         }
 
         section#blog_jumb{
-            padding: 6rem 0 0 0;
+            padding: 96px 0 0 0;
+            height: calc(100svh + 96px);
             img.single-blog-img{
                 height: 100svh;
             }
@@ -2037,7 +2049,7 @@ header{
 
         // CONTACT PAGE
         section#contact{
-            padding:4rem 0 6rem 0;
+            padding:8rem 0 6rem 0;
 
             .map-wrapper{
                 padding: 5rem 0 0 0;
@@ -2115,7 +2127,7 @@ header{
               }
         }
          section#products-main{
-            padding:6rem 0 6rem 0;
+            padding:13rem 0 6rem 0;
             div.img-wrap{
                 img{
                     height: 250px;
@@ -2248,12 +2260,14 @@ header{
         // }
 
         section#jumbotron{
-            padding: 6rem 0 0rem 0;
+            // padding: 6rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
+            height: calc(560px - 96px);
+            margin-top: 96px;
             img{
                 width: 100%;
-                height: 400px;
+                height: 464px;
             }
            }
 
@@ -2264,6 +2278,7 @@ header{
         }
 
         section#jumb_custom_ing{
+            margin:6rem 0 0rem 0;
             height:30svh;
             .container{
                 height: 30svh;
@@ -2274,11 +2289,12 @@ header{
         }
 
         section#no-jumbotron{
-            height: 30svh;
+            margin-top: 96px;
+            height: calc(40svh - 96px);
           
             .container{
                 position: relative;
-                height: 30svh;
+                height: calc(40svh - 96px);
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -2387,7 +2403,8 @@ header{
         }
     
         section#blog_jumb{
-            padding: 6rem 0 0 0;
+            padding: 96px 0 0 0;
+            height: calc(40svh + 96px);
             img.single-blog-img{
                 height: 40svh;
             }
@@ -2690,7 +2707,7 @@ header{
           }
         }
         section#products-main{
-            padding:6rem 0 7rem 0;
+            padding:13rem 0 7rem 0;
             div.img-wrap{
                 img{
                     height: 200px;
@@ -2699,7 +2716,7 @@ header{
         }
 
         section#contact{
-            padding:5rem 0 7rem 0;
+            padding:9rem 0 7rem 0;
             .map-wrapper{
                 padding: 6rem 0 0 0;
             }
@@ -2868,12 +2885,14 @@ header{
         // }
 
         section#jumbotron{
-            padding: 7rem 0 0rem 0;
+            // padding: 7rem 0 0rem 0;
            .jumb-wrap{
             width: 100%;
+            height: calc(570px - 116px);
+            margin-top: 116px;
             img{
                 width: 100%;
-                height: 500px;
+                height: 454px;
             }
            }
         }
@@ -2883,6 +2902,7 @@ header{
         }
 
         section#jumb_custom_ing{
+            margin:7rem 0 0rem 0;
             height:35svh;
             .container{
                 height: 35svh;
@@ -2893,11 +2913,11 @@ header{
         }
 
         section#no-jumbotron{
-            height: 55svh;
-          
+            margin-top: 96px;
+            height: calc(60svh - 96px);
             .container{
                 position: relative;
-                height: 55svh;
+                height: calc(60svh - 96px);
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -3012,7 +3032,8 @@ header{
         }
 
         section#blog_jumb{
-            padding: 7.2rem 0 0 0;
+            padding: 116px 0 0 0;
+            height: calc(45svh + 116px);
             img.single-blog-img{
                 height: 45svh;
             }
@@ -3024,7 +3045,6 @@ header{
                 height: 53svh;
             }
         }
-
 
         section#about{
             padding: 6rem 0;
@@ -3244,7 +3264,7 @@ header{
 
         // CONTACT PAGE
         section#contact{
-            padding:6rem 0 8rem 0;
+            padding:13rem 0 8rem 0;
 
             .map-wrapper{
                 padding: unset;
@@ -3329,7 +3349,7 @@ header{
               }
          }
          section#products-main{
-            padding:7rem 0 6rem 0;
+            padding:13.5rem 0 6rem 0;
             div.img-wrap{
                 img{
                     height:205px;
@@ -3531,12 +3551,15 @@ header{
         // }
 
         section#jumbotron{
-            padding: 6.5rem 0 0rem 0;
+            // padding: 6.5rem 0 0rem 0;
+           
            .jumb-wrap{
             width: 100%;
+            height: calc(100svh - 116px);
+            margin-top: 116px;
             img{
                 width: 100%;
-                height: 500px;
+                height: 652px;
             }
 
             #content-wrap{
@@ -3551,6 +3574,7 @@ header{
             padding: 3.25rem 0;
         }
         section#jumb_custom_ing{
+             margin:6rem 0 0rem 0;
             height:40svh;
             .container{
                 height: 40svh;
@@ -3561,12 +3585,12 @@ header{
         }
 
         section#no-jumbotron{
-            height: 50svh;
+            height: calc(65svh - 96px);
             width: 100%;
           
             .container{
                 position: relative;
-                height: 50svh;
+                height: calc(65svh - 96px);
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -3754,7 +3778,8 @@ header{
         }
 
         section#blog_jumb{
-            padding: 7.5rem 0 0 0;
+            padding: 116px 0 0 0;
+            height: calc(50svh + 116px);
             img.single-blog-img{
                 height: 50svh;
             }
@@ -3941,7 +3966,7 @@ header{
         }
         // ABOUT PAGE
         section#contact{
-            padding:6rem 0 10rem 0;
+            padding:12.4rem 0 10rem 0;
 
             
             .map-wrapper{
@@ -4260,7 +4285,7 @@ header{
         }
         
         section#products-main{
-            padding: 9rem 0 10rem 0;
+            padding: 15rem 0 10rem 0;
             div.img-wrap{
                 img{
                     width: 100%;
@@ -4469,12 +4494,14 @@ header{
         // }
 
         section#jumbotron{
-            padding: 7.5rem 0 10rem 0;
+            // padding: 7.5rem 0 10rem 0;
            .jumb-wrap{
             width: 100%;
+            height: calc(100svh - 116px);
+            margin-top: 116px;
             img{
                 width: 100%;
-                height: 550px;
+                height: 100%;
             }
 
             #content-wrap{
@@ -4487,12 +4514,12 @@ header{
         }
 
         section#no-jumbotron{
-            height: 50svh;
+            height: calc(60svh - 96px);
             width: 100%;
           
             .container{
                 position: relative;
-                height: 50svh;
+                height: calc(60svh - 96px);
                 .col-12{
                     position: absolute;
                     top: 50%;
@@ -4548,6 +4575,8 @@ header{
 
         }
         section#blog_jumb{
+            padding: 116px 0 0 0;
+            height: calc(50svh + 116px);
             img.single-blog-img{
                 height: 50svh;
             }
@@ -4633,7 +4662,7 @@ header{
         }
 
         section#about{
-            padding:0 0 10rem 0;
+            padding:10rem 0 10rem 0;
             // .about-imgs{
             //     .col{
             //         height: 400px;
@@ -4781,7 +4810,7 @@ header{
         }
         // ABOUT PAGE
         section#contact{
-            padding: 6rem 0 10rem 0;
+            padding: 13rem 0 10rem 0;
 
             
             .map-wrapper{
@@ -5072,7 +5101,8 @@ header{
         }
         
         section#products-main{
-            padding: 9rem 0 10rem 0;
+            padding: 16.5rem 0 10rem 0;
+
             div.img-wrap{
                 overflow: hidden;
                 // border-radius: 1rem;

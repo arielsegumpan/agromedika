@@ -17,12 +17,11 @@
       <i class='bi bi-chevron-up text-lteal fs-4 rounded-3 bg-primary'></i>
     </div>
 
-    <header class="position-absolute w-100">
+    <header class="bg-lteal position-fixed w-100">
       <nav class="navbar navbar-expand-xl bg-transparent">
           <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="assets/imgs/agromedika.png" alt="">
-              
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               
@@ -43,17 +42,38 @@
                 <li class="nav-item me-3">
                   <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Home</a>
                 </li>
+
                 <li class="nav-item dropdown me-3">
                   <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Products <i class="bi bi-chevron-down"></i>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu drop-1">
                     <li><a class="dropdown-item text-uppercase" href="products.html">All Herbs</a></li>
+
+                    <li class="nav-item dropend ps-3 ps-lg-0">
+                      <a class="nav-link dropdown-toggle text-uppercase text-black fw-normal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Customized Ingredients <i class="bi bi-chevron-right"></i>
+                      </a> 
+                      <ul class="dropdown-menu drop-2">
+                        <li><a class="dropdown-item text-uppercase" href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="extract.html">Dietary Supplements</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_extract.html">Essential Oils</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Functional Foods</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Personal Care/Cosmetic</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Animal Nutrition</a></li>
+                      </ul>
+                    </li>
+
+
+
+
                     <li><a class="dropdown-item text-uppercase" href="extract.html">Extract List</a></li>
                     <li><a class="dropdown-item text-uppercase" href="price_list_extract.html">Price List Extract</a></li>
                     <li><a class="dropdown-item text-uppercase" href="price_list_powder.html">Price List Powder</a></li>
                   </ul>
                 </li>
+
+
                 <li class="nav-item dropdown me-3">
                   <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About Us <i class="bi bi-chevron-down"></i>
@@ -71,10 +91,11 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item text-uppercase" href="certificates.html">Certificates</a></li>
                     <li><a class="dropdown-item text-uppercase" href="brochure.html">Brochures</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="medicinal.html">Medicinal Plants</a></li>
                   </ul>
                 </li>
                 <li class="nav-item me-3">
-                  <a class="nav-link  text-uppercase" href="blog.html">News and Updates</a>
+                  <a class="nav-link  text-uppercase" href="blog.html">Blog</a>
                 </li>
                 
                 <li class="nav-item me-3">
@@ -89,7 +110,6 @@
                     <label class="button searchbutton" for="searchright"><i class="bi bi-search btn btn-primary text-white"></i></label>
                   </form>
                 </div>
-                <a href="#!" class="btn btn-primary text-white me-2"><i class="bi bi-whatsapp"></i></a>
                 <a href="#!" class="btn btn-primary text-white"><i class="bi bi-person"></i></a>
               </div>
 
@@ -99,9 +119,7 @@
     </header>
      
     <main>
-        <section id="prod_jumbotron" class="bg-lteal">  
-          <div class="jumb-overlay"></div>
-      </section>
+        
         <section id="no-jumbotron" class="bg-white">
             <div class="container">
               <div class="row">

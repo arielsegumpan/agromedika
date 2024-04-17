@@ -85,10 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function checkScroll() {
     // Show/hide the button based on the scroll position
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
       scrollBtn.style.display = 'block';
+      // $('header.position-fixed.w-100').addClass('bg-lteal');
     } else {
       scrollBtn.style.display = 'none';
+      // $('header.bg-lteal.position-fixed.w-100').removeClass('bg-lteal');
     }
   }
 
